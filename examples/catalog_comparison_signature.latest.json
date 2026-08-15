@@ -1,0 +1,61 @@
+{
+  "project_code": "DITUS-DEMO-20KM",
+  "system_voltage_kv": 34.5,
+  "design_current_a": 386.573659,
+  "candidates": [
+    {
+      "rank": 1,
+      "manufacturer": "Üretici A",
+      "model": "Sentetik Al 1x400/35",
+      "material": "Al",
+      "parallel": 1,
+      "reference_ampacity_arithmetic_a": 545.0,
+      "reference_ampacity_normalized_a": null,
+      "reference_validation_status": "REFERENCE_ONLY_INCOMPLETE",
+      "normalized_margin_a": null,
+      "screening_status": "REFERENCE_ONLY",
+      "voltage_drop_percent": 4.39190066,
+      "completion": "CONDITIONAL",
+      "gates": "CONDITIONAL_READY",
+      "verification": "REFERENCE_NORMALIZATION_REQUIRED",
+      "catalog_present": 8,
+      "catalog_missing": 1
+    },
+    {
+      "rank": 2,
+      "manufacturer": "Üretici B",
+      "model": "Sentetik Al 1x400/35",
+      "material": "Al",
+      "parallel": 1,
+      "reference_ampacity_arithmetic_a": 571.0,
+      "reference_ampacity_normalized_a": null,
+      "reference_validation_status": "REFERENCE_ONLY_INCOMPLETE",
+      "normalized_margin_a": null,
+      "screening_status": "REFERENCE_ONLY",
+      "voltage_drop_percent": 4.265325198,
+      "completion": "CONDITIONAL",
+      "gates": "CONDITIONAL_READY",
+      "verification": "REFERENCE_NORMALIZATION_REQUIRED",
+      "catalog_present": 8,
+      "catalog_missing": 1
+    },
+    {
+      "rank": 3,
+      "manufacturer": "Üretici C",
+      "model": "Sentetik Cu 1x400/35",
+      "material": "Cu",
+      "parallel": 1,
+      "reference_ampacity_arithmetic_a": 680.0,
+      "reference_ampacity_normalized_a": null,
+      "reference_validation_status": "REFERENCE_ONLY_INCOMPLETE",
+      "normalized_margin_a": null,
+      "screening_status": "REFERENCE_ONLY",
+      "voltage_drop_percent": 3.180009975,
+      "completion": "CONDITIONAL",
+      "gates": "CONDITIONAL_READY",
+      "verification": "REFERENCE_NORMALIZATION_REQUIRED",
+      "catalog_present": 8,
+      "catalog_missing": 1
+    }
+  ]
+}

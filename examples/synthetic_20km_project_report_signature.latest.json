@@ -1,0 +1,29 @@
+{
+  "format": "DITUS_PROJECT_REPORT_DEMO",
+  "version": "0.16.1",
+  "project_file": "synthetic_20km_applied.ucd.json",
+  "project_signature_sha256": "0b76ac9b7eba6fb2b824ab556dc0174ac10701422b319bea3c44eda6e1f0f8a5",
+  "report_status": "CONDITIONAL",
+  "selected_modules": [
+    "PROJECT_SUMMARY",
+    "DESIGN_BASIS",
+    "SOURCE_AUDIT",
+    "CABLE_CONSTRUCTION",
+    "ROUTE_AND_REGIONS",
+    "VOLTAGE_DROP",
+    "IEC60287",
+    "NODAL_THERMAL",
+    "BONDING",
+    "FAULT_EPR",
+    "SVL",
+    "PROCUREMENT_SUMMARY",
+    "WARNINGS_LIMITATIONS"
+  ],
+  "outputs": {
+    "json": "synthetic_20km_project_report.latest.json",
+    "markdown": "synthetic_20km_project_report.latest.md",
+    "html": "synthetic_20km_project_report.latest.html",
+    "docx": "synthetic_20km_project_report.latest.docx",
+    "pdf": "synthetic_20km_project_report.latest.pdf"
+  }
+}

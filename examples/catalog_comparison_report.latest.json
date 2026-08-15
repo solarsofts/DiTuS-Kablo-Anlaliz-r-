@@ -1,0 +1,378 @@
+{
+  "generated_at": "2026-08-06T23:38:03",
+  "project_name": "Sentetik 20 km Çift Devre Yeraltı Kablo Hattı",
+  "project_code": "DITUS-DEMO-20KM",
+  "system_voltage_kv": 34.5,
+  "design_current_a": 386.57365850088,
+  "candidates": [
+    {
+      "rank": 1,
+      "candidate_id": "SYN-MFR-A-MV40K5-AL400-35::P1",
+      "record_id": "SYN-MFR-A-MV40K5-AL400-35",
+      "manufacturer": "Üretici A",
+      "model": "Sentetik Al 1x400/35",
+      "series": "Sentetik OG Aday Serisi",
+      "conductor_material": "Al",
+      "conductor_area_mm2": 400.0,
+      "voltage_class": "20.3/35 (40.5) kV",
+      "parallel_cables_per_phase": 1,
+      "required_design_current_a": 386.57365850088,
+      "reference_ampacity_a_per_cable": 545.0,
+      "combined_reference_ampacity_a": 545.0,
+      "adjusted_reference_ampacity_a": null,
+      "normalized_design_margin_a": null,
+      "reference_validation_status": "REFERENCE_ONLY_INCOMPLETE",
+      "governing_reference_region_id": "",
+      "correction_factors_source_verified": false,
+      "physical_model_ampacity_a": null,
+      "physical_minus_catalog_a": null,
+      "physical_minus_catalog_percent": null,
+      "physical_comparison_status": "NOT_AVAILABLE",
+      "design_margin_a": 158.42634149911999,
+      "design_margin_percent": 40.98218748620694,
+      "voltage_drop_percent": 4.39190066003857,
+      "screening_status": "REFERENCE_ONLY",
+      "completion_status": "CONDITIONAL",
+      "iteration_gate_status": "CONDITIONAL_READY",
+      "verification_status": "REFERENCE_NORMALIZATION_REQUIRED",
+      "source_quality": "SYNTHETIC_DEMO",
+      "source_page": "Sentetik satır A",
+      "source_file_hashes": [],
+      "catalog_scalar_count": 8,
+      "catalog_scalar_missing_count": 1,
+      "blocking_missing_count": 0,
+      "manufacturer_confirmation_count": 2,
+      "assumption_count": 3,
+      "reference_condition_summary": "toprakta üçgen demet; toprak 20°C; derinlik 0.7 m; ρth 1 K·m/W; katalog yük faktörü 1; Tamamen sentetik karşılaştırma koşulu; düzeltme faktörü içermez.",
+      "missing_or_conditional_items": [
+        "Gerçek iletken çapı",
+        "Metalik ekran/kılıf kesiti",
+        "Metalik ekran tel adedi ve tel çapı",
+        "Katman ısıl özdirençleri",
+        "Katman hacimsel ısı kapasiteleri"
+      ],
+      "warnings": [
+        "Konstrüksiyon/model verisi koşullu; üretici çizimi veya test verisi gerekiyor.",
+        "Katalog Iref proje koşullarına kaynaklı faktörlerle normalize edilmedi; ham ×N değeri uygunluk kapısı değildir.",
+        "RS-01 Sentetik standart hendek: eksik düzeltme -> soil_temperature_c, burial_depth_m, soil_thermal_resistivity_km_w",
+        "RS-02 Sentetik yüksek termal özdirenç bölgesi: eksik düzeltme -> soil_temperature_c, burial_depth_m, soil_thermal_resistivity_km_w",
+        "RS-03 Sentetik yol geçişi duct bank: eksik düzeltme -> soil_temperature_c, burial_depth_m, soil_thermal_resistivity_km_w, installation_method",
+        "RS-04 Sentetik HDD geçişi: eksik düzeltme -> soil_temperature_c, burial_depth_m, soil_thermal_resistivity_km_w, installation_method"
+      ],
+      "decision_basis": [
+        "Katalog ön eleme: REFERENCE_ONLY",
+        "Katalog referans marjı: +158.426 A",
+        "Veri tamamlama: CONDITIONAL",
+        "İterasyon kapıları: CONDITIONAL_READY",
+        "Referans normalizasyonu: REFERENCE_ONLY_INCOMPLETE"
+      ]
+    },
+    {
+      "rank": 2,
+      "candidate_id": "SYN-MFR-B-MV40K5-AL400-35::P1",
+      "record_id": "SYN-MFR-B-MV40K5-AL400-35",
+      "manufacturer": "Üretici B",
+      "model": "Sentetik Al 1x400/35",
+      "series": "Sentetik OG Aday Serisi",
+      "conductor_material": "Al",
+      "conductor_area_mm2": 400.0,
+      "voltage_class": "20.3/35 (40.5) kV",
+      "parallel_cables_per_phase": 1,
+      "required_design_current_a": 386.57365850088,
+      "reference_ampacity_a_per_cable": 571.0,
+      "combined_reference_ampacity_a": 571.0,
+      "adjusted_reference_ampacity_a": null,
+      "normalized_design_margin_a": null,
+      "reference_validation_status": "REFERENCE_ONLY_INCOMPLETE",
+      "governing_reference_region_id": "",
+      "correction_factors_source_verified": false,
+      "physical_model_ampacity_a": null,
+      "physical_minus_catalog_a": null,
+      "physical_minus_catalog_percent": null,
+      "physical_comparison_status": "NOT_AVAILABLE",
+      "design_margin_a": 184.42634149911999,
+      "design_margin_percent": 47.70794321949387,
+      "voltage_drop_percent": 4.265325197727902,
+      "screening_status": "REFERENCE_ONLY",
+      "completion_status": "CONDITIONAL",
+      "iteration_gate_status": "CONDITIONAL_READY",
+      "verification_status": "REFERENCE_NORMALIZATION_REQUIRED",
+      "source_quality": "SYNTHETIC_DEMO",
+      "source_page": "Sentetik satır B",
+      "source_file_hashes": [],
+      "catalog_scalar_count": 8,
+      "catalog_scalar_missing_count": 1,
+      "blocking_missing_count": 0,
+      "manufacturer_confirmation_count": 2,
+      "assumption_count": 3,
+      "reference_condition_summary": "toprakta üçgen demet; toprak 20°C; derinlik 0.7 m; ρth 1 K·m/W; katalog yük faktörü 1; Tamamen sentetik karşılaştırma koşulu; düzeltme faktörü içermez.",
+      "missing_or_conditional_items": [
+        "Gerçek iletken çapı",
+        "Metalik ekran/kılıf kesiti",
+        "Metalik ekran tel adedi ve tel çapı",
+        "Katman ısıl özdirençleri",
+        "Katman hacimsel ısı kapasiteleri"
+      ],
+      "warnings": [
+        "Konstrüksiyon/model verisi koşullu; üretici çizimi veya test verisi gerekiyor.",
+        "Katalog Iref proje koşullarına kaynaklı faktörlerle normalize edilmedi; ham ×N değeri uygunluk kapısı değildir.",
+        "RS-01 Sentetik standart hendek: eksik düzeltme -> soil_temperature_c, burial_depth_m, soil_thermal_resistivity_km_w",
+        "RS-02 Sentetik yüksek termal özdirenç bölgesi: eksik düzeltme -> soil_temperature_c, burial_depth_m, soil_thermal_resistivity_km_w",
+        "RS-03 Sentetik yol geçişi duct bank: eksik düzeltme -> soil_temperature_c, burial_depth_m, soil_thermal_resistivity_km_w, installation_method",
+        "RS-04 Sentetik HDD geçişi: eksik düzeltme -> soil_temperature_c, burial_depth_m, soil_thermal_resistivity_km_w, installation_method"
+      ],
+      "decision_basis": [
+        "Katalog ön eleme: REFERENCE_ONLY",
+        "Katalog referans marjı: +184.426 A",
+        "Veri tamamlama: CONDITIONAL",
+        "İterasyon kapıları: CONDITIONAL_READY",
+        "Referans normalizasyonu: REFERENCE_ONLY_INCOMPLETE"
+      ]
+    },
+    {
+      "rank": 3,
+      "candidate_id": "SYN-MFR-C-MV40K5-CU400-35::P1",
+      "record_id": "SYN-MFR-C-MV40K5-CU400-35",
+      "manufacturer": "Üretici C",
+      "model": "Sentetik Cu 1x400/35",
+      "series": "Sentetik OG Aday Serisi",
+      "conductor_material": "Cu",
+      "conductor_area_mm2": 400.0,
+      "voltage_class": "20.3/35 (40.5) kV",
+      "parallel_cables_per_phase": 1,
+      "required_design_current_a": 386.57365850088,
+      "reference_ampacity_a_per_cable": 680.0,
+      "combined_reference_ampacity_a": 680.0,
+      "adjusted_reference_ampacity_a": null,
+      "normalized_design_margin_a": null,
+      "reference_validation_status": "REFERENCE_ONLY_INCOMPLETE",
+      "governing_reference_region_id": "",
+      "correction_factors_source_verified": false,
+      "physical_model_ampacity_a": null,
+      "physical_minus_catalog_a": null,
+      "physical_minus_catalog_percent": null,
+      "physical_comparison_status": "NOT_AVAILABLE",
+      "design_margin_a": 293.42634149912,
+      "design_margin_percent": 75.90438071673526,
+      "voltage_drop_percent": 3.1800099748627284,
+      "screening_status": "REFERENCE_ONLY",
+      "completion_status": "CONDITIONAL",
+      "iteration_gate_status": "CONDITIONAL_READY",
+      "verification_status": "REFERENCE_NORMALIZATION_REQUIRED",
+      "source_quality": "SYNTHETIC_DEMO",
+      "source_page": "Sentetik satır C",
+      "source_file_hashes": [],
+      "catalog_scalar_count": 8,
+      "catalog_scalar_missing_count": 1,
+      "blocking_missing_count": 0,
+      "manufacturer_confirmation_count": 2,
+      "assumption_count": 3,
+      "reference_condition_summary": "toprakta üçgen demet; toprak 20°C; derinlik 0.7 m; ρth 1 K·m/W; katalog yük faktörü 1; Tamamen sentetik karşılaştırma koşulu; düzeltme faktörü içermez.",
+      "missing_or_conditional_items": [
+        "Gerçek iletken çapı",
+        "Metalik ekran/kılıf kesiti",
+        "Metalik ekran tel adedi ve tel çapı",
+        "Katman ısıl özdirençleri",
+        "Katman hacimsel ısı kapasiteleri"
+      ],
+      "warnings": [
+        "Konstrüksiyon/model verisi koşullu; üretici çizimi veya test verisi gerekiyor.",
+        "Katalog Iref proje koşullarına kaynaklı faktörlerle normalize edilmedi; ham ×N değeri uygunluk kapısı değildir.",
+        "RS-01 Sentetik standart hendek: eksik düzeltme -> soil_temperature_c, burial_depth_m, soil_thermal_resistivity_km_w",
+        "RS-02 Sentetik yüksek termal özdirenç bölgesi: eksik düzeltme -> soil_temperature_c, burial_depth_m, soil_thermal_resistivity_km_w",
+        "RS-03 Sentetik yol geçişi duct bank: eksik düzeltme -> soil_temperature_c, burial_depth_m, soil_thermal_resistivity_km_w, installation_method",
+        "RS-04 Sentetik HDD geçişi: eksik düzeltme -> soil_temperature_c, burial_depth_m, soil_thermal_resistivity_km_w, installation_method"
+      ],
+      "decision_basis": [
+        "Katalog ön eleme: REFERENCE_ONLY",
+        "Katalog referans marjı: +293.426 A",
+        "Veri tamamlama: CONDITIONAL",
+        "İterasyon kapıları: CONDITIONAL_READY",
+        "Referans normalizasyonu: REFERENCE_ONLY_INCOMPLETE"
+      ]
+    }
+  ],
+  "parameter_rows": [
+    {
+      "key": "conductor_rdc20_ohm_km",
+      "label": "İletken Rdc @20 °C",
+      "unit": "Ω/km",
+      "values": [
+        [
+          "SYN-MFR-A-MV40K5-AL400-35::P1",
+          "0.0778"
+        ],
+        [
+          "SYN-MFR-B-MV40K5-AL400-35::P1",
+          "0.0754"
+        ],
+        [
+          "SYN-MFR-C-MV40K5-CU400-35::P1",
+          "0.047"
+        ]
+      ]
+    },
+    {
+      "key": "conductor_rdc90_ohm_km",
+      "label": "İletken Rdc @90 °C",
+      "unit": "Ω/km",
+      "values": [
+        [
+          "SYN-MFR-A-MV40K5-AL400-35::P1",
+          "—"
+        ],
+        [
+          "SYN-MFR-B-MV40K5-AL400-35::P1",
+          "—"
+        ],
+        [
+          "SYN-MFR-C-MV40K5-CU400-35::P1",
+          "—"
+        ]
+      ]
+    },
+    {
+      "key": "inductance_trefoil_mh_km",
+      "label": "Endüktans — üçgen demet",
+      "unit": "mH/km",
+      "values": [
+        [
+          "SYN-MFR-A-MV40K5-AL400-35::P1",
+          "0.4"
+        ],
+        [
+          "SYN-MFR-B-MV40K5-AL400-35::P1",
+          "0.39"
+        ],
+        [
+          "SYN-MFR-C-MV40K5-CU400-35::P1",
+          "0.38"
+        ]
+      ]
+    },
+    {
+      "key": "inductance_flat_mh_km",
+      "label": "Endüktans — düz tertip",
+      "unit": "mH/km",
+      "values": [
+        [
+          "SYN-MFR-A-MV40K5-AL400-35::P1",
+          "0.46"
+        ],
+        [
+          "SYN-MFR-B-MV40K5-AL400-35::P1",
+          "0.45"
+        ],
+        [
+          "SYN-MFR-C-MV40K5-CU400-35::P1",
+          "0.44"
+        ]
+      ]
+    },
+    {
+      "key": "capacitance_uf_km",
+      "label": "Kapasitans",
+      "unit": "µF/km",
+      "values": [
+        [
+          "SYN-MFR-A-MV40K5-AL400-35::P1",
+          "0.244587"
+        ],
+        [
+          "SYN-MFR-B-MV40K5-AL400-35::P1",
+          "0.244587"
+        ],
+        [
+          "SYN-MFR-C-MV40K5-CU400-35::P1",
+          "0.244587"
+        ]
+      ]
+    },
+    {
+      "key": "ampacity_ground_trefoil_a",
+      "label": "Katalog ampacity — toprak/üçgen",
+      "unit": "A",
+      "values": [
+        [
+          "SYN-MFR-A-MV40K5-AL400-35::P1",
+          "545"
+        ],
+        [
+          "SYN-MFR-B-MV40K5-AL400-35::P1",
+          "571"
+        ],
+        [
+          "SYN-MFR-C-MV40K5-CU400-35::P1",
+          "680"
+        ]
+      ]
+    },
+    {
+      "key": "ampacity_ground_flat_a",
+      "label": "Katalog ampacity — toprak/düz",
+      "unit": "A",
+      "values": [
+        [
+          "SYN-MFR-A-MV40K5-AL400-35::P1",
+          "558"
+        ],
+        [
+          "SYN-MFR-B-MV40K5-AL400-35::P1",
+          "584"
+        ],
+        [
+          "SYN-MFR-C-MV40K5-CU400-35::P1",
+          "695"
+        ]
+      ]
+    },
+    {
+      "key": "overall_diameter_mm",
+      "label": "Kablo dış çapı",
+      "unit": "mm",
+      "values": [
+        [
+          "SYN-MFR-A-MV40K5-AL400-35::P1",
+          "57.71"
+        ],
+        [
+          "SYN-MFR-B-MV40K5-AL400-35::P1",
+          "56.013"
+        ],
+        [
+          "SYN-MFR-C-MV40K5-CU400-35::P1",
+          "57.144"
+        ]
+      ]
+    },
+    {
+      "key": "net_weight_kg_km",
+      "label": "Net ağırlık",
+      "unit": "kg/km",
+      "values": [
+        [
+          "SYN-MFR-A-MV40K5-AL400-35::P1",
+          "3624.5"
+        ],
+        [
+          "SYN-MFR-B-MV40K5-AL400-35::P1",
+          "3348.3"
+        ],
+        [
+          "SYN-MFR-C-MV40K5-CU400-35::P1",
+          "6046.4"
+        ]
+      ]
+    }
+  ],
+  "trace": [
+    "DiTuS v0.16.9.4.27 FAZ 6.8 katalog referans-normalizasyon ve fiziksel model karşılaştırma raporu. Katalog ampacity değerleri yalnız yayımlandıkları referans koşullar için benchmarktır; karşılaştırma sonucu nihai kablo uygunluk onayı değildir.",
+    "DiTuS v0.16.9.4.27 FAZ 6.8 catalog reference-condition screening. Catalog current ratings are used only under their stated reference conditions; final design requires project IEC 60287, 2D thermal, bonding and fault validation.",
+    "Sistem: 34.5 kV; normal 167.348 A/devre; N-1 334.696 A/devre; tasarım 386.574 A/devre.",
+    "6 katalog/parallel varyantı değerlendirildi.",
+    "Katalog ampacity değerleri proje güzergâhı için doğrudan nihai rating kabul edilmedi.",
+    "3 farklı katalog kaydı/aday varyantı teknik karşılaştırmaya alındı.",
+    "İlk sıra yalnız ileri doğrulama önceliğidir: Üretici A Sentetik Al 1x400/35; durum REFERENCE_NORMALIZATION_REQUIRED.",
+    "Hiçbir aday 'nihai uygun' olarak etiketlenmedi."
+  ]
+}

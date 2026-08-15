@@ -1,0 +1,599 @@
+{
+  "engine": "DiTuS v0.16.5.2 General N-Conductor EM SHADOW_COMPARE",
+  "project_schema": "0.16.4",
+  "cross_section_id": "ICS-DEMO-N24",
+  "results": {
+    "OPEN_SHEATH": {
+      "conductor_count": 24,
+      "core_count": 12,
+      "group_count": 6,
+      "methods_agree": true,
+      "maximum_method_current_difference_a": 4.041982792082278e-13,
+      "maximum_method_voltage_difference_v_km": 2.1691928285568095e-13,
+      "lambda1_shadow": 0.0,
+      "maximum_current_imbalance_percent": 41.295659117926895,
+      "groups": [
+        {
+          "group_id": "C1:A",
+          "target": {
+            "real": 900.0,
+            "imag": 0.0,
+            "magnitude": 900.0
+          },
+          "solved": {
+            "real": 900.0,
+            "imag": 0.0,
+            "magnitude": 900.0
+          },
+          "current_sum_residual_a": 0.0,
+          "imbalance_percent": 24.075063924509628
+        },
+        {
+          "group_id": "C1:B",
+          "target": {
+            "real": -449.9999999999998,
+            "imag": -779.4228634059948,
+            "magnitude": 899.9999999999999
+          },
+          "solved": {
+            "real": -449.9999999999998,
+            "imag": -779.4228634059948,
+            "magnitude": 899.9999999999999
+          },
+          "current_sum_residual_a": 0.0,
+          "imbalance_percent": 0.15802120721724278
+        },
+        {
+          "group_id": "C1:C",
+          "target": {
+            "real": -449.9999999999998,
+            "imag": 779.4228634059948,
+            "magnitude": 899.9999999999999
+          },
+          "solved": {
+            "real": -449.9999999999998,
+            "imag": 779.4228634059948,
+            "magnitude": 899.9999999999999
+          },
+          "current_sum_residual_a": 0.0,
+          "imbalance_percent": 23.06842289317877
+        },
+        {
+          "group_id": "C2:A",
+          "target": {
+            "real": 600.0,
+            "imag": 0.0,
+            "magnitude": 600.0
+          },
+          "solved": {
+            "real": 600.0,
+            "imag": 0.0,
+            "magnitude": 600.0
+          },
+          "current_sum_residual_a": 0.0,
+          "imbalance_percent": 41.295659117926895
+        },
+        {
+          "group_id": "C2:B",
+          "target": {
+            "real": -299.9999999999999,
+            "imag": -519.6152422706632,
+            "magnitude": 600.0
+          },
+          "solved": {
+            "real": -299.9999999999999,
+            "imag": -519.6152422706632,
+            "magnitude": 600.0
+          },
+          "current_sum_residual_a": 0.0,
+          "imbalance_percent": 9.167357432671736
+        },
+        {
+          "group_id": "C2:C",
+          "target": {
+            "real": -299.9999999999999,
+            "imag": 519.6152422706632,
+            "magnitude": 600.0
+          },
+          "solved": {
+            "real": -299.9999999999999,
+            "imag": 519.6152422706632,
+            "magnitude": 600.0
+          },
+          "current_sum_residual_a": 0.0,
+          "imbalance_percent": 25.180604143716202
+        }
+      ],
+      "cables": [
+        {
+          "physical_cable_id": "C1-A-1",
+          "core_current": {
+            "real": 395.547406382727,
+            "imag": 32.328144806655594,
+            "magnitude": 396.86629945454206
+          },
+          "sheath_current": {
+            "real": 0.0,
+            "imag": 0.0,
+            "magnitude": 0.0
+          },
+          "current_share_percent": 43.98123401887259,
+          "core_loss_w_km": 3000.8703613490093,
+          "sheath_loss_w_km": 0.0
+        },
+        {
+          "physical_cable_id": "C1-B-1",
+          "core_current": {
+            "real": -253.0330874453711,
+            "imag": -373.11381847455357,
+            "magnitude": 450.821100747069
+          },
+          "sheath_current": {
+            "real": 0.0,
+            "imag": 0.0,
+            "magnitude": 0.0
+          },
+          "current_share_percent": 49.96049469819568,
+          "core_loss_w_km": 3872.284528475842,
+          "sheath_loss_w_km": 0.0
+        },
+        {
+          "physical_cable_id": "C1-C-1",
+          "core_current": {
+            "real": -286.61433875437746,
+            "imag": 414.57441739943044,
+            "magnitude": 504.0036971508108
+          },
+          "sheath_current": {
+            "real": 0.0,
+            "imag": 0.0,
+            "magnitude": 0.0
+          },
+          "current_share_percent": 55.7671057232947,
+          "core_loss_w_km": 4839.786851528613,
+          "sheath_loss_w_km": 0.0
+        },
+        {
+          "physical_cable_id": "C1-A-2",
+          "core_current": {
+            "real": 504.452593617273,
+            "imag": -32.328144806655594,
+            "magnitude": 505.4874164149229
+          },
+          "sheath_current": {
+            "real": 0.0,
+            "imag": 0.0,
+            "magnitude": 0.0
+          },
+          "current_share_percent": 56.01876598112741,
+          "core_loss_w_km": 4868.32416110569,
+          "sheath_loss_w_km": 0.0
+        },
+        {
+          "physical_cable_id": "C1-B-2",
+          "core_current": {
+            "real": -196.96691255462866,
+            "imag": -406.30904493144124,
+            "magnitude": 451.5340570039016
+          },
+          "sheath_current": {
+            "real": 0.0,
+            "imag": 0.0,
+            "magnitude": 0.0
+          },
+          "current_share_percent": 50.039505301804304,
+          "core_loss_w_km": 3884.541951669603,
+          "sheath_loss_w_km": 0.0
+        },
+        {
+          "physical_cable_id": "C1-C-2",
+          "core_current": {
+            "real": -163.38566124562232,
+            "imag": 364.84844600656436,
+            "magnitude": 399.76150746923366
+          },
+          "sheath_current": {
+            "real": 0.0,
+            "imag": 0.0,
+            "magnitude": 0.0
+          },
+          "current_share_percent": 44.232894276705316,
+          "core_loss_w_km": 3044.813798654879,
+          "sheath_loss_w_km": 0.0
+        },
+        {
+          "physical_cable_id": "C2-C-1",
+          "core_current": {
+            "real": -106.93599321210513,
+            "imag": 240.6778706384424,
+            "magnitude": 263.365039554065
+          },
+          "sheath_current": {
+            "real": 0.0,
+            "imag": 0.0,
+            "magnitude": 0.0
+          },
+          "current_share_percent": 43.704848964070955,
+          "core_loss_w_km": 1321.5239514316095,
+          "sheath_loss_w_km": 0.0
+        },
+        {
+          "physical_cable_id": "C2-B-1",
+          "core_current": {
+            "real": -147.31673883257307,
+            "imag": -277.2567124233028,
+            "magnitude": 313.9641796830374
+          },
+          "sheath_current": {
+            "real": 0.0,
+            "imag": 0.0,
+            "magnitude": 0.0
+          },
+          "current_share_percent": 52.291839358167934,
+          "core_loss_w_km": 1878.1012205928241,
+          "sheath_loss_w_km": 0.0
+        },
+        {
+          "physical_cable_id": "C2-A-1",
+          "core_current": {
+            "real": 362.0462488043271,
+            "imag": -11.95525545776174,
+            "magnitude": 362.24358435498215
+          },
+          "sheath_current": {
+            "real": 0.0,
+            "imag": 0.0,
+            "magnitude": 0.0
+          },
+          "current_share_percent": 60.323914779481726,
+          "core_loss_w_km": 2500.116209249288,
+          "sheath_loss_w_km": 0.0
+        },
+        {
+          "physical_cable_id": "C2-C-2",
+          "core_current": {
+            "real": -193.06400678789475,
+            "imag": 278.9373716322208,
+            "magnitude": 339.2340902829312
+          },
+          "sheath_current": {
+            "real": 0.0,
+            "imag": 0.0,
+            "magnitude": 0.0
+          },
+          "current_share_percent": 56.29515103592905,
+          "core_loss_w_km": 2192.5917141803843,
+          "sheath_loss_w_km": 0.0
+        },
+        {
+          "physical_cable_id": "C2-B-2",
+          "core_current": {
+            "real": -152.68326116742682,
+            "imag": -242.3585298473604,
+            "magnitude": 286.44342413554295
+          },
+          "sheath_current": {
+            "real": 0.0,
+            "imag": 0.0,
+            "magnitude": 0.0
+          },
+          "current_share_percent": 47.708160641832066,
+          "core_loss_w_km": 1563.2790366806953,
+          "sheath_loss_w_km": 0.0
+        },
+        {
+          "physical_cable_id": "C2-A-2",
+          "core_current": {
+            "real": 237.95375119567294,
+            "imag": 11.95525545776174,
+            "magnitude": 238.2538894565051
+          },
+          "sheath_current": {
+            "real": 0.0,
+            "imag": 0.0,
+            "magnitude": 0.0
+          },
+          "current_share_percent": 39.676085220518274,
+          "core_loss_w_km": 1081.530544261677,
+          "sheath_loss_w_km": 0.0
+        }
+      ]
+    },
+    "SOLID_BOTH_END_SECTION": {
+      "conductor_count": 24,
+      "core_count": 12,
+      "group_count": 6,
+      "methods_agree": true,
+      "maximum_method_current_difference_a": 7.929657726941477e-13,
+      "maximum_method_voltage_difference_v_km": 2.3651575954052696e-13,
+      "lambda1_shadow": 2.5032384990142016,
+      "maximum_current_imbalance_percent": 25.644902084492436,
+      "groups": [
+        {
+          "group_id": "C1:A",
+          "target": {
+            "real": 900.0,
+            "imag": 0.0,
+            "magnitude": 900.0
+          },
+          "solved": {
+            "real": 900.0,
+            "imag": 0.0,
+            "magnitude": 900.0
+          },
+          "current_sum_residual_a": 0.0,
+          "imbalance_percent": 5.880436534586508
+        },
+        {
+          "group_id": "C1:B",
+          "target": {
+            "real": -449.9999999999998,
+            "imag": -779.4228634059948,
+            "magnitude": 899.9999999999999
+          },
+          "solved": {
+            "real": -449.9999999999998,
+            "imag": -779.4228634059948,
+            "magnitude": 899.9999999999999
+          },
+          "current_sum_residual_a": 0.0,
+          "imbalance_percent": 8.080654717014804
+        },
+        {
+          "group_id": "C1:C",
+          "target": {
+            "real": -449.9999999999998,
+            "imag": 779.4228634059948,
+            "magnitude": 899.9999999999999
+          },
+          "solved": {
+            "real": -449.9999999999998,
+            "imag": 779.4228634059948,
+            "magnitude": 899.9999999999999
+          },
+          "current_sum_residual_a": 0.0,
+          "imbalance_percent": 22.330381145323877
+        },
+        {
+          "group_id": "C2:A",
+          "target": {
+            "real": 600.0,
+            "imag": 0.0,
+            "magnitude": 600.0
+          },
+          "solved": {
+            "real": 600.0,
+            "imag": 0.0,
+            "magnitude": 600.0
+          },
+          "current_sum_residual_a": 0.0,
+          "imbalance_percent": 17.673645082128054
+        },
+        {
+          "group_id": "C2:B",
+          "target": {
+            "real": -299.9999999999999,
+            "imag": -519.6152422706632,
+            "magnitude": 600.0
+          },
+          "solved": {
+            "real": -299.9999999999999,
+            "imag": -519.6152422706632,
+            "magnitude": 600.0
+          },
+          "current_sum_residual_a": 0.0,
+          "imbalance_percent": 10.782409558028728
+        },
+        {
+          "group_id": "C2:C",
+          "target": {
+            "real": -299.9999999999999,
+            "imag": 519.6152422706632,
+            "magnitude": 600.0
+          },
+          "solved": {
+            "real": -299.9999999999999,
+            "imag": 519.6152422706632,
+            "magnitude": 600.0
+          },
+          "current_sum_residual_a": 0.0,
+          "imbalance_percent": 25.644902084492436
+        }
+      ],
+      "cables": [
+        {
+          "physical_cable_id": "C1-A-1",
+          "core_current": {
+            "real": 436.6137953059431,
+            "imag": 48.719608434009935,
+            "magnitude": 439.3235783536131
+          },
+          "sheath_current": {
+            "real": -137.34241259171426,
+            "imag": -166.88101797098682,
+            "magnitude": 216.13008225498248
+          },
+          "current_share_percent": 48.52989086635337,
+          "core_loss_w_km": 3677.289447810044,
+          "sheath_loss_w_km": 10143.363447820637
+        },
+        {
+          "physical_cable_id": "C1-B-1",
+          "core_current": {
+            "real": -229.7925437018102,
+            "imag": -365.9235665634111,
+            "magnitude": 432.09335762938485
+          },
+          "sheath_current": {
+            "real": -115.20434418623388,
+            "imag": 150.61658883275,
+            "magnitude": 189.62435959283795
+          },
+          "current_share_percent": 47.9798363207463,
+          "core_loss_w_km": 3557.246585372184,
+          "sheath_loss_w_km": 7807.999982301853
+        },
+        {
+          "physical_cable_id": "C1-C-1",
+          "core_current": {
+            "real": -246.5760858827855,
+            "imag": 435.2753733562369,
+            "magnitude": 500.2643469004025
+          },
+          "sheath_current": {
+            "real": 213.43843060297945,
+            "imag": 21.553543384182746,
+            "magnitude": 214.52393547265703
+          },
+          "current_share_percent": 55.582595286330964,
+          "core_loss_w_km": 4768.237684813761,
+          "sheath_loss_w_km": 9993.165055276937
+        },
+        {
+          "physical_cable_id": "C1-A-2",
+          "core_current": {
+            "real": 463.3862046940569,
+            "imag": -48.719608434009935,
+            "magnitude": 465.9403126439326
+          },
+          "sheath_current": {
+            "real": -105.49851777165571,
+            "imag": -167.32652104825826,
+            "magnitude": 197.80824527336966
+          },
+          "current_share_percent": 51.47010913364663,
+          "core_loss_w_km": 4136.369854446682,
+          "sheath_loss_w_km": 8496.505254462025
+        },
+        {
+          "physical_cable_id": "C1-B-2",
+          "core_current": {
+            "real": -220.20745629818958,
+            "imag": -413.4992968425837,
+            "magnitude": 468.4794470397076
+          },
+          "sheath_current": {
+            "real": -99.96216587894351,
+            "imag": 149.343605934106,
+            "magnitude": 179.71073212418605
+          },
+          "current_share_percent": 52.0201636792537,
+          "core_loss_w_km": 4181.574856478408,
+          "sheath_loss_w_km": 7012.931170085624
+        },
+        {
+          "physical_cable_id": "C1-C-2",
+          "core_current": {
+            "real": -203.42391411721428,
+            "imag": 344.1474900497579,
+            "magnitude": 399.77341550222667
+          },
+          "sheath_current": {
+            "real": 244.8090781616153,
+            "imag": 26.61995979412156,
+            "magnitude": 246.2521208229089
+          },
+          "current_share_percent": 44.41740471366903,
+          "core_loss_w_km": 3044.9951982269467,
+          "sheath_loss_w_km": 13167.748059467434
+        },
+        {
+          "physical_cable_id": "C2-C-1",
+          "core_current": {
+            "real": -135.9859042133172,
+            "imag": 223.4621067059303,
+            "magnitude": 261.5864661601706
+          },
+          "sheath_current": {
+            "real": 171.86604719654304,
+            "imag": 13.236846011571934,
+            "magnitude": 172.37503378186304
+          },
+          "current_share_percent": 43.58877447887689,
+          "core_loss_w_km": 1303.7350238176086,
+          "sheath_loss_w_km": 6452.087940708044
+        },
+        {
+          "physical_cable_id": "C2-B-1",
+          "core_current": {
+            "real": -159.93230866533835,
+            "imag": -272.74982589102177,
+            "magnitude": 316.18161059525227
+          },
+          "sheath_current": {
+            "real": -60.41025107385597,
+            "imag": 98.89935028344257,
+            "magnitude": 115.88994745573659
+          },
+          "current_share_percent": 52.69560238950719,
+          "core_loss_w_km": 1904.7237875307048,
+          "sheath_loss_w_km": 2916.37308444729
+        },
+        {
+          "physical_cable_id": "C2-A-1",
+          "core_current": {
+            "real": 326.9606527175504,
+            "imag": -38.93827845395703,
+            "magnitude": 329.27110100105125
+          },
+          "sheath_current": {
+            "real": -74.7466995548124,
+            "imag": -121.3898771326075,
+            "magnitude": 142.55725644318122
+          },
+          "current_share_percent": 54.41841127053202,
+          "core_loss_w_km": 2065.6941639472625,
+          "sheath_loss_w_km": 4412.962193594585
+        },
+        {
+          "physical_cable_id": "C2-C-2",
+          "core_current": {
+            "real": -164.01409578668267,
+            "imag": 296.1531355647329,
+            "magnitude": 338.5370043607437
+          },
+          "sheath_current": {
+            "real": 147.40323921462297,
+            "imag": 11.130769998920774,
+            "magnitude": 147.82289731882622
+          },
+          "current_share_percent": 56.41122552112312,
+          "core_loss_w_km": 2183.5899393310588,
+          "sheath_loss_w_km": 4744.986376547125
+        },
+        {
+          "physical_cable_id": "C2-B-2",
+          "core_current": {
+            "real": -140.06769133466153,
+            "imag": -246.86541637964143,
+            "magnitude": 283.8335638364775
+          },
+          "sheath_current": {
+            "real": -66.50249660568677,
+            "imag": 107.18351436466533,
+            "magnitude": 126.1383677013057
+          },
+          "current_share_percent": 47.30439761049282,
+          "core_loss_w_km": 1534.9219311797292,
+          "sheath_loss_w_km": 3454.983382576734
+        },
+        {
+          "physical_cable_id": "C2-A-2",
+          "core_current": {
+            "real": 273.0393472824496,
+            "imag": 38.93827845395703,
+            "magnitude": 275.80187579743546
+          },
+          "sheath_current": {
+            "real": -103.05107793829241,
+            "imag": -130.8788052792653,
+            "magnitude": 166.57966963459813
+          },
+          "current_share_percent": 45.58158872946799,
+          "core_loss_w_km": 1449.2830802661008,
+          "sheath_loss_w_km": 6025.5340143755
+        }
+      ]
+    }
+  }
+}

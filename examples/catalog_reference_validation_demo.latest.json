@@ -1,0 +1,132 @@
+{
+  "format": "DITUS_CATALOG_REFERENCE_VALIDATION_DEMO",
+  "version": "0.16.9.4.27",
+  "notice": "Tamamen sentetik düzeltme faktörleri; normatif IEC tablo verisi değildir.",
+  "result": {
+    "status": "NORMALIZED_CONDITIONAL",
+    "reference_ampacity_per_cable_a": 545.0,
+    "target_parallel_cables_per_phase": 1,
+    "arithmetic_total_ampacity_a": 545.0,
+    "governing_adjusted_ampacity_a": 447.23789999999997,
+    "governing_region_id": "TR-DEMO-2",
+    "source_verified": false,
+    "regions": [
+      {
+        "region_id": "TR-DEMO-1",
+        "region_name": "DEMO-R1",
+        "reference_ampacity_per_cable_a": 545.0,
+        "arithmetic_total_ampacity_a": 545.0,
+        "combined_factor": 0.8753279999999999,
+        "adjusted_total_ampacity_a": 477.05375999999995,
+        "status": "NORMALIZED_CONDITIONAL",
+        "applied_factors": [
+          {
+            "factor_id": "SYN-TEMP-25",
+            "parameter": "soil_temperature_c",
+            "factor": 0.96,
+            "reference_value": 20.0,
+            "target_value": 25.0,
+            "source_type": "SYNTHETIC_DEMO",
+            "source_reference": "Sentetik FAZ 6.8 demo faktörü; normatif tablo değildir.",
+            "source_id": "",
+            "status": "CONDITIONAL"
+          },
+          {
+            "factor_id": "SYN-DEPTH-1",
+            "parameter": "burial_depth_m",
+            "factor": 0.97,
+            "reference_value": 0.7,
+            "target_value": 1.0,
+            "source_type": "SYNTHETIC_DEMO",
+            "source_reference": "Sentetik FAZ 6.8 demo faktörü; normatif tablo değildir.",
+            "source_id": "",
+            "status": "CONDITIONAL"
+          },
+          {
+            "factor_id": "SYN-RHO-12",
+            "parameter": "soil_thermal_resistivity_km_w",
+            "factor": 0.94,
+            "reference_value": 1.0,
+            "target_value": 1.2,
+            "source_type": "SYNTHETIC_DEMO",
+            "source_reference": "Sentetik FAZ 6.8 demo faktörü; normatif tablo değildir.",
+            "source_id": "",
+            "status": "CONDITIONAL"
+          }
+        ],
+        "missing_parameters": [],
+        "trace": [
+          "Başlangıç: 545.000000 A/kablo × 1 = 545.000000 A aritmetik toplam.",
+          "soil_temperature_c: 20.0 → 25.0; k=0.96; kaynak=SYNTHETIC_DEMO:Sentetik FAZ 6.8 demo faktörü; normatif tablo değildir.",
+          "burial_depth_m: 0.7 → 1.0; k=0.97; kaynak=SYNTHETIC_DEMO:Sentetik FAZ 6.8 demo faktörü; normatif tablo değildir.",
+          "soil_thermal_resistivity_km_w: 1.0 → 1.2; k=0.94; kaynak=SYNTHETIC_DEMO:Sentetik FAZ 6.8 demo faktörü; normatif tablo değildir.",
+          "arrangement: referans=proje; k=1.0",
+          "installation_method: referans=proje; k=1.0",
+          "grouping_parallel: referans=proje; k=1.0"
+        ]
+      },
+      {
+        "region_id": "TR-DEMO-2",
+        "region_name": "DEMO-R2",
+        "reference_ampacity_per_cable_a": 545.0,
+        "arithmetic_total_ampacity_a": 545.0,
+        "combined_factor": 0.8206199999999999,
+        "adjusted_total_ampacity_a": 447.23789999999997,
+        "status": "NORMALIZED_CONDITIONAL",
+        "applied_factors": [
+          {
+            "factor_id": "SYN-TEMP-30",
+            "parameter": "soil_temperature_c",
+            "factor": 0.9,
+            "reference_value": 20.0,
+            "target_value": 30.0,
+            "source_type": "SYNTHETIC_DEMO",
+            "source_reference": "Sentetik FAZ 6.8 demo faktörü; normatif tablo değildir.",
+            "source_id": "",
+            "status": "CONDITIONAL"
+          },
+          {
+            "factor_id": "SYN-DEPTH-1",
+            "parameter": "burial_depth_m",
+            "factor": 0.97,
+            "reference_value": 0.7,
+            "target_value": 1.0,
+            "source_type": "SYNTHETIC_DEMO",
+            "source_reference": "Sentetik FAZ 6.8 demo faktörü; normatif tablo değildir.",
+            "source_id": "",
+            "status": "CONDITIONAL"
+          },
+          {
+            "factor_id": "SYN-RHO-12",
+            "parameter": "soil_thermal_resistivity_km_w",
+            "factor": 0.94,
+            "reference_value": 1.0,
+            "target_value": 1.2,
+            "source_type": "SYNTHETIC_DEMO",
+            "source_reference": "Sentetik FAZ 6.8 demo faktörü; normatif tablo değildir.",
+            "source_id": "",
+            "status": "CONDITIONAL"
+          }
+        ],
+        "missing_parameters": [],
+        "trace": [
+          "Başlangıç: 545.000000 A/kablo × 1 = 545.000000 A aritmetik toplam.",
+          "soil_temperature_c: 20.0 → 30.0; k=0.9; kaynak=SYNTHETIC_DEMO:Sentetik FAZ 6.8 demo faktörü; normatif tablo değildir.",
+          "burial_depth_m: 0.7 → 1.0; k=0.97; kaynak=SYNTHETIC_DEMO:Sentetik FAZ 6.8 demo faktörü; normatif tablo değildir.",
+          "soil_thermal_resistivity_km_w: 1.0 → 1.2; k=0.94; kaynak=SYNTHETIC_DEMO:Sentetik FAZ 6.8 demo faktörü; normatif tablo değildir.",
+          "arrangement: referans=proje; k=1.0",
+          "installation_method: referans=proje; k=1.0",
+          "grouping_parallel: referans=proje; k=1.0"
+        ]
+      }
+    ],
+    "warnings": [],
+    "trace": [
+      "IEC 60287-3-1 site reference conditions; catalog ratings remain tied to their published reference conditions. DiTuS does not embed proprietary correction tables."
+    ],
+    "physical_model_ampacity_a": null,
+    "physical_minus_catalog_a": null,
+    "physical_minus_catalog_percent": null,
+    "physical_comparison_status": "NOT_AVAILABLE"
+  }
+}

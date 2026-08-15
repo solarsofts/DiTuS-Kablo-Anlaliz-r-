@@ -1,0 +1,177 @@
+{
+  "project_name": "Sentetik 20 km Çift Devre Yeraltı Kablo Hattı",
+  "schema_version": "0.16.4",
+  "current_stage_id": "system_load",
+  "recommended_stage_id": "route",
+  "recommended_action": "Güzergâh ekranını açın, bölümleri kontrol edin ve Mevcut Güzergâhı Kabul Et komutunu kullanın.",
+  "overall_status": "BLOCKED",
+  "stages": [
+    {
+      "number": 1,
+      "stage_id": "system_load",
+      "title": "Proje ve Sistem / Yük",
+      "status": "COMPLETE",
+      "missing_inputs": [],
+      "blocking_reasons": [],
+      "engines": [
+        "Yük ve tasarım akımı motoru"
+      ],
+      "next_action": "Güzergâhı ve bölge sınırlarını tanımlayın."
+    },
+    {
+      "number": 2,
+      "stage_id": "route",
+      "title": "Güzergâh ve Bölgelendirme",
+      "status": "PRELIMINARY",
+      "missing_inputs": [],
+      "blocking_reasons": [],
+      "engines": [
+        "Güzergâh doğrulama",
+        "Chainage ve kapsam denetimi"
+      ],
+      "next_action": "Güzergâh ekranını açın, bölümleri kontrol edin ve Mevcut Güzergâhı Kabul Et komutunu kullanın."
+    },
+    {
+      "number": 3,
+      "stage_id": "installation",
+      "title": "Kurulum ve Termal Kesit",
+      "status": "CONDITIONAL",
+      "missing_inputs": [],
+      "blocking_reasons": [],
+      "engines": [
+        "Termal kesit doğrulama",
+        "Termal direnç ön işlemi"
+      ],
+      "next_action": "Fiziksel kesiti doğrulayın; ardından proje kablosunu seçip güzergâha atayın."
+    },
+    {
+      "number": 4,
+      "stage_id": "cable",
+      "title": "Kablo Adayları ve Kablo Tanımı",
+      "status": "PRELIMINARY",
+      "missing_inputs": [],
+      "blocking_reasons": [],
+      "engines": [
+        "Katalog ön eleme",
+        "Parametrik kablo doğrulama"
+      ],
+      "next_action": "Projeye kablo atanmamışsa aday seçin; atanmışsa ilk elektriksel ön eleme hesabını çalıştırın."
+    },
+    {
+      "number": 5,
+      "stage_id": "precheck",
+      "title": "İlk Elektriksel Ön Eleme",
+      "status": "READY",
+      "missing_inputs": [],
+      "blocking_reasons": [],
+      "engines": [
+        "Yük akımı",
+        "Gerilim düşümü",
+        "Katalog ampacity ön kontrolü",
+        "Faz iletkeni kısa devre ön kontrolü"
+      ],
+      "next_action": "IEC 60287 ve 2D termal doğrulamayı çalıştırın."
+    },
+    {
+      "number": 6,
+      "stage_id": "steady_thermal",
+      "title": "IEC 60287 ve 2D Termal",
+      "status": "READY",
+      "missing_inputs": [],
+      "blocking_reasons": [],
+      "engines": [
+        "IEC 60287",
+        "2D nodal kararlı durum",
+        "Bölgesel termal optimizasyon"
+      ],
+      "next_action": "Joint, link box ve bonding ağını tanımlayın."
+    },
+    {
+      "number": 7,
+      "stage_id": "bonding",
+      "title": "Joint, Link Box ve Bonding",
+      "status": "READY",
+      "missing_inputs": [],
+      "blocking_reasons": [],
+      "engines": [
+        "Bonding loop",
+        "Primitive CIM / Node Voltage"
+      ],
+      "next_action": "Arıza, EPR ve metalik ekran dayanımını doğrulayın."
+    },
+    {
+      "number": 8,
+      "stage_id": "fault_epr",
+      "title": "Arıza, EPR ve Ekran Dayanımı",
+      "status": "READY",
+      "missing_inputs": [],
+      "blocking_reasons": [],
+      "engines": [
+        "3PH / PP / SLG arıza",
+        "EPR ve akım paylaşımı",
+        "Ekran termik kontrolü"
+      ],
+      "next_action": "SVL ihtiyacı ve yalıtım koordinasyonunu değerlendirin."
+    },
+    {
+      "number": 9,
+      "stage_id": "svl",
+      "title": "SVL ve Yalıtım Koordinasyonu",
+      "status": "BLOCKED",
+      "missing_inputs": [],
+      "blocking_reasons": [
+        "Arıza/EPR sonucu tamamlanmadan SVL sonucu nihai olamaz."
+      ],
+      "engines": [
+        "SVL MCOV/TOV/residual",
+        "Enerji ve deşarj ön kontrolü"
+      ],
+      "next_action": "Geçici/çevrimsel yük profilini tanımlayın."
+    },
+    {
+      "number": 10,
+      "stage_id": "transient",
+      "title": "IEC 60853 Geçici / Çevrimsel",
+      "status": "READY",
+      "missing_inputs": [],
+      "blocking_reasons": [],
+      "engines": [
+        "IEC 60853 iş akışlı transient",
+        "Cyclic ve emergency rating"
+      ],
+      "next_action": "Birleşik tasarım iterasyonu için kapıları gözden geçirin."
+    },
+    {
+      "number": 11,
+      "stage_id": "iteration",
+      "title": "Birleşik İterasyon ve Tasarım Kararı",
+      "status": "BLOCKED",
+      "missing_inputs": [],
+      "blocking_reasons": [
+        "SVL: BLOCKED"
+      ],
+      "engines": [
+        "Birleşik tasarım iterasyonu",
+        "Bölgesel alternatif değerlendirmesi"
+      ],
+      "next_action": "Tasarım kararını kaydedin; rapor ve tedarik çıktılarını üretin."
+    },
+    {
+      "number": 12,
+      "stage_id": "deliverables",
+      "title": "Rapor, BOQ/BOM ve RFQ",
+      "status": "BLOCKED",
+      "missing_inputs": [],
+      "blocking_reasons": [
+        "Birleşik tasarım kararı henüz rapor kapısını açmıyor."
+      ],
+      "engines": [
+        "Raporlama",
+        "BOQ/BOM",
+        "Makara planı",
+        "RFQ"
+      ],
+      "next_action": "Rapor oluşturun veya BOQ/BOM/RFQ paketini üretin."
+    }
+  ]
+}

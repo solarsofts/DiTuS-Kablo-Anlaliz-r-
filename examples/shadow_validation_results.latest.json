@@ -1,0 +1,362 @@
+{
+  "mode": "SHADOW_VALIDATION",
+  "promotion_target": "PHYSICAL_PRIMARY",
+  "promotion_recommendation": "HOLD_SHADOW",
+  "reference": "IEC 60287-1-1:2023 steady-state rating/loss framework; IEC 60287-1-3:2023 parallel single-core phase-current and circulating-loss scope; IEC 60287-2-1:2023 steady-state thermal-resistance scope; CIGRE TB 797 sheath-bonding architecture; CIGRE TB 880 rating-tool verification targets",
+  "evaluated_at": "2026-08-06T21:32:49",
+  "metrics": [
+    {
+      "metric_id": "AMPACITY_IEC_VS_PHYSICAL",
+      "category": "AMPACITY",
+      "label": "IEC 60287 legacy ↔ kapalı çevrim fiziksel ampacity",
+      "unit": "A",
+      "legacy_value": 1149.5511514258303,
+      "physical_value": 923.7499999999999,
+      "absolute_difference": -225.80115142583043,
+      "difference_percent": -19.642549280713695,
+      "status": "REVIEW",
+      "reason_code": "THERMAL_AND_LOSS_MODEL_CHANGED",
+      "explanation": "Legacy analitik T1–T4 ve katsayı kayıpları; fiziksel sonuç global akım paylaşımı, kılıf ağı ve gerçek x-y 2D sıcaklık alanı kullanır. Tek devre/tek paralel olduğundan legacy ve fiziksel ağ doğrudan karşılaştırılabilir."
+    },
+    {
+      "metric_id": "AMPACITY_NODAL_VS_PHYSICAL",
+      "category": "AMPACITY",
+      "label": "Legacy 2D nodal ↔ kapalı çevrim fiziksel ampacity",
+      "unit": "A",
+      "legacy_value": 981.8224677561799,
+      "physical_value": 923.7499999999999,
+      "absolute_difference": -58.072467756180004,
+      "difference_percent": -5.914762562818168,
+      "status": "PASS",
+      "reason_code": "CURRENT_SHARING_AND_LOSS_FEEDBACK_CHANGED",
+      "explanation": "Her iki yol 2D termal çözüm içerir; fiziksel yol ayrıca eşitsiz core paylaşımı ve sıcaklığa bağlı kılıf/core ağını kapalı çevrimde yeniden çözer. Tek devre/tek paralel olduğundan legacy ve fiziksel ağ doğrudan karşılaştırılabilir."
+    },
+    {
+      "metric_id": "TEMPERATURE_IEC_VS_PHYSICAL",
+      "category": "TEMPERATURE",
+      "label": "Tasarım akımında IEC legacy ↔ fiziksel Tmax",
+      "unit": "°C",
+      "legacy_value": 53.6440257231617,
+      "physical_value": 71.72121935083764,
+      "absolute_difference": 18.077193627675946,
+      "difference_percent": 33.69842845308833,
+      "status": "REVIEW",
+      "reason_code": "GEOMETRY_AND_HEAT_SOURCE_DISTRIBUTION_CHANGED",
+      "explanation": "Legacy sonuç en kötü eşdeğer fazı; fiziksel sonuç gerçek x-y konumundaki en sıcak fiziksel kabloyu verir."
+    },
+    {
+      "metric_id": "TEMPERATURE_NODAL_VS_PHYSICAL",
+      "category": "TEMPERATURE",
+      "label": "Legacy 2D nodal ↔ fiziksel Tmax",
+      "unit": "°C",
+      "legacy_value": 65.60654909029546,
+      "physical_value": 71.72121935083764,
+      "absolute_difference": 6.114670260542184,
+      "difference_percent": 9.320213218540811,
+      "status": "REVIEW",
+      "reason_code": "ELECTROMAGNETIC_FEEDBACK_CHANGED",
+      "explanation": "Fark; kılıf akımı, eşitsiz paralel akım paylaşımı ve sıcaklık-direnç geri beslemesinden kaynaklanabilir."
+    },
+    {
+      "metric_id": "LAMBDA1_LEGACY_VS_PHYSICAL",
+      "category": "LOSSES",
+      "label": "Bonding legacy ↔ global fiziksel λ1",
+      "unit": "-",
+      "legacy_value": 1.6930353130856685e-05,
+      "physical_value": 1.778198779264087e-05,
+      "absolute_difference": 8.516346617841855e-07,
+      "difference_percent": 5.0302238541736335,
+      "status": "PASS",
+      "reason_code": "NETWORK_SCOPE_CHANGED",
+      "explanation": "Legacy tek-devre primitive/bonding yolu ile genel N-core/N-kılıf global ağının kılıf kayıp oranı karşılaştırılır. Tek devre/tek paralel olduğundan legacy ve fiziksel ağ doğrudan karşılaştırılabilir."
+    },
+    {
+      "metric_id": "SHEATH_LOSS_LEGACY_VS_PHYSICAL",
+      "category": "LOSSES",
+      "label": "Toplam kılıf metal kaybı",
+      "unit": "W",
+      "legacy_value": 1.0342904325240405,
+      "physical_value": 0.9625200491469053,
+      "absolute_difference": -0.07177038337713526,
+      "difference_percent": -6.939093809655545,
+      "status": "PASS",
+      "reason_code": "NETWORK_SCOPE_CHANGED",
+      "explanation": "Fiziksel sonuç bütün minor section, link-box, sıcaklığa bağlı kılıf direnci ve gerçek geometriyi kullanır. Tek devre/tek paralel olduğundan legacy ve fiziksel ağ doğrudan karşılaştırılabilir."
+    },
+    {
+      "metric_id": "CORE_LOSS_LEGACY_VS_PHYSICAL",
+      "category": "LOSSES",
+      "label": "Toplam iletken metal kaybı",
+      "unit": "W",
+      "legacy_value": 61090.895419008004,
+      "physical_value": 54128.93431100246,
+      "absolute_difference": -6961.961108005547,
+      "difference_percent": -11.396069840284879,
+      "status": "REVIEW",
+      "reason_code": "AC_RESISTANCE_AND_CURRENT_SHARING_CHANGED",
+      "explanation": "Fiziksel çözüm her core akımını ayrı çözer ve sıcaklığa bağlı direnci kapalı çevrimde günceller."
+    },
+    {
+      "metric_id": "SHEATH_EARTH_VOLTAGE",
+      "category": "BONDING",
+      "label": "Legacy standing voltage ↔ fiziksel kılıf-toprak maksimumu",
+      "unit": "V",
+      "legacy_value": 22.002137749348638,
+      "physical_value": 22.003743125176065,
+      "absolute_difference": 0.0016053758274274799,
+      "difference_percent": 0.007296453852421709,
+      "status": "PASS",
+      "reason_code": "OPEN_CIRCUIT_PROFILE_VS_SOLVED_NODE_VOLTAGE",
+      "explanation": "Legacy profil açık-devre indüklenen gerilim özetidir; fiziksel değer kılıf akımı ve bonding ağı çözülmüş gerçek düğüm gerilimidir."
+    }
+  ],
+  "gates": [
+    {
+      "gate_id": "CLOSED_LOOP_CONVERGENCE",
+      "category": "COUPLING",
+      "label": "Elektro-termal kapalı çevrim yakınsaması",
+      "status": "PASS",
+      "blocking": true,
+      "measured_value": "9/15",
+      "acceptance_limit": "ΔT≤0.1 °C; ΔI≤%0.1; ΔP≤%0.1",
+      "message": "Sıcaklık, core/kılıf akımı ve aktif kayıp kapıları birlikte kapandı."
+    },
+    {
+      "gate_id": "EM_DUAL_METHOD_AGREEMENT",
+      "category": "NUMERICAL",
+      "label": "GLOBAL_DIRECT_KKT ↔ GLOBAL_SHEATH_SCHUR anlaşması",
+      "status": "PASS",
+      "blocking": true,
+      "measured_value": "ΔIc=2.578e-13 A; ΔIsh=4.438e-13 A; ΔV=1.315e-13 V",
+      "acceptance_limit": "ΔI≤1.0e-06 A; ΔV≤1.0e-06 V",
+      "message": "İki bağımsız kompleks çözüm aynı fiziksel sonucu veriyor."
+    },
+    {
+      "gate_id": "EM_EQUATION_RESIDUAL",
+      "category": "NUMERICAL",
+      "label": "Global denklem residual'ı",
+      "status": "PASS",
+      "blocking": true,
+      "measured_value": "5.251e-16",
+      "acceptance_limit": "≤1.0e-08",
+      "message": "Global kompleks sistem denklem residual'ı kabul sınırında."
+    },
+    {
+      "gate_id": "PHASE_CURRENT_CONSTRAINT",
+      "category": "PHYSICS",
+      "label": "Devre/faz akım toplamı korunumu",
+      "status": "PASS",
+      "blocking": true,
+      "measured_value": "2.578e-13 A",
+      "acceptance_limit": "≤1.0e-06 A",
+      "message": "Paralel core akımlarının faz toplamı sınır şartını sağlıyor."
+    },
+    {
+      "gate_id": "SHEATH_KCL",
+      "category": "PHYSICS",
+      "label": "Kılıf/link-box/GCC düğüm KCL korunumu",
+      "status": "PASS",
+      "blocking": true,
+      "measured_value": "5.864e-13 A",
+      "acceptance_limit": "≤1.0e-06 A",
+      "message": "Metalik ağ düğüm akımları KCL kapısını sağlıyor."
+    },
+    {
+      "gate_id": "SHEATH_BRANCH_VOLTAGE",
+      "category": "PHYSICS",
+      "label": "Kılıf dal gerilim denklemi",
+      "status": "PASS",
+      "blocking": true,
+      "measured_value": "3.531e-13 V",
+      "acceptance_limit": "≤1.0e-06 V",
+      "message": "Kılıf dallarında indüklenen EMF ve empedans düşümü denklemi kapanıyor."
+    },
+    {
+      "gate_id": "CORE_VOLTAGE_EQUALITY",
+      "category": "PHYSICS",
+      "label": "Paralel core uçtan uca gerilim eşitliği",
+      "status": "PASS",
+      "blocking": true,
+      "measured_value": "1.832e-13 V",
+      "acceptance_limit": "≤1.0e-06 V",
+      "message": "Aynı fazın paralel core gerilim düşümleri eşitlik kısıtını sağlıyor."
+    },
+    {
+      "gate_id": "EM_MATRIX_CONDITION",
+      "category": "NUMERICAL",
+      "label": "Elektromanyetik matris koşul sayısı",
+      "status": "PASS",
+      "blocking": false,
+      "measured_value": "87.3999",
+      "acceptance_limit": "<1e+10",
+      "message": "Matris koşul sayısı tanımlı normal doğrulama aralığında."
+    },
+    {
+      "gate_id": "THERMAL_REGION_CONVERGENCE",
+      "category": "THERMAL",
+      "label": "Bütün 2D termal bölgelerin yakınsaması",
+      "status": "PASS",
+      "blocking": true,
+      "measured_value": "3/3",
+      "acceptance_limit": "tüm bölgeler yakınsamalı",
+      "message": "Bütün etkin termal bölgeler yakınsadı."
+    },
+    {
+      "gate_id": "THERMAL_ENERGY_BALANCE",
+      "category": "NUMERICAL",
+      "label": "2D termal enerji dengesi",
+      "status": "PASS",
+      "blocking": false,
+      "measured_value": "%3.4298e-11",
+      "acceptance_limit": "PASS≤%0.5; FAIL>%2",
+      "message": "2D termal enerji kapanışı kabul aralığında."
+    },
+    {
+      "gate_id": "THERMAL_LINEAR_RESIDUAL",
+      "category": "NUMERICAL",
+      "label": "2D termal lineer denklem residual'ı",
+      "status": "PASS",
+      "blocking": true,
+      "measured_value": "9.956e-13",
+      "acceptance_limit": "≤1.0e-07",
+      "message": "2D termal lineer sistem residual'ı kabul sınırında."
+    },
+    {
+      "gate_id": "INSTALLATION_MODEL_VALID",
+      "category": "INPUT",
+      "label": "Kablo-Kanal Düzeni veri bütünlüğü",
+      "status": "PASS",
+      "blocking": true,
+      "measured_value": "0 hata",
+      "acceptance_limit": "0 hata",
+      "message": "Fiziksel kablo/devre/faz/slot ve koordinat bütünlüğü geçerli."
+    },
+    {
+      "gate_id": "PHYSICAL_PARAMETER_SCOPE",
+      "category": "INPUT",
+      "label": "Kablo fiziksel parametre motoru kapsamı",
+      "status": "BLOCKED",
+      "blocking": true,
+      "measured_value": "ERROR=1",
+      "acceptance_limit": "final_design_ready=True",
+      "message": "Kablo yapısı veya parametre kanıtı fiziksel hesap için tamamlanmamış."
+    },
+    {
+      "gate_id": "CALCULATION_PROVENANCE",
+      "category": "GOVERNANCE",
+      "label": "Hesap parametresi kaynak/yöntem kapısı",
+      "status": "BLOCKED",
+      "blocking": true,
+      "measured_value": "hata=7; uyarı=18",
+      "acceptance_limit": "nihai kapı BLOKE olmamalı",
+      "message": "Legacy katsayı veya eksik köken kaydı nihai fiziksel motor geçişini bloke ediyor."
+    },
+    {
+      "gate_id": "SOURCE_DATA_AUDIT",
+      "category": "GOVERNANCE",
+      "label": "Proje kaynak veri tutarlılığı",
+      "status": "PASS",
+      "blocking": true,
+      "measured_value": "PASS; kritik=0; yüksek=0",
+      "acceptance_limit": "kritik=0 ve yüksek=0",
+      "message": "Proje kaynak denetiminde kritik/yüksek çelişki yok."
+    },
+    {
+      "gate_id": "CLOSED_LOOP_AMPACITY",
+      "category": "AMPACITY",
+      "label": "Kapalı çevrim ampacity dış döngüsü",
+      "status": "PASS",
+      "blocking": true,
+      "measured_value": "factor=1.1546875",
+      "acceptance_limit": "iç ve dış döngü yakınsamış olmalı",
+      "message": "En sıcak fiziksel kablo sıcaklık sınırına göre rating dış döngüsü kapandı."
+    },
+    {
+      "gate_id": "EXTERNAL_PUBLISHED_BENCHMARKS",
+      "category": "BENCHMARK",
+      "label": "Yayımlanmış IEC/CIGRE doğrulama vakaları",
+      "status": "NOT_RUN",
+      "blocking": true,
+      "measured_value": "0/4 PASS",
+      "acceptance_limit": "zorunlu dört benchmark ailesi PASS",
+      "message": "TB 880 ve diğer yayımlanmış sayısal referans vakaları izlenebilir kanıtla tamamlanmadan PHYSICAL_PRIMARY geçişi yapılamaz."
+    },
+    {
+      "gate_id": "ARMOUR_PHYSICS_SCOPE",
+      "category": "MODEL_SCOPE",
+      "label": "Fiziksel zırh kayıp ağı",
+      "status": "PASS",
+      "blocking": false,
+      "measured_value": "zırhsız kapsam",
+      "acceptance_limit": "zırhlı kabloda doğrulanmış fiziksel zırh modeli",
+      "message": "Zırhsız kablo kapsamında blokaj yok."
+    },
+    {
+      "gate_id": "EARTH_RETURN_MODEL_SCOPE",
+      "category": "MODEL_SCOPE",
+      "label": "Toprak dönüş empedansı kapsamı",
+      "status": "WARNING",
+      "blocking": false,
+      "measured_value": "SIMPLIFIED_CARSON_EQUIVALENT_DEPTH",
+      "acceptance_limit": "proje frekans/kapsamına doğrulanmış earth-return modeli",
+      "message": "Mevcut 50/60 Hz mühendislik çekirdeği simplified-Carson kullanır; tam Pollaczek/Wedepohl-Wilcox ve wideband EMT bu geçişin dışında kalır."
+    }
+  ],
+  "benchmarks": [
+    {
+      "benchmark_id": "IEC60287_1_1_STEADY_STATE",
+      "title": "IEC 60287-1-1 kararlı durum kayıp ve ampacity vakası",
+      "source_type": "EXTERNAL_PUBLISHED_REFERENCE",
+      "status": "NOT_RUN",
+      "blocking": true,
+      "evidence_reference": "",
+      "case_count": 0,
+      "message": "Lisanslı/yayımlanmış referans sayısal vaka kanıtı pakete gömülmemiştir; kullanıcı veya doğrulama laboratuvarı kanıtı gereklidir."
+    },
+    {
+      "benchmark_id": "IEC60287_1_3_PARALLEL_CURRENT",
+      "title": "IEC 60287-1-3 paralel kablo akım paylaşımı/kılıf kaybı vakası",
+      "source_type": "EXTERNAL_PUBLISHED_REFERENCE",
+      "status": "NOT_RUN",
+      "blocking": true,
+      "evidence_reference": "",
+      "case_count": 0,
+      "message": "Lisanslı/yayımlanmış referans sayısal vaka kanıtı pakete gömülmemiştir; kullanıcı veya doğrulama laboratuvarı kanıtı gereklidir."
+    },
+    {
+      "benchmark_id": "CIGRE_TB797_BONDING",
+      "title": "CIGRE TB 797 bonding gerilim-akım ağı vakası",
+      "source_type": "EXTERNAL_PUBLISHED_REFERENCE",
+      "status": "NOT_RUN",
+      "blocking": true,
+      "evidence_reference": "",
+      "case_count": 0,
+      "message": "Lisanslı/yayımlanmış referans sayısal vaka kanıtı pakete gömülmemiştir; kullanıcı veya doğrulama laboratuvarı kanıtı gereklidir."
+    },
+    {
+      "benchmark_id": "CIGRE_TB880_RATING_TOOL",
+      "title": "CIGRE TB 880 rating aracı doğrulama vakaları",
+      "source_type": "EXTERNAL_PUBLISHED_REFERENCE",
+      "status": "NOT_RUN",
+      "blocking": true,
+      "evidence_reference": "",
+      "case_count": 0,
+      "message": "Lisanslı/yayımlanmış referans sayısal vaka kanıtı pakete gömülmemiştir; kullanıcı veya doğrulama laboratuvarı kanıtı gereklidir."
+    }
+  ],
+  "summary": {
+    "blocking_gate_count": 3,
+    "failed_gate_count": 2,
+    "warning_gate_count": 1,
+    "final_design_ready": false
+  },
+  "trace": [
+    "Legacy üretim yolu ve fiziksel gölge yolu aynı proje snapshot'ından bağımsız çalıştırıldı.",
+    "Karşılaştırma farkları tek başına PASS/FAIL değildir; neden kodları model kapsamı değişimini açıklar.",
+    "Numerik/korunum kapıları başarısızsa fiziksel motor gölgede tutulur.",
+    "Yayımlanmış IEC/CIGRE sayısal vaka kanıtları lisans nedeniyle pakete gömülmez; harici izlenebilir kanıt gerektirir.",
+    "Bu sonuç proje lambda1, IEC rating, termal girdiler, run registry veya JSON şemasına yazılmaz."
+  ],
+  "engine": "DiTuS v0.16.8 Physical Motor Validation / SHADOW_VALIDATION",
+  "project_schema": "0.16.4"
+}

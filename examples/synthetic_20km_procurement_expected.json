@@ -1,0 +1,32 @@
+{
+  "version": "0.16.9.4.27",
+  "project_code": "DITUS-DEMO-20KM-APPLIED",
+  "net_route_length_m": 20000.0,
+  "installed_single_core_length_m": 121740.0,
+  "order_single_core_length_m": 124175.0,
+  "termination_units": 12,
+  "joint_units": 120,
+  "link_box_units": 40,
+  "cross_bonding_link_box_units": 28,
+  "grounding_link_box_units": 12,
+  "svl_set_units": 28,
+  "svl_units": 84,
+  "drum_count": 126,
+  "drum_plan_status": "VALID",
+  "order_allowance_total_m": 2423.0,
+  "overload_total_m": 0.0,
+  "line_count": 15,
+  "status": "CONDITIONAL_PROJECT_DATA",
+  "files": {
+    "csv_bom": "synthetic_20km_boq_bom_rfq.latest_bom.csv",
+    "csv_boq": "synthetic_20km_boq_bom_rfq.latest_boq.csv",
+    "csv_drum_plan": "synthetic_20km_boq_bom_rfq.latest_drum_plan.csv",
+    "csv_rfq": "synthetic_20km_boq_bom_rfq.latest_rfq.csv",
+    "docx": "synthetic_20km_boq_bom_rfq.latest.docx",
+    "html": "synthetic_20km_boq_bom_rfq.latest.html",
+    "json": "synthetic_20km_boq_bom_rfq.latest.json",
+    "markdown": "synthetic_20km_boq_bom_rfq.latest.md",
+    "pdf": "synthetic_20km_boq_bom_rfq.latest.pdf",
+    "xlsx": "synthetic_20km_boq_bom_rfq.latest.xlsx"
+  }
+}

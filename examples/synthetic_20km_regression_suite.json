@@ -1,0 +1,26 @@
+{
+  "suite_id": "DITUS_SYNTHETIC_20KM_REGRESSION",
+  "scope": "UNDERGROUND_ONLY",
+  "description": "Tamamen sentetik 20 km yeraltı kablo hattı regresyonu.",
+  "source_type": "GENERATED_SYNTHETIC_DATA",
+  "cases": [
+    {
+      "case_id": "SYN-20KM",
+      "purpose": "20 km çift devre ana sentetik örnek",
+      "route_length_m": 20000.0,
+      "project_file": "synthetic_20km_line.ucd.json"
+    },
+    {
+      "case_id": "SYN-20KM-AUDIT",
+      "purpose": "Sentetik kaynak denetimi iş akışı",
+      "route_length_m": 20000.0,
+      "project_file": "synthetic_20km_audit_case.ucd.json"
+    },
+    {
+      "case_id": "SYN-20KM-APPLIED",
+      "purpose": "Sentetik katalog uygulama ve raporlama iş akışı",
+      "route_length_m": 20000.0,
+      "project_file": "synthetic_20km_applied.ucd.json"
+    }
+  ]
+}

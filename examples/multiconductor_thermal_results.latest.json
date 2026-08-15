@@ -1,0 +1,196 @@
+{
+  "engine": "DiTuS v0.16.6 Real-x/y Multiconductor Thermal SHADOW_COMPARE",
+  "project_schema": "0.16.4",
+  "mode": "SHADOW_COMPARE",
+  "coupling_mode": "GLOBAL_EM_LOSS_TO_REAL_XY_THERMAL",
+  "region_count": 1,
+  "critical_analytical_region_id": "TR-THERMAL-DEMO",
+  "critical_nodal_region_id": "TR-THERMAL-DEMO",
+  "maximum_analytical_conductor_temperature_c": 40.703114874737835,
+  "maximum_nodal_conductor_temperature_c": 38.295348032277744,
+  "maximum_method_temperature_difference_c": 2.465154686364478,
+  "regions": [
+    {
+      "region_id": "TR-THERMAL-DEMO",
+      "cross_section_id": "ICS-THERMAL-DEMO",
+      "installation_type": "DIRECT_BURIED",
+      "cable_count": 12,
+      "analytical_matrix_size": 12,
+      "nodal_mesh": [
+        108,
+        37
+      ],
+      "nodal_converged": true,
+      "nodal_energy_balance_error_percent": 8.471974977317126e-12,
+      "maximum_analytical_conductor_temperature_c": 40.703114874737835,
+      "maximum_nodal_conductor_temperature_c": 38.295348032277744,
+      "maximum_method_temperature_difference_c": 2.465154686364478,
+      "cables": [
+        {
+          "physical_cable_id": "C1-A-1",
+          "key": "C1:A:P1",
+          "current_a": 400.8328848958866,
+          "conductor_loss_w_m": 2.540940403819091,
+          "sheath_loss_w_m": 0.07879230515677932,
+          "dielectric_loss_w_m": 0.5397929141134357,
+          "armour_loss_w_m": 0.0,
+          "total_loss_w_m": 3.159525623089306,
+          "analytical_conductor_temperature_c": 36.098583867259514,
+          "nodal_conductor_temperature_c": 34.841507502391
+        },
+        {
+          "physical_cable_id": "C1-A-2",
+          "key": "C1:A:P2",
+          "current_a": 503.69496520784577,
+          "conductor_loss_w_m": 4.063767387071118,
+          "sheath_loss_w_m": 0.052929690067637016,
+          "dielectric_loss_w_m": 0.5397929141134357,
+          "armour_loss_w_m": 0.0,
+          "total_loss_w_m": 4.65648999125219,
+          "analytical_conductor_temperature_c": 40.703114874737835,
+          "nodal_conductor_temperature_c": 38.295348032277744
+        },
+        {
+          "physical_cable_id": "C1-B-1",
+          "key": "C1:B:P1",
+          "current_a": 437.89170672744746,
+          "conductor_loss_w_m": 3.048483604535248,
+          "sheath_loss_w_m": 0.07639480433585606,
+          "dielectric_loss_w_m": 0.5397929141134357,
+          "armour_loss_w_m": 0.0,
+          "total_loss_w_m": 3.66467132298454,
+          "analytical_conductor_temperature_c": 38.11114220170527,
+          "nodal_conductor_temperature_c": 36.26278323536895
+        },
+        {
+          "physical_cable_id": "C1-B-2",
+          "key": "C1:B:P2",
+          "current_a": 463.7234932588256,
+          "conductor_loss_w_m": 3.4427550388347883,
+          "sheath_loss_w_m": 0.05474786455141687,
+          "dielectric_loss_w_m": 0.5397929141134357,
+          "armour_loss_w_m": 0.0,
+          "total_loss_w_m": 4.037295817499641,
+          "analytical_conductor_temperature_c": 40.62719643153791,
+          "nodal_conductor_temperature_c": 38.166270059180974
+        },
+        {
+          "physical_cable_id": "C1-C-1",
+          "key": "C1:C:P1",
+          "current_a": 504.8029295244855,
+          "conductor_loss_w_m": 4.073157135670431,
+          "sheath_loss_w_m": 0.07701602262398019,
+          "dielectric_loss_w_m": 0.5397929141134357,
+          "armour_loss_w_m": 0.0,
+          "total_loss_w_m": 4.689966072407847,
+          "analytical_conductor_temperature_c": 39.95819496696445,
+          "nodal_conductor_temperature_c": 37.725758776120735
+        },
+        {
+          "physical_cable_id": "C1-C-2",
+          "key": "C1:C:P2",
+          "current_a": 397.4400386116807,
+          "conductor_loss_w_m": 2.5240832669661137,
+          "sheath_loss_w_m": 0.05298192597397651,
+          "dielectric_loss_w_m": 0.5397929141134357,
+          "armour_loss_w_m": 0.0,
+          "total_loss_w_m": 3.1168581070535257,
+          "analytical_conductor_temperature_c": 40.112054264986945,
+          "nodal_conductor_temperature_c": 37.64689957862247
+        },
+        {
+          "physical_cable_id": "C2-A-1",
+          "key": "C2:A:P1",
+          "current_a": 358.95143682295964,
+          "conductor_loss_w_m": 2.0341325360772333,
+          "sheath_loss_w_m": 0.025944709559810916,
+          "dielectric_loss_w_m": 0.5397929141134357,
+          "armour_loss_w_m": 0.0,
+          "total_loss_w_m": 2.5998701597504796,
+          "analytical_conductor_temperature_c": 36.009082619677244,
+          "nodal_conductor_temperature_c": 34.37037480058089
+        },
+        {
+          "physical_cable_id": "C2-A-2",
+          "key": "C2:A:P2",
+          "current_a": 242.41502736145884,
+          "conductor_loss_w_m": 0.9160826126162644,
+          "sheath_loss_w_m": 0.03154825660881512,
+          "dielectric_loss_w_m": 0.5397929141134357,
+          "armour_loss_w_m": 0.0,
+          "total_loss_w_m": 1.487423783338515,
+          "analytical_conductor_temperature_c": 31.6672714405551,
+          "nodal_conductor_temperature_c": 30.98710668970743
+        },
+        {
+          "physical_cable_id": "C2-B-1",
+          "key": "C2:B:P1",
+          "current_a": 322.69922074991194,
+          "conductor_loss_w_m": 1.6463867853444567,
+          "sheath_loss_w_m": 0.02735192256791068,
+          "dielectric_loss_w_m": 0.5397929141134357,
+          "armour_loss_w_m": 0.0,
+          "total_loss_w_m": 2.213531622025803,
+          "analytical_conductor_temperature_c": 36.56688175675505,
+          "nodal_conductor_temperature_c": 34.760384306649755
+        },
+        {
+          "physical_cable_id": "C2-B-2",
+          "key": "C2:B:P2",
+          "current_a": 277.49507984377504,
+          "conductor_loss_w_m": 1.2064190296115513,
+          "sheath_loss_w_m": 0.029979410588872567,
+          "dielectric_loss_w_m": 0.5397929141134357,
+          "armour_loss_w_m": 0.0,
+          "total_loss_w_m": 1.7761913543138597,
+          "analytical_conductor_temperature_c": 33.45929656995593,
+          "nodal_conductor_temperature_c": 32.319924692348685
+        },
+        {
+          "physical_cable_id": "C2-C-1",
+          "key": "C2:C:P1",
+          "current_a": 262.21094039868734,
+          "conductor_loss_w_m": 1.0881483202455795,
+          "sheath_loss_w_m": 0.026320865998850446,
+          "dielectric_loss_w_m": 0.5397929141134357,
+          "armour_loss_w_m": 0.0,
+          "total_loss_w_m": 1.6542621003578657,
+          "analytical_conductor_temperature_c": 37.054735299477784,
+          "nodal_conductor_temperature_c": 35.04057098534015
+        },
+        {
+          "physical_cable_id": "C2-C-2",
+          "key": "C2:C:P2",
+          "current_a": 339.2687719193871,
+          "conductor_loss_w_m": 1.8112691082021461,
+          "sheath_loss_w_m": 0.030781148155922835,
+          "dielectric_loss_w_m": 0.5397929141134357,
+          "armour_loss_w_m": 0.0,
+          "total_loss_w_m": 2.3818431704715044,
+          "analytical_conductor_temperature_c": 34.945588770964555,
+          "nodal_conductor_temperature_c": 33.495966627898085
+        }
+      ]
+    }
+  ],
+  "issues": [
+    {
+      "severity": "INFO",
+      "code": "INSTALLATION_CHANNEL_GEOMETRY_ACTIVE",
+      "message": "Kullanıcı tarafından kabul edilen Kablo-Kanal Düzeni geometri ve malzemeleri 2D gölge modele aktarıldı.",
+      "object_id": "ICS-THERMAL-DEMO"
+    },
+    {
+      "severity": "INFO",
+      "code": "EXTERNAL_HEAT_SOURCE_INCLUDED",
+      "message": "Harici doğrusal ısı kaynakları gerçek koordinatlarından hesaba katıldı.",
+      "object_id": "TR-THERMAL-DEMO"
+    },
+    {
+      "severity": "INFO",
+      "code": "ANALYTICAL_BACKFILL_EQUIVALENT_ZONE",
+      "message": "Analitik yöntem dolgu bölgesini eşdeğer yarıçapla temsil eder.",
+      "object_id": "TR-THERMAL-DEMO"
+    }
+  ]
+}

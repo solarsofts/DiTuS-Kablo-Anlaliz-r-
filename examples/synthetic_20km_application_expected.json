@@ -1,0 +1,104 @@
+{
+  "format": "DITUS_PROJECT_APPLICATION_DEMO",
+  "version": "0.16.9.4.24",
+  "catalog_record_id": "SYN-MFR-A-MV40K5-AL400-35",
+  "scope": "UNDERGROUND_ONLY",
+  "results": [
+    {
+      "project": "synthetic_20km_line.ucd.json",
+      "route_length_m": 20000.0,
+      "snapshot_id": "SNAP-D5AB88B00AF0",
+      "snapshot_hash": "d5ab88b00af084eb4ceff14f9cbed60561a40dd14918f2a18d02ce8d3f0dc31c",
+      "application_status": "APPLIED_CONDITIONAL",
+      "completion_status": "CONDITIONAL",
+      "assigned_route_sections": [
+        "RS-01 Sentetik standart hendek",
+        "RS-02 Sentetik yüksek termal özdirenç bölgesi",
+        "RS-03 Sentetik yol geçişi duct bank",
+        "RS-04 Sentetik HDD geçişi"
+      ],
+      "iteration_gate_status": "CONDITIONAL_READY",
+      "voltage_drop_percent": 4.39190066003857,
+      "voltage_drop_v": 1515.205727713307,
+      "production_active_scenario_id": "DESIGN",
+      "production_completion_status": "COMPLETE",
+      "production_suitability_status": "UYGUN_DEGIL",
+      "production_maximum_conductor_temperature_c": 144.73570333568838,
+      "production_global_lambda1": 0.00013443351770237158,
+      "production_loss_vector_fingerprint": "LOSS-F0F28C6A1C6B4A82",
+      "unresolved_blocking_gates": [],
+      "trace": [
+        "DiTuS v0.15.1 project cable application workflow. Catalog values, calculated values, user inputs and engineering assumptions remain separately traceable. Applying a cable does not convert a catalog screening result into final project approval.",
+        "PROJECT_CABLE: PASS — SNAP-D5AB88B00AF0",
+        "DATA_COMPLETION: CONDITIONAL — Bloke eden eksik: 0; üretici teyidi: 2; varsayım: 3.",
+        "SOURCE_CONFLICTS: PASS — Kritik/yüksek çelişkiler karara bağlandı.",
+        "ROUTE_ASSIGNMENT: PASS — Aktif atama: 4 bölüm.",
+        "VOLTAGE_DROP: PASS — ΔV = 1515.206 V (%4.39190)."
+      ]
+    },
+    {
+      "project": "synthetic_20km_audit_case.ucd.json",
+      "route_length_m": 20000.0,
+      "snapshot_id": "SNAP-D5AB88B00AF0",
+      "snapshot_hash": "d5ab88b00af084eb4ceff14f9cbed60561a40dd14918f2a18d02ce8d3f0dc31c",
+      "application_status": "APPLIED_CONDITIONAL",
+      "completion_status": "CONDITIONAL",
+      "assigned_route_sections": [
+        "RS-01 Sentetik standart hendek",
+        "RS-02 Sentetik yüksek termal özdirenç bölgesi",
+        "RS-03 Sentetik yol geçişi duct bank",
+        "RS-04 Sentetik HDD geçişi"
+      ],
+      "iteration_gate_status": "CONDITIONAL_READY",
+      "voltage_drop_percent": 4.39190066003857,
+      "voltage_drop_v": 1515.205727713307,
+      "production_active_scenario_id": "DESIGN",
+      "production_completion_status": "COMPLETE",
+      "production_suitability_status": "UYGUN_DEGIL",
+      "production_maximum_conductor_temperature_c": 144.73570333568838,
+      "production_global_lambda1": 0.00013443351770237158,
+      "production_loss_vector_fingerprint": "LOSS-F0F28C6A1C6B4A82",
+      "unresolved_blocking_gates": [],
+      "trace": [
+        "DiTuS v0.15.1 project cable application workflow. Catalog values, calculated values, user inputs and engineering assumptions remain separately traceable. Applying a cable does not convert a catalog screening result into final project approval.",
+        "PROJECT_CABLE: PASS — SNAP-D5AB88B00AF0",
+        "DATA_COMPLETION: CONDITIONAL — Bloke eden eksik: 0; üretici teyidi: 2; varsayım: 3.",
+        "SOURCE_CONFLICTS: PASS — Kritik/yüksek çelişkiler karara bağlandı.",
+        "ROUTE_ASSIGNMENT: PASS — Aktif atama: 4 bölüm.",
+        "VOLTAGE_DROP: PASS — ΔV = 1515.206 V (%4.39190)."
+      ]
+    },
+    {
+      "project": "synthetic_20km_applied.ucd.json",
+      "route_length_m": 20000.0,
+      "snapshot_id": "SNAP-D5AB88B00AF0",
+      "snapshot_hash": "d5ab88b00af084eb4ceff14f9cbed60561a40dd14918f2a18d02ce8d3f0dc31c",
+      "application_status": "APPLIED_CONDITIONAL",
+      "completion_status": "CONDITIONAL",
+      "assigned_route_sections": [
+        "RS-01 Sentetik standart hendek",
+        "RS-02 Sentetik yüksek termal özdirenç bölgesi",
+        "RS-03 Sentetik yol geçişi duct bank",
+        "RS-04 Sentetik HDD geçişi"
+      ],
+      "iteration_gate_status": "CONDITIONAL_READY",
+      "voltage_drop_percent": 4.39190066003857,
+      "voltage_drop_v": 1515.205727713307,
+      "production_active_scenario_id": "DESIGN",
+      "production_completion_status": "COMPLETE",
+      "production_suitability_status": "UYGUN_DEGIL",
+      "production_maximum_conductor_temperature_c": 144.73570333568838,
+      "production_global_lambda1": 0.00013443351770237158,
+      "production_loss_vector_fingerprint": "LOSS-F0F28C6A1C6B4A82",
+      "unresolved_blocking_gates": [],
+      "trace": [
+        "DiTuS v0.15.1 project cable application workflow. Catalog values, calculated values, user inputs and engineering assumptions remain separately traceable. Applying a cable does not convert a catalog screening result into final project approval.",
+        "PROJECT_CABLE: PASS — SNAP-D5AB88B00AF0",
+        "DATA_COMPLETION: CONDITIONAL — Bloke eden eksik: 0; üretici teyidi: 2; varsayım: 3.",
+        "SOURCE_CONFLICTS: PASS — Kritik/yüksek çelişkiler karara bağlandı.",
+        "ROUTE_ASSIGNMENT: PASS — Aktif atama: 4 bölüm.",
+        "VOLTAGE_DROP: PASS — ΔV = 1515.206 V (%4.39190)."
+      ]
+    }
+  ]
+}

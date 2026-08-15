@@ -1,0 +1,1176 @@
+{
+  "project_code": "DITUS-DEMO-20KM",
+  "scope": "UNDERGROUND_ONLY",
+  "engines": [
+    {
+      "engine_id": "precheck",
+      "method": {
+        "engine_id": "precheck",
+        "display_name": "DiTuS İlk Elektriksel Ön Eleme",
+        "standard_basis": "Katalog/kullanıcı girdili dengeli üç faz ön eleme",
+        "stage_id": "precheck",
+        "workspace_key": "first_design",
+        "model_limit": "Katalog akım kapasitesi nihai IEC 60287/2D güzergâh doğrulaması değildir."
+      },
+      "status": "CONDITIONAL",
+      "maturity": "CONDITIONAL",
+      "can_run": true,
+      "items": [
+        {
+          "item_id": "system_voltage",
+          "label": "Sistem gerilimi",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "system_load",
+          "owner_label": "Sistem/Yük"
+        },
+        {
+          "item_id": "frequency",
+          "label": "Frekans",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "system_load",
+          "owner_label": "Sistem/Yük"
+        },
+        {
+          "item_id": "design_current",
+          "label": "Tasarım akımı",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "system_load",
+          "owner_label": "Sistem/Yük"
+        },
+        {
+          "item_id": "route",
+          "label": "Pozitif uzunluklu güzergâh",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "route",
+          "owner_label": "Güzergâh"
+        },
+        {
+          "item_id": "candidate",
+          "label": "Kablo adayı veya kesit tercihi",
+          "gate": "SOFT",
+          "status": "OK",
+          "detail": "Aday yoksa ilk iterasyon jenerik adayları üretir.",
+          "owner_stage_id": "cable",
+          "owner_label": "Kablo Adayları"
+        },
+        {
+          "item_id": "cable_snapshot",
+          "label": "Projeye atanmış kablo",
+          "gate": "SOFT",
+          "status": "MISSING",
+          "detail": "",
+          "owner_stage_id": "cable",
+          "owner_label": "Kablo Editörü"
+        },
+        {
+          "item_id": "catalog_rl",
+          "label": "Katalog/hesap R-L ön eleme verisi",
+          "gate": "SOFT",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "cable",
+          "owner_label": "Kablo Kaynakları"
+        }
+      ],
+      "assumptions": [],
+      "notes": [
+        "Katalog akım kapasitesi nihai IEC 60287/2D güzergâh doğrulaması değildir."
+      ]
+    },
+    {
+      "engine_id": "iec60287",
+      "method": {
+        "engine_id": "iec60287",
+        "display_name": "IEC 60287 Bölgesel Kararlı Durum",
+        "standard_basis": "IEC 60287 iş akışı; bölgesel T1–T4 ve kayıp bileşenleri",
+        "stage_id": "steady_thermal",
+        "workspace_key": "thermal_route",
+        "model_limit": "Normatif standardın metni/formülleri kopyalanmaz; uygulama bağımsız sayısal implementasyondur."
+      },
+      "status": "CONDITIONAL",
+      "maturity": "CONDITIONAL",
+      "can_run": true,
+      "items": [
+        {
+          "item_id": "system_voltage",
+          "label": "Sistem gerilimi",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "system_load",
+          "owner_label": "Sistem/Yük"
+        },
+        {
+          "item_id": "frequency",
+          "label": "Frekans",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "system_load",
+          "owner_label": "Sistem/Yük"
+        },
+        {
+          "item_id": "design_current",
+          "label": "Tasarım akımı",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "system_load",
+          "owner_label": "Sistem/Yük"
+        },
+        {
+          "item_id": "conductor_area",
+          "label": "İletken kesiti",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "cable",
+          "owner_label": "Kablo Editörü"
+        },
+        {
+          "item_id": "overall_diameter",
+          "label": "Kablo dış çapı",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "cable",
+          "owner_label": "Kablo Editörü"
+        },
+        {
+          "item_id": "cable_snapshot",
+          "label": "Projeye atanmış kablo",
+          "gate": "SOFT",
+          "status": "MISSING",
+          "detail": "Proje kablo kaydı yoksa katalog/manuel kablo değişiklikleri geçmiş hesabı etkileyebilir.",
+          "owner_stage_id": "cable",
+          "owner_label": "Kablo Editörü"
+        },
+        {
+          "item_id": "verified_cable_source",
+          "label": "Üretici doğrulanmış kablo kaynağı",
+          "gate": "SOFT",
+          "status": "MISSING",
+          "detail": "Katalog veya kullanıcı varsayımıyla hesap yapılabilir; nihai tasarım için üretici verisi gerekir.",
+          "owner_stage_id": "cable",
+          "owner_label": "Kablo Kaynakları"
+        },
+        {
+          "item_id": "thermal_regions",
+          "label": "Chainage bazlı termal bölge",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "installation",
+          "owner_label": "Termal Güzergâh"
+        },
+        {
+          "item_id": "thermal_templates",
+          "label": "Termal kesit şablonu",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "installation",
+          "owner_label": "Termal Kesit"
+        },
+        {
+          "item_id": "internal_thermal",
+          "label": "Kablo iç termal modeli (katman veya T1–T3)",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "cable",
+          "owner_label": "Kablo Parametrik Kesiti"
+        },
+        {
+          "item_id": "thermal_material_quality",
+          "label": "Doğrulanmış termal malzeme özellikleri",
+          "gate": "SOFT",
+          "status": "MISSING",
+          "detail": "Düşük güvenli/ön kabul malzemelerle sonuç koşullu kalır.",
+          "owner_stage_id": "installation",
+          "owner_label": "Termal Malzeme Kütüphanesi"
+        },
+        {
+          "item_id": "bonding_losses",
+          "label": "Güncel metalik kılıf/bonding kayıpları",
+          "gate": "SOFT",
+          "status": "MISSING",
+          "detail": "Bonding sonucu yoksa proje λ1/ön kabulü kullanılır ve termal sonuç koşullu olur.",
+          "owner_stage_id": "bonding",
+          "owner_label": "Bonding"
+        }
+      ],
+      "assumptions": [],
+      "notes": [
+        "Normatif standardın metni/formülleri kopyalanmaz; uygulama bağımsız sayısal implementasyondur."
+      ]
+    },
+    {
+      "engine_id": "thermal_route",
+      "method": {
+        "engine_id": "thermal_route",
+        "display_name": "IEC 60287 Termal Güzergâh Çözümü",
+        "standard_basis": "Chainage bazlı bölgesel IEC 60287",
+        "stage_id": "steady_thermal",
+        "workspace_key": "thermal_route",
+        "model_limit": ""
+      },
+      "status": "CONDITIONAL",
+      "maturity": "CONDITIONAL",
+      "can_run": true,
+      "items": [
+        {
+          "item_id": "system_voltage",
+          "label": "Sistem gerilimi",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "system_load",
+          "owner_label": "Sistem/Yük"
+        },
+        {
+          "item_id": "frequency",
+          "label": "Frekans",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "system_load",
+          "owner_label": "Sistem/Yük"
+        },
+        {
+          "item_id": "design_current",
+          "label": "Tasarım akımı",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "system_load",
+          "owner_label": "Sistem/Yük"
+        },
+        {
+          "item_id": "conductor_area",
+          "label": "İletken kesiti",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "cable",
+          "owner_label": "Kablo Editörü"
+        },
+        {
+          "item_id": "overall_diameter",
+          "label": "Kablo dış çapı",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "cable",
+          "owner_label": "Kablo Editörü"
+        },
+        {
+          "item_id": "cable_snapshot",
+          "label": "Projeye atanmış kablo",
+          "gate": "SOFT",
+          "status": "MISSING",
+          "detail": "Proje kablo kaydı yoksa katalog/manuel kablo değişiklikleri geçmiş hesabı etkileyebilir.",
+          "owner_stage_id": "cable",
+          "owner_label": "Kablo Editörü"
+        },
+        {
+          "item_id": "verified_cable_source",
+          "label": "Üretici doğrulanmış kablo kaynağı",
+          "gate": "SOFT",
+          "status": "MISSING",
+          "detail": "Katalog veya kullanıcı varsayımıyla hesap yapılabilir; nihai tasarım için üretici verisi gerekir.",
+          "owner_stage_id": "cable",
+          "owner_label": "Kablo Kaynakları"
+        },
+        {
+          "item_id": "thermal_regions",
+          "label": "Chainage bazlı termal bölge",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "installation",
+          "owner_label": "Termal Güzergâh"
+        },
+        {
+          "item_id": "thermal_templates",
+          "label": "Termal kesit şablonu",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "installation",
+          "owner_label": "Termal Kesit"
+        },
+        {
+          "item_id": "internal_thermal",
+          "label": "Kablo iç termal modeli (katman veya T1–T3)",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "cable",
+          "owner_label": "Kablo Parametrik Kesiti"
+        },
+        {
+          "item_id": "thermal_material_quality",
+          "label": "Doğrulanmış termal malzeme özellikleri",
+          "gate": "SOFT",
+          "status": "MISSING",
+          "detail": "Düşük güvenli/ön kabul malzemelerle sonuç koşullu kalır.",
+          "owner_stage_id": "installation",
+          "owner_label": "Termal Malzeme Kütüphanesi"
+        },
+        {
+          "item_id": "bonding_losses",
+          "label": "Güncel metalik kılıf/bonding kayıpları",
+          "gate": "SOFT",
+          "status": "MISSING",
+          "detail": "Bonding sonucu yoksa proje λ1/ön kabulü kullanılır ve termal sonuç koşullu olur.",
+          "owner_stage_id": "bonding",
+          "owner_label": "Bonding"
+        }
+      ],
+      "assumptions": [],
+      "notes": []
+    },
+    {
+      "engine_id": "nodal",
+      "method": {
+        "engine_id": "nodal",
+        "display_name": "2D Hücre-Merkezli Sonlu Hacim Termal Çözümü",
+        "standard_basis": "Kararlı durum çok-malzemeli 2D nodal/FVM",
+        "stage_id": "steady_thermal",
+        "workspace_key": "thermal_review",
+        "model_limit": "Eksenel ısı akışı yoktur; kesit geçişleri ve HDD giriş/çıkışı yerel 3D gerektirir."
+      },
+      "status": "CONDITIONAL",
+      "maturity": "CONDITIONAL",
+      "can_run": true,
+      "items": [
+        {
+          "item_id": "system_voltage",
+          "label": "Sistem gerilimi",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "system_load",
+          "owner_label": "Sistem/Yük"
+        },
+        {
+          "item_id": "frequency",
+          "label": "Frekans",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "system_load",
+          "owner_label": "Sistem/Yük"
+        },
+        {
+          "item_id": "design_current",
+          "label": "Tasarım akımı",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "system_load",
+          "owner_label": "Sistem/Yük"
+        },
+        {
+          "item_id": "conductor_area",
+          "label": "İletken kesiti",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "cable",
+          "owner_label": "Kablo Editörü"
+        },
+        {
+          "item_id": "overall_diameter",
+          "label": "Kablo dış çapı",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "cable",
+          "owner_label": "Kablo Editörü"
+        },
+        {
+          "item_id": "cable_snapshot",
+          "label": "Projeye atanmış kablo",
+          "gate": "SOFT",
+          "status": "MISSING",
+          "detail": "Proje kablo kaydı yoksa katalog/manuel kablo değişiklikleri geçmiş hesabı etkileyebilir.",
+          "owner_stage_id": "cable",
+          "owner_label": "Kablo Editörü"
+        },
+        {
+          "item_id": "verified_cable_source",
+          "label": "Üretici doğrulanmış kablo kaynağı",
+          "gate": "SOFT",
+          "status": "MISSING",
+          "detail": "Katalog veya kullanıcı varsayımıyla hesap yapılabilir; nihai tasarım için üretici verisi gerekir.",
+          "owner_stage_id": "cable",
+          "owner_label": "Kablo Kaynakları"
+        },
+        {
+          "item_id": "thermal_regions",
+          "label": "Chainage bazlı termal bölge",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "installation",
+          "owner_label": "Termal Güzergâh"
+        },
+        {
+          "item_id": "thermal_templates",
+          "label": "2D çözüm etkin kesit şablonu",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "installation",
+          "owner_label": "Termal Kesit"
+        },
+        {
+          "item_id": "thermal_materials",
+          "label": "2D malzeme kütüphanesi",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "installation",
+          "owner_label": "Termal Malzeme Kütüphanesi"
+        },
+        {
+          "item_id": "full_layers",
+          "label": "Gerçek/izlenebilir kablo katman geometrisi",
+          "gate": "SOFT",
+          "status": "OK",
+          "detail": "Eksikse eşdeğer kablo iç modeliyle ön 2D çözüm yapılır.",
+          "owner_stage_id": "cable",
+          "owner_label": "Kablo Parametrik Kesiti"
+        },
+        {
+          "item_id": "material_reliability",
+          "label": "Termal malzeme güven seviyesi",
+          "gate": "SOFT",
+          "status": "MISSING",
+          "detail": "LOW güvenli malzemeler koşullu ön modeldir.",
+          "owner_stage_id": "installation",
+          "owner_label": "Termal Malzeme Kütüphanesi"
+        },
+        {
+          "item_id": "bonding_losses",
+          "label": "Güncel bonding/λ1 kaybı",
+          "gate": "SOFT",
+          "status": "MISSING",
+          "detail": "",
+          "owner_stage_id": "bonding",
+          "owner_label": "Bonding"
+        }
+      ],
+      "assumptions": [],
+      "notes": [
+        "Eksenel ısı akışı yoktur; kesit geçişleri ve HDD giriş/çıkışı yerel 3D gerektirir."
+      ]
+    },
+    {
+      "engine_id": "bonding",
+      "method": {
+        "engine_id": "bonding",
+        "display_name": "CIGRE TB 797 Yönelimli Primitive CIM",
+        "standard_basis": "Primitive core–metalik kılıf–GCC ağı; CIM/MNA ana çözüm, Node-Voltage bağımsız kontrol",
+        "stage_id": "bonding",
+        "workspace_key": "bonding",
+        "model_limit": "Toprak dönüş modeli: SIMPLIFIED_CARSON. Tam Pollaczek/Wedepohl–Wilcox/Ametani henüz uygulanmamıştır."
+      },
+      "status": "CONDITIONAL",
+      "maturity": "CONDITIONAL",
+      "can_run": true,
+      "items": [
+        {
+          "item_id": "system_voltage",
+          "label": "Sistem gerilimi",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "system_load",
+          "owner_label": "Sistem/Yük"
+        },
+        {
+          "item_id": "frequency",
+          "label": "Frekans",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "system_load",
+          "owner_label": "Sistem/Yük"
+        },
+        {
+          "item_id": "design_current",
+          "label": "Tasarım akımı",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "system_load",
+          "owner_label": "Sistem/Yük"
+        },
+        {
+          "item_id": "minor_sections",
+          "label": "Minor/major section sınırları",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "bonding",
+          "owner_label": "Bonding Ağı"
+        },
+        {
+          "item_id": "nodes",
+          "label": "Joint/terminasyon düğümleri",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "bonding",
+          "owner_label": "Joint/Termination"
+        },
+        {
+          "item_id": "connections",
+          "label": "Cross-bonding bağlantı grafiği",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "bonding",
+          "owner_label": "Bonding Ağı"
+        },
+        {
+          "item_id": "screen_electrical",
+          "label": "Metalik ekran direnci/kesiti ve etkin çapı",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "Üretici Rdc + etkin çap veya toplam kesit + etkin çap gerekir.",
+          "owner_stage_id": "cable",
+          "owner_label": "Kablo Metalik Ekran"
+        },
+        {
+          "item_id": "screen_wire_geometry",
+          "label": "Ekran tel adedi ve tel çapı",
+          "gate": "SOFT",
+          "status": "OK",
+          "detail": "Toplam ekran kesitiyle ön hesap mümkündür; tel geometrisi uydurulmaz.",
+          "owner_stage_id": "cable",
+          "owner_label": "Kablo Metalik Ekran"
+        },
+        {
+          "item_id": "screen_source",
+          "label": "Üretici doğrulanmış ekran/kılıf verisi",
+          "gate": "SOFT",
+          "status": "MISSING",
+          "detail": "",
+          "owner_stage_id": "cable",
+          "owner_label": "Kablo Kaynakları"
+        },
+        {
+          "item_id": "grounding",
+          "label": "Terminasyon/link box topraklama değerleri",
+          "gate": "SOFT",
+          "status": "OK",
+          "detail": "Varsayımsal topraklama ile sonuç koşullu kalır.",
+          "owner_stage_id": "bonding",
+          "owner_label": "Bonding/Topraklama"
+        }
+      ],
+      "assumptions": [
+        "Toprak dönüşü SIMPLIFIED_CARSON ile modellenir."
+      ],
+      "notes": [
+        "Toprak dönüş modeli: SIMPLIFIED_CARSON. Tam Pollaczek/Wedepohl–Wilcox/Ametani henüz uygulanmamıştır."
+      ]
+    },
+    {
+      "engine_id": "fault_epr",
+      "method": {
+        "engine_id": "fault_epr",
+        "display_name": "CIGRE TB 797 / IEEE 575 Arıza-EPR Ağı",
+        "standard_basis": "Power-frequency primitive ağ; IEEE 575 Annex E sınıflandırma yönelimi",
+        "stage_id": "fault_epr",
+        "workspace_key": "fault",
+        "model_limit": "Dağıtılmış dokunma/adım gerilimi ve tam saha topraklama ağı henüz kapsam dışıdır."
+      },
+      "status": "CONDITIONAL",
+      "maturity": "CONDITIONAL",
+      "can_run": true,
+      "items": [
+        {
+          "item_id": "system_voltage",
+          "label": "Sistem gerilimi",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "system_load",
+          "owner_label": "Sistem/Yük"
+        },
+        {
+          "item_id": "frequency",
+          "label": "Frekans",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "system_load",
+          "owner_label": "Sistem/Yük"
+        },
+        {
+          "item_id": "design_current",
+          "label": "Tasarım akımı",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "system_load",
+          "owner_label": "Sistem/Yük"
+        },
+        {
+          "item_id": "fault_scenarios",
+          "label": "Etkin arıza senaryosu",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "fault_epr",
+          "owner_label": "Arıza Senaryoları"
+        },
+        {
+          "item_id": "fault_current",
+          "label": "Pozitif arıza akımı",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "fault_epr",
+          "owner_label": "Arıza Senaryoları"
+        },
+        {
+          "item_id": "clearing_time",
+          "label": "Koruma temizleme süresi",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "fault_epr",
+          "owner_label": "Arıza Senaryoları"
+        },
+        {
+          "item_id": "bonding_network",
+          "label": "Bonding/joint/toprak ağı",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "bonding",
+          "owner_label": "Bonding Ağı"
+        },
+        {
+          "item_id": "screen_thermal",
+          "label": "Metalik ekran kesiti veya doğrulanmış direnci",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "cable",
+          "owner_label": "Kablo Metalik Ekran"
+        },
+        {
+          "item_id": "grounding",
+          "label": "Topraklama direnci/EPR dönüş yolu",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "bonding",
+          "owner_label": "Bonding/Topraklama"
+        },
+        {
+          "item_id": "measured_grounding",
+          "label": "Ölçülmüş veya tasarımca doğrulanmış topraklama",
+          "gate": "SOFT",
+          "status": "MISSING",
+          "detail": "Kaynak doğrulaması olmayan topraklama verisiyle EPR sonucu koşulludur.",
+          "owner_stage_id": "bonding",
+          "owner_label": "Bonding/Topraklama"
+        }
+      ],
+      "assumptions": [],
+      "notes": [
+        "Dağıtılmış dokunma/adım gerilimi ve tam saha topraklama ağı henüz kapsam dışıdır."
+      ]
+    },
+    {
+      "engine_id": "svl",
+      "method": {
+        "engine_id": "svl",
+        "display_name": "IEEE 575 / CIGRE TB 797 SVL Ön Koordinasyonu",
+        "standard_basis": "MCOV, TOV, residual, lead düşümü ve enerji ön kontrolü",
+        "stage_id": "svl",
+        "workspace_key": "svl",
+        "model_limit": "Tam frekans-bağımlı EMT ve doğrusal olmayan MOV zaman alanı enerjisi değildir."
+      },
+      "status": "BLOCKED",
+      "maturity": "SCREENING",
+      "can_run": false,
+      "items": [
+        {
+          "item_id": "svl_candidates",
+          "label": "SVL adayları",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "svl",
+          "owner_label": "SVL Editörü"
+        },
+        {
+          "item_id": "fault_tov",
+          "label": "Arıza TOV görevi",
+          "gate": "HARD",
+          "status": "MISSING",
+          "detail": "",
+          "owner_stage_id": "fault_epr",
+          "owner_label": "Arıza/EPR"
+        },
+        {
+          "item_id": "fault_duration",
+          "label": "TOV süresi",
+          "gate": "HARD",
+          "status": "MISSING",
+          "detail": "",
+          "owner_stage_id": "fault_epr",
+          "owner_label": "Arıza/EPR"
+        },
+        {
+          "item_id": "insulation_levels",
+          "label": "Joint/dış kılıf yalıtım seviyeleri",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "svl",
+          "owner_label": "SVL/Yalıtım Koordinasyonu"
+        },
+        {
+          "item_id": "current_bonding",
+          "label": "Güncel bonding gerilimleri",
+          "gate": "SOFT",
+          "status": "MISSING",
+          "detail": "",
+          "owner_stage_id": "bonding",
+          "owner_label": "Bonding"
+        },
+        {
+          "item_id": "current_fault",
+          "label": "Güncel arıza/EPR sonucu",
+          "gate": "SOFT",
+          "status": "MISSING",
+          "detail": "",
+          "owner_stage_id": "fault_epr",
+          "owner_label": "Arıza/EPR"
+        },
+        {
+          "item_id": "manufacturer_svl",
+          "label": "Üretici doğrulanmış SVL V-I/TOV/enerji verisi",
+          "gate": "SOFT",
+          "status": "MISSING",
+          "detail": "",
+          "owner_stage_id": "svl",
+          "owner_label": "SVL Adayları"
+        }
+      ],
+      "assumptions": [],
+      "notes": [
+        "Tam frekans-bağımlı EMT ve doğrusal olmayan MOV zaman alanı enerjisi değildir."
+      ]
+    },
+    {
+      "engine_id": "transient",
+      "method": {
+        "engine_id": "transient",
+        "display_name": "IEC 60853 İş Akışlı Geçici/Çevrimsel Termal",
+        "standard_basis": "2D transient FVM; cyclic ve emergency rating",
+        "stage_id": "transient",
+        "workspace_key": "transient",
+        "model_limit": "IEC 60853-3 kısmi toprak kuruması/yeniden nemlenme henüz uygulanmamıştır."
+      },
+      "status": "CONDITIONAL",
+      "maturity": "CONDITIONAL",
+      "can_run": true,
+      "items": [
+        {
+          "item_id": "system_voltage",
+          "label": "Sistem gerilimi",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "system_load",
+          "owner_label": "Sistem/Yük"
+        },
+        {
+          "item_id": "frequency",
+          "label": "Frekans",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "system_load",
+          "owner_label": "Sistem/Yük"
+        },
+        {
+          "item_id": "design_current",
+          "label": "Tasarım akımı",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "system_load",
+          "owner_label": "Sistem/Yük"
+        },
+        {
+          "item_id": "load_profiles",
+          "label": "Yük-zaman profili",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "transient",
+          "owner_label": "IEC 60853 Yük Profili"
+        },
+        {
+          "item_id": "thermal_base",
+          "label": "Kararlı durum termal taban",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "installation",
+          "owner_label": "Termal Güzergâh"
+        },
+        {
+          "item_id": "heat_capacity",
+          "label": "Pozitif hacimsel ısı kapasiteleri",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "transient",
+          "owner_label": "IEC 60853 Ayarları"
+        },
+        {
+          "item_id": "steady_result",
+          "label": "Güncel IEC 60287/2D kararlı durum sonucu",
+          "gate": "SOFT",
+          "status": "MISSING",
+          "detail": "",
+          "owner_stage_id": "steady_thermal",
+          "owner_label": "IEC 60287 ve 2D Termal"
+        },
+        {
+          "item_id": "verified_capacity",
+          "label": "Doğrulanmış malzeme ısı kapasiteleri",
+          "gate": "SOFT",
+          "status": "MISSING",
+          "detail": "",
+          "owner_stage_id": "installation",
+          "owner_label": "Termal Malzeme Kütüphanesi"
+        }
+      ],
+      "assumptions": [
+        "IEC 60853-3 toprak kuruması/yeniden nemlenme modeli henüz etkin değildir."
+      ],
+      "notes": [
+        "IEC 60853-3 kısmi toprak kuruması/yeniden nemlenme henüz uygulanmamıştır."
+      ]
+    },
+    {
+      "engine_id": "iteration",
+      "method": {
+        "engine_id": "iteration",
+        "display_name": "DiTuS Birleşik Tasarım İterasyonu",
+        "standard_basis": "Kablo → bonding → IEC 60287/2D → arıza/EPR → SVL → IEC 60853",
+        "stage_id": "iteration",
+        "workspace_key": "first_design",
+        "model_limit": ""
+      },
+      "status": "CONDITIONAL",
+      "maturity": "CONDITIONAL",
+      "can_run": true,
+      "items": [
+        {
+          "item_id": "system_voltage",
+          "label": "Sistem gerilimi",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "system_load",
+          "owner_label": "Sistem/Yük"
+        },
+        {
+          "item_id": "frequency",
+          "label": "Frekans",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "system_load",
+          "owner_label": "Sistem/Yük"
+        },
+        {
+          "item_id": "design_current",
+          "label": "Tasarım akımı",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "system_load",
+          "owner_label": "Sistem/Yük"
+        },
+        {
+          "item_id": "conductor_area",
+          "label": "İletken kesiti",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "cable",
+          "owner_label": "Kablo Editörü"
+        },
+        {
+          "item_id": "overall_diameter",
+          "label": "Kablo dış çapı",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "cable",
+          "owner_label": "Kablo Editörü"
+        },
+        {
+          "item_id": "cable_snapshot",
+          "label": "Projeye atanmış kablo",
+          "gate": "SOFT",
+          "status": "MISSING",
+          "detail": "Proje kablo kaydı yoksa katalog/manuel kablo değişiklikleri geçmiş hesabı etkileyebilir.",
+          "owner_stage_id": "cable",
+          "owner_label": "Kablo Editörü"
+        },
+        {
+          "item_id": "verified_cable_source",
+          "label": "Üretici doğrulanmış kablo kaynağı",
+          "gate": "SOFT",
+          "status": "MISSING",
+          "detail": "Katalog veya kullanıcı varsayımıyla hesap yapılabilir; nihai tasarım için üretici verisi gerekir.",
+          "owner_stage_id": "cable",
+          "owner_label": "Kablo Kaynakları"
+        },
+        {
+          "item_id": "route",
+          "label": "Güzergâh ve termal bölgeler",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "route",
+          "owner_label": "Güzergâh"
+        },
+        {
+          "item_id": "child_bonding",
+          "label": "Bonding çözümü",
+          "gate": "SOFT",
+          "status": "MISSING",
+          "detail": "",
+          "owner_stage_id": "bonding",
+          "owner_label": "Bonding çözümü"
+        },
+        {
+          "item_id": "child_thermal_route",
+          "label": "IEC 60287/termal çözümü",
+          "gate": "SOFT",
+          "status": "MISSING",
+          "detail": "",
+          "owner_stage_id": "steady_thermal",
+          "owner_label": "IEC 60287/termal çözümü"
+        },
+        {
+          "item_id": "child_fault_epr",
+          "label": "Arıza/EPR çözümü",
+          "gate": "SOFT",
+          "status": "MISSING",
+          "detail": "",
+          "owner_stage_id": "fault_epr",
+          "owner_label": "Arıza/EPR çözümü"
+        },
+        {
+          "item_id": "child_svl",
+          "label": "SVL koordinasyonu",
+          "gate": "SOFT",
+          "status": "MISSING",
+          "detail": "",
+          "owner_stage_id": "svl",
+          "owner_label": "SVL koordinasyonu"
+        },
+        {
+          "item_id": "child_transient",
+          "label": "IEC 60853 çözümü",
+          "gate": "SOFT",
+          "status": "MISSING",
+          "detail": "",
+          "owner_stage_id": "transient",
+          "owner_label": "IEC 60853 çözümü"
+        }
+      ],
+      "assumptions": [],
+      "notes": []
+    },
+    {
+      "engine_id": "report",
+      "method": {
+        "engine_id": "report",
+        "display_name": "DiTuS Hesap ve Proje Raporlama Motoru",
+        "standard_basis": "Seçilebilir modüller, izlenebilir girdi/sonuç ve proje imzası",
+        "stage_id": "deliverables",
+        "workspace_key": "deliverables",
+        "model_limit": ""
+      },
+      "status": "CONDITIONAL",
+      "maturity": "CONDITIONAL",
+      "can_run": true,
+      "items": [
+        {
+          "item_id": "project_identity",
+          "label": "Proje kimliği ve revizyon",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "system_load",
+          "owner_label": "Proje Bilgileri"
+        },
+        {
+          "item_id": "route",
+          "label": "Güzergâh/metraj kaynağı",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "route",
+          "owner_label": "Güzergâh"
+        },
+        {
+          "item_id": "conductor_area",
+          "label": "İletken kesiti",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "cable",
+          "owner_label": "Kablo Editörü"
+        },
+        {
+          "item_id": "overall_diameter",
+          "label": "Kablo dış çapı",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "cable",
+          "owner_label": "Kablo Editörü"
+        },
+        {
+          "item_id": "cable_snapshot",
+          "label": "Projeye atanmış kablo",
+          "gate": "SOFT",
+          "status": "MISSING",
+          "detail": "Proje kablo kaydı yoksa katalog/manuel kablo değişiklikleri geçmiş hesabı etkileyebilir.",
+          "owner_stage_id": "cable",
+          "owner_label": "Kablo Editörü"
+        },
+        {
+          "item_id": "verified_cable_source",
+          "label": "Üretici doğrulanmış kablo kaynağı",
+          "gate": "SOFT",
+          "status": "MISSING",
+          "detail": "Katalog veya kullanıcı varsayımıyla hesap yapılabilir; nihai tasarım için üretici verisi gerekir.",
+          "owner_stage_id": "cable",
+          "owner_label": "Kablo Kaynakları"
+        },
+        {
+          "item_id": "calculation_results",
+          "label": "En az bir güncel hesap sonucu",
+          "gate": "SOFT",
+          "status": "MISSING",
+          "detail": "",
+          "owner_stage_id": "precheck",
+          "owner_label": "Hesap Modülleri"
+        }
+      ],
+      "assumptions": [],
+      "notes": []
+    },
+    {
+      "engine_id": "procurement",
+      "method": {
+        "engine_id": "procurement",
+        "display_name": "DiTuS BOQ/BOM/RFQ Motoru",
+        "standard_basis": "Proje nesnelerinden izlenebilir metraj ve tedarik çıktısı",
+        "stage_id": "deliverables",
+        "workspace_key": "deliverables",
+        "model_limit": ""
+      },
+      "status": "CONDITIONAL",
+      "maturity": "CONDITIONAL",
+      "can_run": true,
+      "items": [
+        {
+          "item_id": "project_identity",
+          "label": "Proje kimliği ve revizyon",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "system_load",
+          "owner_label": "Proje Bilgileri"
+        },
+        {
+          "item_id": "route",
+          "label": "Güzergâh/metraj kaynağı",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "route",
+          "owner_label": "Güzergâh"
+        },
+        {
+          "item_id": "conductor_area",
+          "label": "İletken kesiti",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "cable",
+          "owner_label": "Kablo Editörü"
+        },
+        {
+          "item_id": "overall_diameter",
+          "label": "Kablo dış çapı",
+          "gate": "HARD",
+          "status": "OK",
+          "detail": "",
+          "owner_stage_id": "cable",
+          "owner_label": "Kablo Editörü"
+        },
+        {
+          "item_id": "cable_snapshot",
+          "label": "Projeye atanmış kablo",
+          "gate": "SOFT",
+          "status": "MISSING",
+          "detail": "Proje kablo kaydı yoksa katalog/manuel kablo değişiklikleri geçmiş hesabı etkileyebilir.",
+          "owner_stage_id": "cable",
+          "owner_label": "Kablo Editörü"
+        },
+        {
+          "item_id": "verified_cable_source",
+          "label": "Üretici doğrulanmış kablo kaynağı",
+          "gate": "SOFT",
+          "status": "MISSING",
+          "detail": "Katalog veya kullanıcı varsayımıyla hesap yapılabilir; nihai tasarım için üretici verisi gerekir.",
+          "owner_stage_id": "cable",
+          "owner_label": "Kablo Kaynakları"
+        },
+        {
+          "item_id": "cable_assignment",
+          "label": "Aktif güzergâh-kablo ataması",
+          "gate": "SOFT",
+          "status": "MISSING",
+          "detail": "",
+          "owner_stage_id": "cable",
+          "owner_label": "Kablo Uygulama"
+        }
+      ],
+      "assumptions": [],
+      "notes": []
+    }
+  ]
+}

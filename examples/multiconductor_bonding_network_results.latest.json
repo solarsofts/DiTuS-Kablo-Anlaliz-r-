@@ -1,0 +1,1204 @@
+{
+  "engine": "DiTuS v0.16.5.2 General N-Conductor Bonding Network SHADOW_COMPARE",
+  "project_schema": "0.16.4",
+  "methods_agree": true,
+  "sheath_count": 12,
+  "minor_section_count": 3,
+  "node_count": 80,
+  "branch_current_count": 93,
+  "maximum_method_voltage_difference_v": 9.97057024434784e-13,
+  "maximum_method_current_difference_a": 4.6418839271988414e-12,
+  "maximum_sheath_current_a": 14.376734274205017,
+  "maximum_sheath_to_earth_voltage_v": 5.914687159118997,
+  "maximum_sheath_to_sheath_voltage_v": 10.136773108841306,
+  "maximum_gcc_current_a": 55.89312786519506,
+  "total_core_metal_loss_w": 10214.329298754035,
+  "total_sheath_metal_loss_w": 54.44812087600468,
+  "total_gcc_metal_loss_w": 77.91080972802585,
+  "total_earth_return_equivalent_loss_w": 0.5519611318530764,
+  "total_accessory_loss_w": 19.973111581983026,
+  "lambda1_shadow": 0.005330562515019599,
+  "sections": [
+    {
+      "section_id": "MS1",
+      "major_index": 1,
+      "start_m": 0.0,
+      "end_m": 100.0,
+      "cross_sections": [
+        "ICS-NET-DEMO"
+      ],
+      "maximum_sheath_current_a": 14.375709970308428,
+      "maximum_sheath_to_earth_voltage_v": 5.911958814365672,
+      "maximum_sheath_to_sheath_voltage_v": 10.13631358188521,
+      "core_metal_loss_w": 3404.776432918012,
+      "sheath_metal_loss_w": 18.149578268040415,
+      "gcc_current": {
+        "real": 47.18296839589635,
+        "imag": -29.9634650183668,
+        "magnitude": 55.89312786519506
+      },
+      "sheaths": [
+        {
+          "key": "C1:A:P1",
+          "physical_cable_id": "C1-A-1",
+          "current": {
+            "real": -12.900221614080424,
+            "imag": 6.343919881117462,
+            "magnitude": 14.375709970308428
+          },
+          "start_voltage_to_earth": {
+            "real": -0.6366577566906414,
+            "imag": -1.0417453108980192,
+            "magnitude": 1.220887542705048
+          },
+          "end_voltage_to_earth": {
+            "real": -0.9821569624780787,
+            "imag": -5.829804861555127,
+            "magnitude": 5.911958814365672
+          },
+          "integrated_open_emf": {
+            "real": 1.1051844961948285,
+            "imag": 4.99094366129634,
+            "magnitude": 5.111844226975577
+          },
+          "sheath_metal_loss_w": 4.487558820544514
+        },
+        {
+          "key": "C1:A:P2",
+          "physical_cable_id": "C1-A-2",
+          "current": {
+            "real": 0.3613501782138033,
+            "imag": 3.6185522182552528,
+            "magnitude": 3.636549753204974
+          },
+          "start_voltage_to_earth": {
+            "real": -0.6393100710487255,
+            "imag": -1.0412002373636362,
+            "magnitude": 1.221808209675487
+          },
+          "end_voltage_to_earth": {
+            "real": -0.7502958140762953,
+            "imag": -5.62560550283975,
+            "magnitude": 5.675419022609809
+          },
+          "integrated_open_emf": {
+            "real": 0.4727037852426776,
+            "imag": 4.398298107295154,
+            "magnitude": 4.423626917950799
+          },
+          "sheath_metal_loss_w": 0.2871644118204614
+        },
+        {
+          "key": "C1:B:P1",
+          "physical_cable_id": "C1-B-1",
+          "current": {
+            "real": -12.635804071782784,
+            "imag": 6.500647294386995,
+            "magnitude": 14.209924693203105
+          },
+          "start_voltage_to_earth": {
+            "real": -0.636658154033727,
+            "imag": -1.0418677753948637,
+            "magnitude": 1.220992246700967
+          },
+          "end_voltage_to_earth": {
+            "real": -3.88003467261706,
+            "imag": 1.9702503581406936,
+            "magnitude": 4.351615278774551
+          },
+          "integrated_open_emf": {
+            "real": 4.0195572082796085,
+            "imag": -2.8073700074725565,
+            "magnitude": 4.902873291192525
+          },
+          "sheath_metal_loss_w": 4.384651718562682
+        },
+        {
+          "key": "C1:B:P2",
+          "physical_cable_id": "C1-B-2",
+          "current": {
+            "real": 0.6258965706017968,
+            "imag": 3.775334592261898,
+            "magnitude": 3.826865270769328
+          },
+          "start_voltage_to_earth": {
+            "real": -0.6393104941618304,
+            "imag": -1.0413227128526328,
+            "magnitude": 1.2219128038645846
+          },
+          "end_voltage_to_earth": {
+            "real": -4.059656830164799,
+            "imag": 1.693176123880043,
+            "magnitude": 4.3985973861199374
+          },
+          "integrated_open_emf": {
+            "real": 3.694543200407172,
+            "imag": -3.1126468222395345,
+            "magnitude": 4.8309646758874925
+          },
+          "sheath_metal_loss_w": 0.31800788966964616
+        },
+        {
+          "key": "C1:C:P1",
+          "physical_cable_id": "C1-C-1",
+          "current": {
+            "real": -12.632293105013737,
+            "imag": 6.193286022962562,
+            "magnitude": 14.06881732247601
+          },
+          "start_voltage_to_earth": {
+            "real": -0.6367640106908254,
+            "imag": -1.0418061979860451,
+            "magnitude": 1.220994905588555
+          },
+          "end_voltage_to_earth": {
+            "real": 4.196311617823554,
+            "imag": 2.8276559399862538,
+            "magnitude": 5.060105661823721
+          },
+          "integrated_open_emf": {
+            "real": -4.0901681560755305,
+            "imag": -3.770279490743334,
+            "magnitude": 5.562776553421332
+          },
+          "sheath_metal_loss_w": 4.298003161466411
+        },
+        {
+          "key": "C1:C:P2",
+          "physical_cable_id": "C1-C-2",
+          "current": {
+            "real": 0.6293921731218998,
+            "imag": 3.4678369815461556,
+            "magnitude": 3.5244897273458267
+          },
+          "start_voltage_to_earth": {
+            "real": -0.6394163477460804,
+            "imag": -1.0412611081759524,
+            "magnitude": 1.2219156931493877
+          },
+          "end_voltage_to_earth": {
+            "real": 4.170727402431055,
+            "imag": 2.899034451445518,
+            "magnitude": 5.079307808752814
+          },
+          "integrated_open_emf": {
+            "real": -4.651802131631354,
+            "imag": -4.485519793522675,
+            "magnitude": 6.462132069985394
+          },
+          "sheath_metal_loss_w": 0.2697391891710916
+        },
+        {
+          "key": "C2:A:P1",
+          "physical_cable_id": "C2-A-1",
+          "current": {
+            "real": 3.92878057747793,
+            "imag": 0.1069370662884834,
+            "magnitude": 3.9302356624144315
+          },
+          "start_voltage_to_earth": {
+            "real": -0.6400235571280976,
+            "imag": -1.0404979143327575,
+            "magnitude": 1.2215834246623198
+          },
+          "end_voltage_to_earth": {
+            "real": -0.5236642014720035,
+            "imag": -4.143559910640059,
+            "magnitude": 4.176519236034568
+          },
+          "integrated_open_emf": {
+            "real": -0.11218983643255848,
+            "imag": 2.6651913584996194,
+            "magnitude": 2.6675515996545993
+          },
+          "sheath_metal_loss_w": 0.33541982933588416
+        },
+        {
+          "key": "C2:A:P2",
+          "physical_cable_id": "C2-A-2",
+          "current": {
+            "real": -6.762194055396691,
+            "imag": 1.6447304844065027,
+            "magnitude": 6.959339538287983
+          },
+          "start_voltage_to_earth": {
+            "real": -0.6378853622017308,
+            "imag": -1.0408054730178438,
+            "magnitude": 1.2207267376342383
+          },
+          "end_voltage_to_earth": {
+            "real": -0.6065973480712786,
+            "imag": -4.566839287211446,
+            "magnitude": 4.606949252803318
+          },
+          "integrated_open_emf": {
+            "real": 0.2814049154629039,
+            "imag": 3.4352952300241193,
+            "magnitude": 3.4468017122940435
+          },
+          "sheath_metal_loss_w": 1.0516896526485937
+        },
+        {
+          "key": "C2:B:P1",
+          "physical_cable_id": "C2-B-1",
+          "current": {
+            "real": 4.193323363169228,
+            "imag": 0.26373180015807995,
+            "magnitude": 4.201608655088609
+          },
+          "start_voltage_to_earth": {
+            "real": -0.6400239795198654,
+            "imag": -1.0406203922937234,
+            "magnitude": 1.2216879696624616
+          },
+          "end_voltage_to_earth": {
+            "real": -2.8520529233842224,
+            "imag": 1.1639730887203688,
+            "magnitude": 3.080428416478741
+          },
+          "integrated_open_emf": {
+            "real": 2.1728410720215052,
+            "imag": -2.7743615244555957,
+            "magnitude": 3.523963704785159
+          },
+          "sheath_metal_loss_w": 0.38333877226168456
+        },
+        {
+          "key": "C2:B:P2",
+          "physical_cable_id": "C2-B-2",
+          "current": {
+            "real": -6.4975333759359515,
+            "imag": 1.8012106645700188,
+            "magnitude": 6.7425736799505875
+          },
+          "start_voltage_to_earth": {
+            "real": -0.6378858081722538,
+            "imag": -1.040927888068073,
+            "magnitude": 1.2208313447915025
+          },
+          "end_voltage_to_earth": {
+            "real": -2.7469706734226347,
+            "imag": 1.6329271540091013,
+            "magnitude": 3.195668783047496
+          },
+          "integrated_open_emf": {
+            "real": 2.412451581784996,
+            "imag": -2.805578175351999,
+            "magnitude": 3.700161014397668
+          },
+          "sheath_metal_loss_w": 0.9871950098358078
+        },
+        {
+          "key": "C2:C:P1",
+          "physical_cable_id": "C2-C-1",
+          "current": {
+            "real": 4.196834670869488,
+            "imag": -0.043770163165399514,
+            "magnitude": 4.197062911345949
+          },
+          "start_voltage_to_earth": {
+            "real": -0.6401298362451495,
+            "imag": -1.0405587867465238,
+            "magnitude": 1.2216909576184312
+          },
+          "end_voltage_to_earth": {
+            "real": 2.744474620198799,
+            "imag": 1.9403961370809977,
+            "magnitude": 3.3611423816485666
+          },
+          "integrated_open_emf": {
+            "real": -3.472637511791274,
+            "imag": -3.637900803582724,
+            "magnitude": 5.029267694705435
+          },
+          "sheath_metal_loss_w": 0.38250974827315043
+        },
+        {
+          "key": "C2:C:P2",
+          "physical_cable_id": "C2-C-2",
+          "current": {
+            "real": -6.494353029979147,
+            "imag": 1.4937605688833422,
+            "magnitude": 6.6639284146177635
+          },
+          "start_voltage_to_earth": {
+            "real": -0.6379915987051912,
+            "imag": -1.0408662928943933,
+            "magnitude": 1.2208341081826484
+          },
+          "end_voltage_to_earth": {
+            "real": 2.7010262621196683,
+            "imag": 1.894654041693486,
+            "magnitude": 3.299281256026168
+          },
+          "integrated_open_emf": {
+            "real": -3.057059805596282,
+            "imag": -3.1446763592381153,
+            "magnitude": 4.385727312469787
+          },
+          "sheath_metal_loss_w": 0.9643000644504893
+        }
+      ]
+    },
+    {
+      "section_id": "MS2",
+      "major_index": 1,
+      "start_m": 100.0,
+      "end_m": 200.0,
+      "cross_sections": [
+        "ICS-NET-DEMO"
+      ],
+      "maximum_sheath_current_a": 14.371640076248825,
+      "maximum_sheath_to_earth_voltage_v": 5.914687159118997,
+      "maximum_sheath_to_sheath_voltage_v": 10.130233820269918,
+      "core_metal_loss_w": 3404.776432918012,
+      "sheath_metal_loss_w": 18.149105509118847,
+      "gcc_current": {
+        "real": 47.18296839589635,
+        "imag": -29.9634650183668,
+        "magnitude": 55.89312786519506
+      },
+      "sheaths": [
+        {
+          "key": "C1:A:P1",
+          "physical_cable_id": "C1-A-1",
+          "current": {
+            "real": -12.895008223646752,
+            "imag": 6.345297581148105,
+            "magnitude": 14.371640076248825
+          },
+          "start_voltage_to_earth": {
+            "real": 4.211048542602966,
+            "imag": 2.8230610216236722,
+            "magnitude": 5.06977350184103
+          },
+          "end_voltage_to_earth": {
+            "real": 3.865435543615292,
+            "imag": -1.96510357436696,
+            "magnitude": 4.336268441855768
+          },
+          "integrated_open_emf": {
+            "real": 1.1051844961948285,
+            "imag": 4.99094366129634,
+            "magnitude": 5.111844226975577
+          },
+          "sheath_metal_loss_w": 4.4850182429052685
+        },
+        {
+          "key": "C1:A:P2",
+          "physical_cable_id": "C1-A-2",
+          "current": {
+            "real": 0.3666775454449393,
+            "imag": 3.6198487639293115,
+            "magnitude": 3.6383729187720837
+          },
+          "start_voltage_to_earth": {
+            "real": 4.170820991753139,
+            "imag": 2.8954189287142573,
+            "magnitude": 5.077321982896639
+          },
+          "end_voltage_to_earth": {
+            "real": 4.059733643575593,
+            "imag": -1.6890447612854267,
+            "magnitude": 4.397079651587552
+          },
+          "integrated_open_emf": {
+            "real": 0.4727037852426776,
+            "imag": 4.398298107295154,
+            "magnitude": 4.423626917950799
+          },
+          "sheath_metal_loss_w": 0.2874524208083149
+        },
+        {
+          "key": "C1:B:P1",
+          "physical_cable_id": "C1-B-1",
+          "current": {
+            "real": -12.637223495608298,
+            "imag": 6.495441085461568,
+            "magnitude": 14.208806162822286
+          },
+          "start_voltage_to_earth": {
+            "real": -0.9673261176217682,
+            "imag": -5.835049646096762,
+            "magnitude": 5.914687159118997
+          },
+          "end_voltage_to_earth": {
+            "real": -4.210728439404042,
+            "imag": -2.822807590121424,
+            "magnitude": 5.069366497034231
+          },
+          "integrated_open_emf": {
+            "real": 4.0195572082796085,
+            "imag": -2.8073700074725565,
+            "magnitude": 4.902873291192525
+          },
+          "sheath_metal_loss_w": 4.383961472380598
+        },
+        {
+          "key": "C1:B:P2",
+          "physical_cable_id": "C1-B-2",
+          "current": {
+            "real": 0.6243496928127468,
+            "imag": 3.770071887998082,
+            "magnitude": 3.821420492380915
+          },
+          "start_voltage_to_earth": {
+            "real": -0.7501081714567286,
+            "imag": -5.629870961605023,
+            "magnitude": 5.6796222861392485
+          },
+          "end_voltage_to_earth": {
+            "real": -4.17046551448755,
+            "imag": -2.8952021434904713,
+            "magnitude": 5.07690634729475
+          },
+          "integrated_open_emf": {
+            "real": 3.694543200407172,
+            "imag": -3.1126468222395345,
+            "magnitude": 4.8309646758874925
+          },
+          "sheath_metal_loss_w": 0.3171036243740053
+        },
+        {
+          "key": "C1:C:P1",
+          "physical_cable_id": "C1-C-1",
+          "current": {
+            "real": -12.636094163915105,
+            "imag": 6.1971189362241175,
+            "magnitude": 14.073917678778605
+          },
+          "start_voltage_to_earth": {
+            "real": -3.8658135846024617,
+            "imag": 1.9652491650198916,
+            "magnitude": 4.3366714138274665
+          },
+          "end_voltage_to_earth": {
+            "real": 0.9673813189648596,
+            "imag": 5.8346792088193045,
+            "magnitude": 5.914330738647481
+          },
+          "integrated_open_emf": {
+            "real": -4.0901681560755305,
+            "imag": -3.770279490743334,
+            "magnitude": 5.562776553421332
+          },
+          "sheath_metal_loss_w": 4.301120029156748
+        },
+        {
+          "key": "C1:C:P2",
+          "physical_cable_id": "C1-C-2",
+          "current": {
+            "real": 0.6256045911676266,
+            "imag": 3.4718075124796433,
+            "magnitude": 3.527722850253418
+          },
+          "start_voltage_to_earth": {
+            "real": -4.060079072730117,
+            "imag": 1.689154177314174,
+            "magnitude": 4.397440609213383
+          },
+          "end_voltage_to_earth": {
+            "real": 0.750197839545941,
+            "imag": 5.62946651854369,
+            "magnitude": 5.679233230099272
+          },
+          "integrated_open_emf": {
+            "real": -4.651802131631354,
+            "imag": -4.485519793522675,
+            "magnitude": 6.462132069985394
+          },
+          "sheath_metal_loss_w": 0.27023429627659884
+        },
+        {
+          "key": "C2:A:P1",
+          "physical_cable_id": "C2-A-1",
+          "current": {
+            "real": 3.934113518247899,
+            "imag": 0.10825137935044526,
+            "magnitude": 3.935602563215973
+          },
+          "start_voltage_to_earth": {
+            "real": 2.740221032670824,
+            "imag": 1.940028127328966,
+            "magnitude": 3.357457437216307
+          },
+          "end_voltage_to_earth": {
+            "real": 2.856478827362656,
+            "imag": -1.1630897492621086,
+            "magnitude": 3.084193420654698
+          },
+          "integrated_open_emf": {
+            "real": -0.11218983643255848,
+            "imag": 2.6651913584996194,
+            "magnitude": 2.6675515996545993
+          },
+          "sheath_metal_loss_w": 0.3363365143419882
+        },
+        {
+          "key": "C2:A:P2",
+          "physical_cable_id": "C2-A-2",
+          "current": {
+            "real": -6.757074494957636,
+            "imag": 1.6457823684135255,
+            "magnitude": 6.954613960140981
+          },
+          "start_voltage_to_earth": {
+            "real": 2.708480826674833,
+            "imag": 1.8942049327262211,
+            "magnitude": 3.305129455199831
+          },
+          "end_voltage_to_earth": {
+            "real": 2.7396628761323303,
+            "imag": -1.6319365196008437,
+            "magnitude": 3.1888821676042824
+          },
+          "integrated_open_emf": {
+            "real": 0.2814049154629039,
+            "imag": 3.4352952300241193,
+            "magnitude": 3.4468017122940435
+          },
+          "sheath_metal_loss_w": 1.0502618866128122
+        },
+        {
+          "key": "C2:B:P1",
+          "physical_cable_id": "C2-B-1",
+          "current": {
+            "real": 4.191790221353032,
+            "imag": 0.25845519325353694,
+            "magnitude": 4.199750510060166
+          },
+          "start_voltage_to_earth": {
+            "real": -0.5278237336580893,
+            "imag": -4.144577841202748,
+            "magnitude": 4.178052581718138
+          },
+          "end_voltage_to_earth": {
+            "real": -2.7398642023843767,
+            "imag": -1.939812218494855,
+            "magnitude": 3.3570414490335545
+          },
+          "integrated_open_emf": {
+            "real": 2.1728410720215052,
+            "imag": -2.7743615244555957,
+            "magnitude": 3.523963704785159
+          },
+          "sheath_metal_loss_w": 0.38299978708404725
+        },
+        {
+          "key": "C2:B:P2",
+          "physical_cable_id": "C2-B-2",
+          "current": {
+            "real": -6.499187301514517,
+            "imag": 1.7962491405749497,
+            "magnitude": 6.742844099872382
+          },
+          "start_voltage_to_earth": {
+            "real": -0.599048917024491,
+            "imag": -4.567938630364262,
+            "magnitude": 4.607051436196729
+          },
+          "end_voltage_to_earth": {
+            "real": -2.7081551776138144,
+            "imag": -1.8939465196389085,
+            "magnitude": 3.3047144937632424
+          },
+          "integrated_open_emf": {
+            "real": 2.412451581784996,
+            "imag": -2.805578175351999,
+            "magnitude": 3.700161014397668
+          },
+          "sheath_metal_loss_w": 0.987274196972164
+        },
+        {
+          "key": "C2:C:P1",
+          "physical_cable_id": "C2-C-1",
+          "current": {
+            "real": 4.193027773081022,
+            "imag": -0.03980350695548879,
+            "magnitude": 4.193216691872094
+          },
+          "start_voltage_to_earth": {
+            "real": -2.85682232817885,
+            "imag": 1.1631986622108978,
+            "magnitude": 3.0845526324818073
+          },
+          "end_voltage_to_earth": {
+            "real": 0.5279155574491959,
+            "imag": 4.144171819932329,
+            "magnitude": 4.177661416261271
+          },
+          "integrated_open_emf": {
+            "real": -3.472637511791274,
+            "imag": -3.637900803582724,
+            "magnitude": 5.029267694705435
+          },
+          "sheath_metal_loss_w": 0.38180899998464574
+        },
+        {
+          "key": "C2:C:P2",
+          "physical_cable_id": "C2-C-2",
+          "current": {
+            "real": -6.497825764940765,
+            "imag": 1.49767459675911,
+            "magnitude": 6.668190824302016
+          },
+          "start_voltage_to_earth": {
+            "real": -2.7400322911662602,
+            "imag": 1.632071635670571,
+            "magnitude": 3.189268690561245
+          },
+          "end_voltage_to_earth": {
+            "real": 0.5990982725725942,
+            "imag": 4.567562115131248,
+            "magnitude": 4.606684536169338
+          },
+          "integrated_open_emf": {
+            "real": -3.057059805596282,
+            "imag": -3.1446763592381153,
+            "magnitude": 4.385727312469787
+          },
+          "sheath_metal_loss_w": 0.9655340382216552
+        }
+      ]
+    },
+    {
+      "section_id": "MS3",
+      "major_index": 1,
+      "start_m": 200.0,
+      "end_m": 300.0,
+      "cross_sections": [
+        "ICS-NET-DEMO"
+      ],
+      "maximum_sheath_current_a": 14.376734274205017,
+      "maximum_sheath_to_earth_voltage_v": 5.9122251765893346,
+      "maximum_sheath_to_sheath_voltage_v": 10.136773108841306,
+      "core_metal_loss_w": 3404.776432918012,
+      "sheath_metal_loss_w": 18.149437098845418,
+      "gcc_current": {
+        "real": 47.18296839589635,
+        "imag": -29.9634650183668,
+        "magnitude": 55.89312786519506
+      },
+      "sheaths": [
+        {
+          "key": "C1:A:P1",
+          "physical_cable_id": "C1-A-1",
+          "current": {
+            "real": -12.898788727920337,
+            "imag": 6.349152521681655,
+            "magnitude": 14.376734274205017
+          },
+          "start_voltage_to_earth": {
+            "real": 0.9821228795991465,
+            "imag": 5.830080718829257,
+            "magnitude": 5.9122251765893346
+          },
+          "end_voltage_to_earth": {
+            "real": 0.6366581645341202,
+            "imag": 1.041867779058558,
+            "magnitude": 1.2209922553023695
+          },
+          "integrated_open_emf": {
+            "real": 1.1051844961948285,
+            "imag": 4.99094366129634,
+            "magnitude": 5.111844226975577
+          },
+          "sheath_metal_loss_w": 4.488198342036782
+        },
+        {
+          "key": "C1:A:P2",
+          "physical_cable_id": "C1-A-2",
+          "current": {
+            "real": 0.3629086308028697,
+            "imag": 3.623842632303774,
+            "magnitude": 3.641968986415667
+          },
+          "start_voltage_to_earth": {
+            "real": 0.7502960715701915,
+            "imag": 5.625847273839264,
+            "magnitude": 5.675658705699132
+          },
+          "end_voltage_to_earth": {
+            "real": 0.6393105040054909,
+            "imag": 1.0413227170788693,
+            "magnitude": 1.2219128126164622
+          },
+          "integrated_open_emf": {
+            "real": 0.4727037852426776,
+            "imag": 4.398298107295154,
+            "magnitude": 4.423626917950799
+          },
+          "sheath_metal_loss_w": 0.2880209217355838
+        },
+        {
+          "key": "C1:B:P1",
+          "physical_cable_id": "C1-B-1",
+          "current": {
+            "real": -12.631983749283155,
+            "imag": 6.496785658732699,
+            "magnitude": 14.204761079922061
+          },
+          "start_voltage_to_earth": {
+            "real": 3.880260975046558,
+            "imag": -1.9703505883926054,
+            "magnitude": 4.3518624375832875
+          },
+          "end_voltage_to_earth": {
+            "real": 0.6367640116952629,
+            "imag": 1.0418061866716992,
+            "magnitude": 1.2209948964584874
+          },
+          "integrated_open_emf": {
+            "real": 4.0195572082796085,
+            "imag": -2.8073700074725565,
+            "magnitude": 4.902873291192525
+          },
+          "sheath_metal_loss_w": 4.381465701360217
+        },
+        {
+          "key": "C1:B:P2",
+          "physical_cable_id": "C1-B-2",
+          "current": {
+            "real": 0.629703906863665,
+            "imag": 3.7713355629108714,
+            "magnitude": 3.8235453362547727
+          },
+          "start_voltage_to_earth": {
+            "real": 4.05991573819511,
+            "imag": -1.6933123792881644,
+            "magnitude": 4.398888793217543
+          },
+          "end_voltage_to_earth": {
+            "real": 0.6394163492261193,
+            "imag": 1.0412610966507252,
+            "magnitude": 1.2219156841026018
+          },
+          "integrated_open_emf": {
+            "real": 3.694543200407172,
+            "imag": -3.1126468222395345,
+            "magnitude": 4.8309646758874925
+          },
+          "sheath_metal_loss_w": 0.3174563638969112
+        },
+        {
+          "key": "C1:C:P1",
+          "physical_cable_id": "C1-C-1",
+          "current": {
+            "real": -12.637546313478254,
+            "imag": 6.191915018071157,
+            "magnitude": 14.07293105278083
+          },
+          "start_voltage_to_earth": {
+            "real": -4.196506573819377,
+            "imag": -2.827802982130773,
+            "magnitude": 5.0603495066899224
+          },
+          "end_voltage_to_earth": {
+            "real": 0.6366577447185939,
+            "imag": 1.0417453176981035,
+            "magnitude": 1.2208875422642698
+          },
+          "integrated_open_emf": {
+            "real": -4.0901681560755305,
+            "imag": -3.770279490743334,
+            "magnitude": 5.562776553421332
+          },
+          "sheath_metal_loss_w": 4.300517006147461
+        },
+        {
+          "key": "C1:C:P2",
+          "physical_cable_id": "C1-C-2",
+          "current": {
+            "real": 0.6240263837360333,
+            "imag": 3.4665455961683143,
+            "magnitude": 3.5222645127691083
+          },
+          "start_voltage_to_earth": {
+            "real": -4.170886851754745,
+            "imag": -2.899218208845307,
+            "magnitude": 5.079543616570371
+          },
+          "end_voltage_to_earth": {
+            "real": 0.6393100592576637,
+            "imag": 1.041200243811911,
+            "magnitude": 1.2218082090009137
+          },
+          "integrated_open_emf": {
+            "real": -4.651802131631354,
+            "imag": -4.485519793522675,
+            "magnitude": 6.462132069985394
+          },
+          "sheath_metal_loss_w": 0.26939869273452827
+        },
+        {
+          "key": "C2:A:P1",
+          "physical_cable_id": "C2-A-1",
+          "current": {
+            "real": 3.930321683429304,
+            "imag": 0.11223315563164248,
+            "magnitude": 3.9319238060340886
+          },
+          "start_voltage_to_earth": {
+            "real": 0.5236666341316057,
+            "imag": 4.143800099882904,
+            "magnitude": 4.176757834911224
+          },
+          "end_voltage_to_earth": {
+            "real": 0.640023986615536,
+            "imag": 1.0406203951830482,
+            "magnitude": 1.221687975840872
+          },
+          "integrated_open_emf": {
+            "real": -0.11218983643255848,
+            "imag": 2.6651913584996194,
+            "magnitude": 2.6675515996545993
+          },
+          "sheath_metal_loss_w": 0.33570803518436054
+        },
+        {
+          "key": "C2:A:P2",
+          "physical_cable_id": "C2-A-2",
+          "current": {
+            "real": -6.760528964396694,
+            "imag": 1.6497107304332406,
+            "magnitude": 6.958900586482984
+          },
+          "start_voltage_to_earth": {
+            "real": 0.606557132940287,
+            "imag": 4.567109303497975,
+            "magnitude": 4.60721162370674
+          },
+          "end_voltage_to_earth": {
+            "real": 0.637885816486178,
+            "imag": 1.0409278906994737,
+            "magnitude": 1.2208313513791713
+          },
+          "integrated_open_emf": {
+            "real": 0.2814049154629039,
+            "imag": 3.4352952300241193,
+            "magnitude": 3.4468017122940435
+          },
+          "sheath_metal_loss_w": 1.0515569887628708
+        },
+        {
+          "key": "C2:B:P1",
+          "physical_cable_id": "C2-B-1",
+          "current": {
+            "real": 4.197143490317156,
+            "imag": 0.25974640565019375,
+            "magnitude": 4.205173203752715
+          },
+          "start_voltage_to_earth": {
+            "real": 2.852313748017991,
+            "imag": -1.1641098637308678,
+            "magnitude": 3.080721586246953
+          },
+          "end_voltage_to_earth": {
+            "real": 0.6401298371423294,
+            "imag": 1.0405587788187856,
+            "magnitude": 1.2216909513361829
+          },
+          "integrated_open_emf": {
+            "real": 2.1728410720215052,
+            "imag": -2.7743615244555957,
+            "magnitude": 3.523963704785159
+          },
+          "sheath_metal_loss_w": 0.3839894798571016
+        },
+        {
+          "key": "C2:B:P2",
+          "physical_cable_id": "C2-B-2",
+          "current": {
+            "real": -6.4940477237927015,
+            "imag": 1.79727815558613,
+            "magnitude": 6.738164780371896
+          },
+          "start_voltage_to_earth": {
+            "real": 2.747205950832175,
+            "imag": -1.6330377335734458,
+            "magnitude": 3.1959275297732286
+          },
+          "end_voltage_to_earth": {
+            "real": 0.6379915988997165,
+            "imag": 1.0408662851702362,
+            "magnitude": 1.2208341016987951
+          },
+          "integrated_open_emf": {
+            "real": 2.412451581784996,
+            "imag": -2.805578175351999,
+            "magnitude": 3.700161014397668
+          },
+          "sheath_metal_loss_w": 0.9859043986062064
+        },
+        {
+          "key": "C2:C:P1",
+          "physical_cable_id": "C2-C-1",
+          "current": {
+            "real": 4.191473437215021,
+            "imag": -0.04508085871812613,
+            "magnitude": 4.191715860921619
+          },
+          "start_voltage_to_earth": {
+            "real": -2.7446327242305646,
+            "imag": -1.9405807508004371,
+            "magnitude": 3.361378056882992
+          },
+          "end_voltage_to_earth": {
+            "real": 0.6400235486678769,
+            "imag": 1.0404979185204255,
+            "magnitude": 1.2215834237966559
+          },
+          "integrated_open_emf": {
+            "real": -3.472637511791274,
+            "imag": -3.637900803582724,
+            "magnitude": 5.029267694705435
+          },
+          "sheath_metal_loss_w": 0.3815357356831727
+        },
+        {
+          "key": "C2:C:P2",
+          "physical_cable_id": "C2-C-2",
+          "current": {
+            "real": -6.499503773006256,
+            "imag": 1.4927128318022103,
+            "magnitude": 6.668713586108608
+          },
+          "start_voltage_to_earth": {
+            "real": -2.70121573482309,
+            "imag": -1.8947964644916302,
+            "magnitude": 3.2995181599600003
+          },
+          "end_voltage_to_earth": {
+            "real": 0.6378853532260494,
+            "imag": 1.0408054772600117,
+            "magnitude": 1.2207267365609564
+          },
+          "integrated_open_emf": {
+            "real": -3.057059805596282,
+            "imag": -3.1446763592381153,
+            "magnitude": 4.385727312469787
+          },
+          "sheath_metal_loss_w": 0.9656854328402262
+        }
+      ]
+    }
+  ],
+  "cross_links": [
+    {
+      "branch_id": "LINK:J1:C1:A:P1>C1:B:P1",
+      "current": {
+        "real": -12.899937959508927,
+        "imag": 6.6474780440824,
+        "magnitude": 14.51197311552557
+      },
+      "active_loss_w": 0.2261815686199615
+    },
+    {
+      "branch_id": "LINK:J1:C1:A:P2>C1:B:P2",
+      "current": {
+        "real": 0.36163452915195,
+        "imag": 3.922109588924502,
+        "magnitude": 3.938746394502758
+      },
+      "active_loss_w": 0.016661738674063904
+    },
+    {
+      "branch_id": "LINK:J1:C1:B:P1>C1:C:P1",
+      "current": {
+        "real": -12.373062949816537,
+        "imag": 6.348620253413699,
+        "magnitude": 13.906748932880658
+      },
+      "active_loss_w": 0.20770909315745847
+    },
+    {
+      "branch_id": "LINK:J1:C1:B:P2>C1:C:P2",
+      "current": {
+        "real": 0.8886367472204958,
+        "imag": 3.623308165483643,
+        "magnitude": 3.730688586651406
+      },
+      "active_loss_w": 0.014947972093033324
+    },
+    {
+      "branch_id": "LINK:J1:C1:C:P1>C1:A:P1",
+      "current": {
+        "real": -12.895321402289138,
+        "imag": 6.041757177878871,
+        "magnitude": 14.240510660253275
+      },
+      "active_loss_w": 0.21779876251078142
+    },
+    {
+      "branch_id": "LINK:J1:C1:C:P2>C1:A:P2",
+      "current": {
+        "real": 0.36636411962764837,
+        "imag": 3.3163082235659935,
+        "magnitude": 3.33648361330338
+      },
+      "active_loss_w": 0.011955899996578286
+    },
+    {
+      "branch_id": "LINK:J1:C2:A:P1>C2:B:P1",
+      "current": {
+        "real": 3.9290699875030324,
+        "imag": 0.41049365815353106,
+        "magnitude": 3.9504551649248403
+      },
+      "active_loss_w": 0.016760947114827368
+    },
+    {
+      "branch_id": "LINK:J1:C2:A:P2>C2:B:P2",
+      "current": {
+        "real": -6.7619060902090915,
+        "imag": 1.9482873608592217,
+        "magnitude": 7.03698782244865
+      },
+      "active_loss_w": 0.053183618236674106
+    },
+    {
+      "branch_id": "LINK:J1:C2:B:P1>C2:C:P1",
+      "current": {
+        "real": 4.456061728909799,
+        "imag": 0.11170125229887606,
+        "magnitude": 4.457461531143003
+      },
+      "active_loss_w": 0.021339266585939584
+    },
+    {
+      "branch_id": "LINK:J1:C2:B:P2>C2:C:P2",
+      "current": {
+        "real": -6.2347934094952695,
+        "imag": 1.6491797563478194,
+        "magnitude": 6.449220319374513
+      },
+      "active_loss_w": 0.04467028348969275
+    },
+    {
+      "branch_id": "LINK:J1:C2:C:P1>C2:A:P1",
+      "current": {
+        "real": 3.9338033493518254,
+        "imag": -0.19529404849453422,
+        "magnitude": 3.938648062057465
+      },
+      "active_loss_w": 0.016660906749948454
+    },
+    {
+      "branch_id": "LINK:J1:C2:C:P2>C2:A:P2",
+      "current": {
+        "real": -6.757384507516834,
+        "imag": 1.3422368320476745,
+        "magnitude": 6.889400924299144
+      },
+      "active_loss_w": 0.050976169632818216
+    },
+    {
+      "branch_id": "LINK:J2:C1:A:P1>C1:B:P1",
+      "current": {
+        "real": -12.894711391125725,
+        "imag": 6.648839180724042,
+        "magnitude": 14.507951072138294
+      },
+      "active_loss_w": 0.22605621199061404
+    },
+    {
+      "branch_id": "LINK:J2:C1:A:P2>C1:B:P2",
+      "current": {
+        "real": 0.3669753197966536,
+        "imag": 3.923389699208452,
+        "magnitude": 3.940514892396023
+      },
+      "active_loss_w": 0.01667670428086726
+    },
+    {
+      "branch_id": "LINK:J2:C1:B:P1>C1:C:P1",
+      "current": {
+        "real": -12.37449873652077,
+        "imag": 6.343415189875842,
+        "magnitude": 13.905651198390592
+      },
+      "active_loss_w": 0.20767630325989805
+    },
+    {
+      "branch_id": "LINK:J2:C1:B:P2>C1:C:P2",
+      "current": {
+        "real": 0.8870742046001361,
+        "imag": 3.618045855197627,
+        "magnitude": 3.7252055587282284
+      },
+      "active_loss_w": 0.014904066032433392
+    },
+    {
+      "branch_id": "LINK:J2:C1:C:P1>C1:A:P1",
+      "current": {
+        "real": -12.89911218387051,
+        "imag": 6.045601104784332,
+        "magnitude": 14.245574325040257
+      },
+      "active_loss_w": 0.2179536805511644
+    },
+    {
+      "branch_id": "LINK:J2:C1:C:P2>C1:A:P2",
+      "current": {
+        "real": 0.36258587133583875,
+        "imag": 3.3202904232278883,
+        "magnitude": 3.3400294921858396
+      },
+      "active_loss_w": 0.011981325987312866
+    },
+    {
+      "branch_id": "LINK:J2:C2:A:P1>C2:B:P1",
+      "current": {
+        "real": 3.934413092373797,
+        "imag": 0.41179642087336743,
+        "magnitude": 3.9559047857205134
+      },
+      "active_loss_w": 0.01680722219153926
+    },
+    {
+      "branch_id": "LINK:J2:C2:A:P2>C2:B:P2",
+      "current": {
+        "real": -6.756776521125472,
+        "imag": 1.9493278103591765,
+        "magnitude": 7.032347251712769
+      },
+      "active_loss_w": 0.05311349705095388
+    },
+    {
+      "branch_id": "LINK:J2:C2:B:P1>C2:C:P1",
+      "current": {
+        "real": 4.454517990058641,
+        "imag": 0.10642427296680318,
+        "magnitude": 4.455789116377995
+      },
+      "active_loss_w": 0.021323256841705402
+    },
+    {
+      "branch_id": "LINK:J2:C2:B:P2>C2:C:P2",
+      "current": {
+        "real": -6.23645937632681,
+        "imag": 1.644218111873655,
+        "magnitude": 6.449564229619544
+      },
+      "active_loss_w": 0.04467504777963505
+    },
+    {
+      "branch_id": "LINK:J2:C2:C:P1>C2:A:P1",
+      "current": {
+        "real": 3.930003983054636,
+        "imag": -0.19131983224102453,
+        "magnitude": 3.9346581281013524
+      },
+      "active_loss_w": 0.01662716814432656
+    },
+    {
+      "branch_id": "LINK:J2:C2:C:P2>C2:A:P2",
+      "current": {
+        "real": -6.760848109710843,
+        "imag": 1.3461580270027425,
+        "magnitude": 6.8935628376221105
+      },
+      "active_loss_w": 0.05103777803236671
+    }
+  ]
+}

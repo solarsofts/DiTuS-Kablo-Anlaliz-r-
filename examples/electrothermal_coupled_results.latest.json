@@ -1,0 +1,269 @@
+{
+  "engine": "DiTuS v0.16.7 Closed-Loop Electro-Thermal SHADOW_COMPARE",
+  "project_schema": "0.16.4",
+  "mode": "SHADOW_COMPARE",
+  "coupling_mode": "CLOSED_LOOP_GLOBAL_EM_REAL_XY_THERMAL",
+  "converged": true,
+  "iteration_count": 7,
+  "maximum_iterations": 20,
+  "temperature_tolerance_c": 0.08,
+  "current_tolerance_percent": 0.1,
+  "loss_tolerance_percent": 0.1,
+  "final_maximum_conductor_temperature_c": 35.459724508636725,
+  "final_lambda1": 0.021574057666895623,
+  "final_core_loss_w": 8432.09198564098,
+  "final_sheath_loss_w": 181.91443875078693,
+  "maximum_core_current_imbalance_percent": 38.08777370519526,
+  "ampacity_shadow": {
+    "converged": true,
+    "rating_factor": 2.45875,
+    "circuit_rating_currents_a": {
+      "C1": 2212.875,
+      "C2": 1475.2500000000002
+    },
+    "temperature_limit_c": 90.0,
+    "critical_region_id": "TR-ET-DEMO",
+    "critical_cable_id": "C1-A-2",
+    "evaluation_count": 12
+  },
+  "iterations": [
+    {
+      "iteration": 1,
+      "maximum_temperature_residual_c": 15.506573516020616,
+      "maximum_core_current_change_percent": Infinity,
+      "maximum_sheath_current_change_percent": Infinity,
+      "active_loss_change_percent": Infinity,
+      "maximum_conductor_temperature_c": 35.80039626431214,
+      "maximum_sheath_temperature_c": 34.18374083026788,
+      "total_core_loss_w": 8794.44577210664,
+      "total_sheath_loss_w": 180.76609824146186,
+      "lambda1": 0.02055457534513409,
+      "em_methods_agree": true,
+      "thermal_regions_converged": true
+    },
+    {
+      "iteration": 2,
+      "maximum_temperature_residual_c": 6.2978200626518195,
+      "maximum_core_current_change_percent": 0.0701801237701755,
+      "maximum_sheath_current_change_percent": 0.9637921478861152,
+      "active_loss_change_percent": 2.367112267374242,
+      "maximum_conductor_temperature_c": 35.60130639476254,
+      "maximum_sheath_temperature_c": 34.01517651327577,
+      "total_core_loss_w": 8581.355282204458,
+      "total_sheath_loss_w": 181.40324693780417,
+      "lambda1": 0.021139230456287975,
+      "em_methods_agree": true,
+      "thermal_regions_converged": true
+    },
+    {
+      "iteration": 3,
+      "maximum_temperature_residual_c": 2.5581332493203988,
+      "maximum_core_current_change_percent": 0.02988007716543519,
+      "maximum_sheath_current_change_percent": 0.4109398106938307,
+      "active_loss_change_percent": 1.0056464869537882,
+      "maximum_conductor_temperature_c": 35.517936743871715,
+      "maximum_sheath_temperature_c": 33.94467940430086,
+      "total_core_loss_w": 8492.94360184128,
+      "total_sheath_loss_w": 181.69255399241973,
+      "lambda1": 0.02139335459063081,
+      "em_methods_agree": true,
+      "thermal_regions_converged": true
+    },
+    {
+      "iteration": 4,
+      "maximum_temperature_residual_c": 1.0392372512743222,
+      "maximum_core_current_change_percent": 0.012646691894015101,
+      "maximum_sheath_current_change_percent": 0.17428106530617724,
+      "active_loss_change_percent": 0.4214233848362696,
+      "maximum_conductor_temperature_c": 35.483025692297154,
+      "maximum_sheath_temperature_c": 33.91519594663122,
+      "total_core_loss_w": 8456.257603834754,
+      "total_sheath_loss_w": 181.82160668880022,
+      "lambda1": 0.021501427133244797,
+      "em_methods_agree": true,
+      "thermal_regions_converged": true
+    },
+    {
+      "iteration": 5,
+      "maximum_temperature_residual_c": 0.4222458874998196,
+      "maximum_core_current_change_percent": 0.005335971267728308,
+      "maximum_sheath_current_change_percent": 0.07369340698602392,
+      "active_loss_change_percent": 0.17558686983166794,
+      "maximum_conductor_temperature_c": 35.46840750808031,
+      "maximum_sheath_temperature_c": 33.9028656580536,
+      "total_core_loss_w": 8441.033301594052,
+      "total_sheath_loss_w": 181.87857603016343,
+      "lambda1": 0.02154695634192279,
+      "em_methods_agree": true,
+      "thermal_regions_converged": true
+    },
+    {
+      "iteration": 6,
+      "maximum_temperature_residual_c": 0.1715837130843063,
+      "maximum_core_current_change_percent": 0.0022471221716043603,
+      "maximum_sheath_current_change_percent": 0.03110014637343999,
+      "active_loss_change_percent": 0.072987284082099,
+      "maximum_conductor_temperature_c": 35.46228694713404,
+      "maximum_sheath_temperature_c": 33.89770921670574,
+      "total_core_loss_w": 8434.714699451828,
+      "total_sheath_loss_w": 181.90354898411687,
+      "lambda1": 0.02156605830377864,
+      "em_methods_agree": true,
+      "thermal_regions_converged": true
+    },
+    {
+      "iteration": 7,
+      "maximum_temperature_residual_c": 0.06973445495888342,
+      "maximum_core_current_change_percent": 0.0009450590053138815,
+      "maximum_sheath_current_change_percent": 0.013105702156592838,
+      "active_loss_change_percent": 0.03031147451207437,
+      "maximum_conductor_temperature_c": 35.459724508636725,
+      "maximum_sheath_temperature_c": 33.895552928549215,
+      "total_core_loss_w": 8432.09198564098,
+      "total_sheath_loss_w": 181.91443875078693,
+      "lambda1": 0.021574057666895623,
+      "em_methods_agree": true,
+      "thermal_regions_converged": true
+    }
+  ],
+  "regions": [
+    {
+      "region_id": "TR-ET-DEMO",
+      "cross_section_id": "ICS-ET-DEMO",
+      "maximum_nodal_conductor_temperature_c": 35.459724508636725,
+      "nodal_energy_balance_error_percent": 5.092198044495336e-11,
+      "cables": [
+        {
+          "physical_cable_id": "C1-A-1",
+          "key": "C1:A:P1",
+          "current_a": 402.61518867890965,
+          "conductor_loss_w_m": 2.547368481108503,
+          "sheath_loss_w_m": 0.08090205352982541,
+          "nodal_jacket_temperature_c": 31.750065934035312,
+          "nodal_conductor_temperature_c": 33.09972237964407
+        },
+        {
+          "physical_cable_id": "C1-A-2",
+          "key": "C1:A:P2",
+          "current_a": 502.22131478926303,
+          "conductor_loss_w_m": 3.9985577662936294,
+          "sheath_loss_w_m": 0.058849801196280464,
+          "nodal_jacket_temperature_c": 33.435157165744215,
+          "nodal_conductor_temperature_c": 35.459724508636725
+        },
+        {
+          "physical_cable_id": "C1-B-1",
+          "key": "C1:B:P1",
+          "current_a": 436.46312296152735,
+          "conductor_loss_w_m": 3.00624418730385,
+          "sheath_loss_w_m": 0.0788919175400169,
+          "nodal_jacket_temperature_c": 32.661897744673325,
+          "nodal_conductor_temperature_c": 34.225462528694884
+        },
+        {
+          "physical_cable_id": "C1-B-2",
+          "key": "C1:B:P2",
+          "current_a": 465.07002959184285,
+          "conductor_loss_w_m": 3.4198881509395656,
+          "sheath_loss_w_m": 0.06057199174938404,
+          "nodal_jacket_temperature_c": 32.99644461660668,
+          "nodal_conductor_temperature_c": 34.7511794048984
+        },
+        {
+          "physical_cable_id": "C1-C-1",
+          "key": "C1:C:P1",
+          "current_a": 505.33339629376155,
+          "conductor_loss_w_m": 4.047366123565846,
+          "sheath_loss_w_m": 0.07978278306134466,
+          "nodal_jacket_temperature_c": 33.350158006516835,
+          "nodal_conductor_temperature_c": 35.399595517023386
+        },
+        {
+          "physical_cable_id": "C1-C-2",
+          "key": "C1:C:P2",
+          "current_a": 396.6573229576667,
+          "conductor_loss_w_m": 2.475555125667548,
+          "sheath_loss_w_m": 0.05865370499037245,
+          "nodal_jacket_temperature_c": 32.113601195073045,
+          "nodal_conductor_temperature_c": 33.427521699003464
+        },
+        {
+          "physical_cable_id": "C2-A-1",
+          "key": "C2:A:P1",
+          "current_a": 358.07513294911513,
+          "conductor_loss_w_m": 2.0029946337550437,
+          "sheath_loss_w_m": 0.02894146708830533,
+          "nodal_jacket_temperature_c": 30.418913760852654,
+          "nodal_conductor_temperature_c": 31.509363757685154
+        },
+        {
+          "physical_cable_id": "C2-A-2",
+          "key": "C2:A:P2",
+          "current_a": 243.50995036136257,
+          "conductor_loss_w_m": 0.9187699584467752,
+          "sheath_loss_w_m": 0.034045937280749915,
+          "nodal_jacket_temperature_c": 28.747843224991396,
+          "nodal_conductor_temperature_c": 29.332909337130335
+        },
+        {
+          "physical_cable_id": "C2-B-1",
+          "key": "C2:B:P1",
+          "current_a": 323.5958658572952,
+          "conductor_loss_w_m": 1.6346094016950037,
+          "sheath_loss_w_m": 0.0303217234228994,
+          "nodal_jacket_temperature_c": 30.392295329575305,
+          "nodal_conductor_temperature_c": 31.31099641618958
+        },
+        {
+          "physical_cable_id": "C2-B-2",
+          "key": "C2:B:P2",
+          "current_a": 276.5624587091204,
+          "conductor_loss_w_m": 1.1892634365733246,
+          "sheath_loss_w_m": 0.03263033575830252,
+          "nodal_jacket_temperature_c": 29.548277118207345,
+          "nodal_conductor_temperature_c": 30.259412683294027
+        },
+        {
+          "physical_cable_id": "C2-C-1",
+          "key": "C2:C:P1",
+          "current_a": 261.4442086729607,
+          "conductor_loss_w_m": 1.0649352662822373,
+          "sheath_loss_w_m": 0.029278994502479685,
+          "nodal_jacket_temperature_c": 30.14146366391818,
+          "nodal_conductor_temperature_c": 30.79425255408235
+        },
+        {
+          "physical_cable_id": "C2-C-2",
+          "key": "C2:C:P2",
+          "current_a": 339.8265073351652,
+          "conductor_loss_w_m": 1.8014207538386071,
+          "sheath_loss_w_m": 0.03351075238266236,
+          "nodal_jacket_temperature_c": 30.125363124525393,
+          "nodal_conductor_temperature_c": 31.122217120958982
+        }
+      ]
+    }
+  ],
+  "issues": [
+    {
+      "severity": "INFO",
+      "code": "SHADOW_ONLY",
+      "message": "Kapalı çevrim sonucu mevcut IEC, bonding, termal üretim sonuçlarını ve proje λ1 değerini değiştirmez."
+    },
+    {
+      "severity": "INFO",
+      "code": "TEMPERATURE_DEPENDENT_CORE_AND_SHEATH_RESISTANCE",
+      "message": "Her iterasyonda fiziksel core, metalik kılıf ve varsa GCC dirençleri çözülmüş sıcaklıklardan yeniden oluşturulur."
+    },
+    {
+      "severity": "WARNING",
+      "code": "PROXIMITY_SCOPE_REMAINS_V0164",
+      "message": "Rac proximity bileşeni henüz tam N-kablo x-y proximity integralinden değil v0.16.4 fiziksel parametre kapsamından gelir."
+    },
+    {
+      "severity": "WARNING",
+      "code": "ARMOUR_PHYSICS_PENDING",
+      "message": "Zırh kaybı fiziksel zırh ağı tamamlanana kadar legacy λ2 ile termal kaynağa eklenir."
+    }
+  ]
+}

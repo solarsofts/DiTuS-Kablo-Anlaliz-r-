@@ -1,0 +1,2254 @@
+{
+  "reference": "DiTuS v0.16.9.4.34 project, calculation and procurement-summary reporting engine. Reports reproduce the project state and calculation results supplied to the engine; they do not turn conditional or incomplete calculations into final design approval.",
+  "generated_at": "2026-08-07T12:45:04",
+  "project_name": "Sentetik 20 km Katalog Uygulama Örneği",
+  "project_code": "DITUS-DEMO-20KM-APPLIED",
+  "project_signature_sha256": "0b76ac9b7eba6fb2b824ab556dc0174ac10701422b319bea3c44eda6e1f0f8a5",
+  "metadata": {
+    "report_type": "DESIGN_REPORT",
+    "title": "Sentetik 20 km Yeraltı Kablo Proje ve Hesap Raporu",
+    "document_no": "DITUS-DEMO-20KM-RPT-001",
+    "revision": "00",
+    "issue_date": "2026-08-07",
+    "client": "Sentetik 20 km Örnek Hat",
+    "contractor": "",
+    "prepared_by": "",
+    "checked_by": "Teknik kontrol bekliyor",
+    "approval_status": "TASLAK - KOŞULLU",
+    "confidentiality": ""
+  },
+  "selected_modules": [
+    "PROJECT_SUMMARY",
+    "DESIGN_BASIS",
+    "SOURCE_AUDIT",
+    "CABLE_CONSTRUCTION",
+    "ROUTE_AND_REGIONS",
+    "VOLTAGE_DROP",
+    "IEC60287",
+    "NODAL_THERMAL",
+    "BONDING",
+    "FAULT_EPR",
+    "SVL",
+    "PROCUREMENT_SUMMARY",
+    "WARNINGS_LIMITATIONS"
+  ],
+  "sections": [
+    {
+      "section_id": "PROJECT_SUMMARY",
+      "title": "Proje özeti",
+      "status": "AVAILABLE",
+      "paragraphs": [
+        "Bu rapor, rapor üretildiği anda DiTuS proje modelinde bulunan verileri ve bu oturumda rapor motoruna aktarılan hesap sonuçlarını esas alır."
+      ],
+      "tables": [
+        {
+          "title": "Proje kimliği",
+          "headers": [
+            "Alan",
+            "Değer"
+          ],
+          "rows": [
+            [
+              "Proje adı",
+              "Sentetik 20 km Katalog Uygulama Örneği"
+            ],
+            [
+              "Proje kodu",
+              "DITUS-DEMO-20KM-APPLIED"
+            ],
+            [
+              "Açıklama",
+              "Tamamen sentetik, herhangi bir gerçek tesis veya müşteriyi temsil etmeyen 20 km yeraltı kablo tasarım örneği. Eğitim, arayüz denetimi ve regresyon içindir."
+            ],
+            [
+              "Standart profili",
+              "IEC + IEEE + CIGRE"
+            ],
+            [
+              "Proje şema sürümü",
+              "0.16.4"
+            ],
+            [
+              "Oluşturma zamanı",
+              "2026-01-01T00:00:00"
+            ],
+            [
+              "Son değişiklik",
+              "2026-01-01T00:00:00"
+            ],
+            [
+              "Kapsam",
+              "UNDERGROUND_ONLY"
+            ]
+          ],
+          "notes": []
+        }
+      ],
+      "warnings": [],
+      "trace": []
+    },
+    {
+      "section_id": "DESIGN_BASIS",
+      "title": "Tasarım esası ve yük senaryoları",
+      "status": "AVAILABLE",
+      "paragraphs": [],
+      "tables": [
+        {
+          "title": "Tasarım girdileri",
+          "headers": [
+            "Parametre",
+            "Değer"
+          ],
+          "rows": [
+            [
+              "Nominal sistem gerilimi",
+              "34.500 kV"
+            ],
+            [
+              "Frekans",
+              "50.00 Hz"
+            ],
+            [
+              "Devre sayısı",
+              "2"
+            ],
+            [
+              "Aktif devre sayısı",
+              "2"
+            ],
+            [
+              "N-1 etkin",
+              "Evet"
+            ],
+            [
+              "Topraklama tipi",
+              "DIRECT_GROUNDED"
+            ],
+            [
+              "Yük giriş modu",
+              "APPARENT_POWER_MVA"
+            ],
+            [
+              "Aktif güç",
+              "19.000 MW"
+            ],
+            [
+              "Görünür güç",
+              "20.000 MVA"
+            ],
+            [
+              "Güç faktörü",
+              "0.9500"
+            ],
+            [
+              "Normal toplam akım",
+              "334.696 A"
+            ],
+            [
+              "Normal akım / aktif devre",
+              "167.348 A"
+            ],
+            [
+              "N-1 akımı / devre",
+              "334.696 A"
+            ],
+            [
+              "Tasarım akımı / devre",
+              "386.574 A"
+            ],
+            [
+              "Tasarım marjı",
+              "10.00 %"
+            ],
+            [
+              "Toplam yeraltı güzergâhı",
+              "20000.000 m"
+            ],
+            [
+              "Başlangıç kurulum profili",
+              "DIRECT_BURIED_TREFOIL"
+            ],
+            [
+              "Toprak ısıl özdirenci",
+              "1.2000 K.m/W"
+            ],
+            [
+              "Toprak verisi kaynağı",
+              "SYNTHETIC_DESIGN_INPUT"
+            ]
+          ],
+          "notes": []
+        }
+      ],
+      "warnings": [],
+      "trace": []
+    },
+    {
+      "section_id": "SOURCE_AUDIT",
+      "title": "Kaynak veri ve çelişki denetimi",
+      "status": "PASS",
+      "paragraphs": [],
+      "tables": [
+        {
+          "title": "Kaynak denetimi özeti",
+          "headers": [
+            "Alan",
+            "Değer"
+          ],
+          "rows": [
+            [
+              "Kaynak adı",
+              "DiTuS sentetik örnek veri üreticisi"
+            ],
+            [
+              "Kaynak dosya",
+              "—"
+            ],
+            [
+              "Kapsam",
+              "UNDERGROUND_ONLY"
+            ],
+            [
+              "Kapsam dışı alanlar",
+              "—"
+            ],
+            [
+              "Denetim durumu",
+              "PASS"
+            ]
+          ],
+          "notes": []
+        }
+      ],
+      "warnings": [],
+      "trace": []
+    },
+    {
+      "section_id": "CABLE_CONSTRUCTION",
+      "title": "Kablo konstrüksiyonu ve veri kaynağı",
+      "status": "AVAILABLE",
+      "paragraphs": [],
+      "tables": [
+        {
+          "title": "Kablo özeti",
+          "headers": [
+            "Parametre",
+            "Değer"
+          ],
+          "rows": [
+            [
+              "Kablo adı",
+              "Üretici A sentetik aday kablosu"
+            ],
+            [
+              "Üretici",
+              "Üretici A"
+            ],
+            [
+              "Seri / model",
+              "Sentetik OG Aday Serisi / Sentetik Al 1x400/35"
+            ],
+            [
+              "Gerilim sınıfı",
+              "20.3/35 (40.5) kV"
+            ],
+            [
+              "İletken",
+              "Al 400.0 mm²"
+            ],
+            [
+              "Paralel kablo / faz",
+              "1"
+            ],
+            [
+              "Metalik ekran/kılıf kesiti",
+              "35.000 mm²"
+            ],
+            [
+              "Kablo dış çapı",
+              "56.579 mm"
+            ],
+            [
+              "Rdc20",
+              "0.07780000 Ω/km"
+            ],
+            [
+              "Kapasitans",
+              "0.244587 µF/km"
+            ],
+            [
+              "Azami iletken sıcaklığı",
+              "90.00 °C"
+            ],
+            [
+              "Veri durumu",
+              "CONDITIONAL"
+            ],
+            [
+              "Katalog kayıt kimliği",
+              "SYN-MFR-A-MV40K5-AL400-35"
+            ],
+            [
+              "Proje kablosu kayıt kimliği",
+              "SNAP-33A0FED1CC2D"
+            ],
+            [
+              "Proje kablosu veri imzası",
+              "33a0fed1cc2d27f69b39e941cc00d0468344ff7557b824622803f3788de3f113"
+            ]
+          ],
+          "notes": []
+        },
+        {
+          "title": "Parametrik kablo katmanları",
+          "headers": [
+            "ID",
+            "Katman",
+            "Tip",
+            "İç çap [mm]",
+            "Dış çap [mm]",
+            "Malzeme",
+            "ρth [K.m/W]",
+            "Alan [mm²]",
+            "Kaynak"
+          ],
+          "rows": [
+            [
+              "L01",
+              "İletken",
+              "CONDUCTOR",
+              "0.000",
+              "23.788",
+              "Al",
+              "0.0000",
+              "400.000",
+              "SRC-CALC-PARAMETRIC-GENERATOR"
+            ],
+            [
+              "L02",
+              "İç yarı iletken",
+              "CONDUCTOR_SCREEN",
+              "23.788",
+              "26.188",
+              "Semiconductive XLPE",
+              "3.5000",
+              "0.000",
+              "SRC-ASSUME-PHASE2-CONSTRUCTION"
+            ],
+            [
+              "L03",
+              "XLPE izolasyon",
+              "INSULATION",
+              "26.188",
+              "44.188",
+              "XLPE",
+              "3.5000",
+              "0.000",
+              "SRC-STD-HD620-S3"
+            ],
+            [
+              "L04",
+              "Dış yarı iletken",
+              "INSULATION_SCREEN",
+              "44.188",
+              "46.188",
+              "Semiconductive XLPE",
+              "3.5000",
+              "0.000",
+              "SRC-ASSUME-PHASE2-CONSTRUCTION"
+            ],
+            [
+              "L05",
+              "Bantlar / bedding",
+              "WATER_BLOCKING",
+              "46.188",
+              "48.588",
+              "Water blocking tape",
+              "5.0000",
+              "0.000",
+              "SRC-ASSUME-PHASE2-CONSTRUCTION"
+            ],
+            [
+              "L06",
+              "Bakır tel ekran",
+              "METALLIC_SCREEN",
+              "48.588",
+              "50.579",
+              "Cu",
+              "0.0000",
+              "35.000",
+              "SRC-ASSUME-PHASE2-CONSTRUCTION"
+            ],
+            [
+              "L07",
+              "Dış kılıf",
+              "OUTER_SHEATH",
+              "50.579",
+              "56.579",
+              "PVC",
+              "6.0000",
+              "0.000",
+              "SRC-CALC-PARAMETRIC-GENERATOR"
+            ]
+          ],
+          "notes": []
+        },
+        {
+          "title": "Kablo veri kaynakları",
+          "headers": [
+            "Kaynak ID",
+            "Tür",
+            "Doküman",
+            "Revizyon",
+            "Sayfa",
+            "Doğrulama"
+          ],
+          "rows": [
+            [
+              "SRC-STD-IEC60228",
+              "STANDARD_DERIVED",
+              "IEC 60228 — Conductors of insulated cables",
+              "profile reference",
+              "—",
+              "UNVERIFIED"
+            ],
+            [
+              "SRC-STD-IEC60287-2-1",
+              "STANDARD_DERIVED",
+              "IEC 60287-2-1 — Thermal resistance",
+              "material profile",
+              "—",
+              "UNVERIFIED"
+            ],
+            [
+              "SRC-STD-HD620-S3",
+              "STANDARD_DERIVED",
+              "HD 620 S3 — voltage construction profile",
+              "profile reference",
+              "—",
+              "UNVERIFIED"
+            ],
+            [
+              "SRC-ASSUME-PHASE2-CONSTRUCTION",
+              "USER_ASSUMPTION",
+              "DiTuS FAZ 2 jenerik konstrüksiyon varsayımları",
+              "0.16.9.4.27",
+              "—",
+              "UNVERIFIED"
+            ],
+            [
+              "SRC-CALC-PARAMETRIC-GENERATOR",
+              "CALCULATED",
+              "DiTuS parametrik kablo katman üreteci",
+              "0.16.9.4.27",
+              "—",
+              "UNVERIFIED"
+            ],
+            [
+              "SRC-SYN-MFR-A-MV40K5-AL400-35",
+              "CATALOG",
+              "DiTuS sentetik katalog karşılaştırma veri seti",
+              "FAZ 2",
+              "Sentetik satır A",
+              "UNVERIFIED"
+            ]
+          ],
+          "notes": []
+        }
+      ],
+      "warnings": [
+        "Kablo veri durumu nihai doğrulanmış değildir: CONDITIONAL"
+      ],
+      "trace": []
+    },
+    {
+      "section_id": "ROUTE_AND_REGIONS",
+      "title": "Güzergâh ve termal bölgeler",
+      "status": "AVAILABLE",
+      "paragraphs": [],
+      "tables": [
+        {
+          "title": "Yeraltı güzergâh bölümleri",
+          "headers": [
+            "No",
+            "Bölüm",
+            "Tip",
+            "Başlangıç [m]",
+            "Bitiş [m]",
+            "Uzunluk [m]",
+            "Derinlik [m]",
+            "Faz aralığı [m]",
+            "Toprak ρth",
+            "Veri durumu",
+            "Not"
+          ],
+          "rows": [
+            [
+              "1",
+              "TR-01 Sentetik termal bölge 1",
+              "DIRECT_BURIED",
+              "0.000",
+              "12000.000",
+              "12000.000",
+              "1.433",
+              "0.057",
+              "1.2000",
+              "DESIGN",
+              "Bölge TR-01: 0.000-12000.000 m | Şablon = TPL-DG-TREFOIL-TB01 / Doğrudan gömülü / trefoil / termal dolgu | Veri katmanı = DESIGN | Doğal zemin = MAT-NATIVE-01, rho=1.2000 K·m/W | Kablo çevresi = MAT-TB-01, rho=0.7500 K·m/W | Kurulum / dış model = DIRECT_BURIED / AUTO_MIXED_ZONE | Eşdeğer termal dolgu yarıçapı = 0.0297 m | Şablon değerleri bölge override değerleriyle birleştirildi."
+            ],
+            [
+              "2",
+              "TR-02 Sentetik termal bölge 2",
+              "DIRECT_BURIED",
+              "12000.000",
+              "15000.000",
+              "3000.000",
+              "1.533",
+              "0.057",
+              "1.8000",
+              "DESIGN",
+              "Bölge TR-02: 12000.000-15000.000 m | Şablon = TPL-DG-TREFOIL-TB01 / Doğrudan gömülü / trefoil / termal dolgu | Veri katmanı = DESIGN | Doğal zemin = MAT-NATIVE-01, rho=1.8000 K·m/W | Kablo çevresi = MAT-TB-01, rho=0.7500 K·m/W | Kurulum / dış model = DIRECT_BURIED / AUTO_MIXED_ZONE | Eşdeğer termal dolgu yarıçapı = 0.0297 m | Şablon değerleri bölge override değerleriyle birleştirildi."
+            ],
+            [
+              "3",
+              "TR-03 Sentetik termal bölge 3",
+              "DUCT_BANK",
+              "15000.000",
+              "16000.000",
+              "1000.000",
+              "1.633",
+              "0.057",
+              "1.5000",
+              "DESIGN",
+              "Bölge TR-03: 15000.000-16000.000 m | Şablon = TPL-DUCT-MANUAL / Boru bankası / manuel T4 | Veri katmanı = DESIGN | Doğal zemin = MAT-NATIVE-01, rho=1.5000 K·m/W | Kablo çevresi = MAT-CONCRETE-01, rho=1.0000 K·m/W | Kurulum / dış model = DUCT_BANK / MANUAL | Eşdeğer termal dolgu yarıçapı = 0.0297 m | Şablon değerleri bölge override değerleriyle birleştirildi."
+            ],
+            [
+              "4",
+              "TR-04 Sentetik termal bölge 4",
+              "HDD",
+              "16000.000",
+              "20000.000",
+              "4000.000",
+              "5.533",
+              "0.057",
+              "1.6000",
+              "DESIGN",
+              "Bölge TR-04: 16000.000-20000.000 m | Şablon = TPL-HDD-MANUAL / HDD / manuel T4 | Veri katmanı = DESIGN | Doğal zemin = MAT-NATIVE-01, rho=1.6000 K·m/W | Kablo çevresi = MAT-CONCRETE-01, rho=1.0000 K·m/W | Kurulum / dış model = HDD / MANUAL | Eşdeğer termal dolgu yarıçapı = 0.0297 m | Şablon değerleri bölge override değerleriyle birleştirildi."
+            ]
+          ],
+          "notes": []
+        },
+        {
+          "title": "Termal bölgeler",
+          "headers": [
+            "Bölge ID",
+            "Ad",
+            "Başlangıç [m]",
+            "Bitiş [m]",
+            "Kesit şablonu",
+            "Durum",
+            "Kaynak"
+          ],
+          "rows": [
+            [
+              "TR-01",
+              "Sentetik termal bölge 1",
+              "0.000",
+              "12000.000",
+              "TPL-DG-TREFOIL-TB01",
+              "DESIGN",
+              "INSTALLATION_PRODUCTION_LINK:ICS-01"
+            ],
+            [
+              "TR-02",
+              "Sentetik termal bölge 2",
+              "12000.000",
+              "15000.000",
+              "TPL-DG-TREFOIL-TB01",
+              "DESIGN",
+              "INSTALLATION_PRODUCTION_LINK:ICS-02"
+            ],
+            [
+              "TR-03",
+              "Sentetik termal bölge 3",
+              "15000.000",
+              "16000.000",
+              "TPL-DUCT-MANUAL",
+              "DESIGN",
+              "INSTALLATION_PRODUCTION_LINK:ICS-03"
+            ],
+            [
+              "TR-04",
+              "Sentetik termal bölge 4",
+              "16000.000",
+              "20000.000",
+              "TPL-HDD-MANUAL",
+              "DESIGN",
+              "INSTALLATION_PRODUCTION_LINK:ICS-04"
+            ]
+          ],
+          "notes": []
+        }
+      ],
+      "warnings": [],
+      "trace": []
+    },
+    {
+      "section_id": "VOLTAGE_DROP",
+      "title": "Gerilim düşümü ön hesabı",
+      "status": "AVAILABLE",
+      "paragraphs": [
+        "Bu bölüm katalog/proje R-L verileriyle yapılan dengeli üç faz ön hesabıdır; termal rating veya nihai uygunluk kararı değildir."
+      ],
+      "tables": [
+        {
+          "title": "Gerilim düşümü",
+          "headers": [
+            "Parametre",
+            "Değer"
+          ],
+          "rows": [
+            [
+              "Toplam güzergâh",
+              "20000.000 m"
+            ],
+            [
+              "Kablo başına akım",
+              "386.574 A"
+            ],
+            [
+              "R @ işletme",
+              "0.07780000 Ω/km"
+            ],
+            [
+              "X",
+              "0.12566371 Ω/km"
+            ],
+            [
+              "Gerilim düşümü",
+              "1515.20573 V"
+            ],
+            [
+              "Gerilim düşümü",
+              "4.391901 %"
+            ],
+            [
+              "Kaynak",
+              "Üretici A Sentetik Al 1x400/35; Sentetik satır A"
+            ]
+          ],
+          "notes": []
+        }
+      ],
+      "warnings": [],
+      "trace": []
+    },
+    {
+      "section_id": "IEC60287",
+      "title": "IEC 60287 sürekli akım taşıma kapasitesi",
+      "status": "CONDITIONAL",
+      "paragraphs": [],
+      "tables": [
+        {
+          "title": "Senaryo bazlı üretim elektro-termal çalışma noktaları",
+          "headers": [
+            "Senaryo",
+            "Ad",
+            "Devre akım/enerji durumu",
+            "Kapsanan kimlikler",
+            "Termal yöntem",
+            "Kuruma malzemeleri",
+            "Tamamlanma",
+            "Uygunluk",
+            "Tcond max [°C]",
+            "Kritik bölge",
+            "Kritik kablo",
+            "λ1′ network",
+            "λ1″ eddy",
+            "λ1 rating",
+            "Sheath-loss authority",
+            "λ1″ kaynağı",
+            "Neden kodları",
+            "Kayıp vektörü"
+          ],
+          "rows": [
+            [
+              "NORMAL",
+              "Normal işletme",
+              "C1=167.348 A, C2=167.348 A",
+              "NORMAL",
+              "ANALYTIC",
+              "—",
+              "COMPLETE",
+              "UYGUN",
+              "41.553",
+              "TR-04",
+              "C2-B-1",
+              "0.0001967",
+              "0.0000000",
+              "0.0001967",
+              "BLOCKED",
+              "NOT_AVAILABLE",
+              "LAMBDA1_EDDY_CLOSED_FORM_OUT_OF_SCOPE_MULTI_CIRCUIT",
+              "LOSS-B7A669BF1D28AD19"
+            ],
+            [
+              "DESIGN",
+              "Tasarım-marjlı",
+              "C1=386.574 A, C2=386.574 A",
+              "DESIGN",
+              "ANALYTIC",
+              "—",
+              "COMPLETE",
+              "UYGUN_DEGIL",
+              "144.736",
+              "TR-04",
+              "C2-B-1",
+              "0.0001344",
+              "0.0000000",
+              "0.0001344",
+              "BLOCKED",
+              "NOT_AVAILABLE",
+              "LAMBDA1_EDDY_CLOSED_FORM_OUT_OF_SCOPE_MULTI_CIRCUIT",
+              "LOSS-F0F28C6A1C6B4A82"
+            ],
+            [
+              "N_MINUS_ONE_C1_OUT",
+              "N-1 — C1 devre dışı",
+              "C1=OFF, C2=334.696 A",
+              "N_MINUS_ONE_C1_OUT",
+              "ANALYTIC",
+              "—",
+              "COMPLETE",
+              "UYGUN",
+              "76.698",
+              "TR-04",
+              "C2-C-1",
+              "0.0000938",
+              "0.0000000",
+              "0.0000338",
+              "BLOCKED",
+              "NOT_AVAILABLE",
+              "LAMBDA1_EDDY_CLOSED_FORM_OUT_OF_SCOPE_MULTI_CIRCUIT",
+              "LOSS-126289D67A7D4CDA"
+            ],
+            [
+              "N_MINUS_ONE_C2_OUT",
+              "N-1 — C2 devre dışı",
+              "C1=334.696 A, C2=OFF",
+              "N_MINUS_ONE_C2_OUT",
+              "ANALYTIC",
+              "—",
+              "COMPLETE",
+              "UYGUN",
+              "76.698",
+              "TR-04",
+              "C1-B-1",
+              "0.0000938",
+              "0.0000000",
+              "0.0000338",
+              "BLOCKED",
+              "NOT_AVAILABLE",
+              "LAMBDA1_EDDY_CLOSED_FORM_OUT_OF_SCOPE_MULTI_CIRCUIT",
+              "LOSS-C6EA2801F3EDFFBD"
+            ]
+          ],
+          "notes": [
+            "λ1′ network, global primitive ağın boyuna metalik kılıf I²R kayıp oranıdır; IEC kapalı-form λ1′ ile cebirsel özdeşlik iddiası yoktur.",
+            "λ1 rating = network boyuna kılıf kaybı + uygulanabilir IEC/izlenebilir harici λ1″ eddy-current bileşenidir.",
+            "Devre dışı kablolar fiziksel geometriden silinmez, ancak iletken/kılıf/dielektrik kayıpları sıfırlanır.",
+            "Kritik-izoterm kuruma verisi etkinse üretim termal yöntemi AUTO tarafından nodal çözüme yükseltilir."
+          ]
+        }
+      ],
+      "warnings": [
+        "NORMAL: kılıf kaybı fiziği tamamlanmamış; IEC ampacity üretim otoritesi yok. Neden=LAMBDA1_EDDY_CLOSED_FORM_OUT_OF_SCOPE_MULTI_CIRCUIT.",
+        "DESIGN: kılıf kaybı fiziği tamamlanmamış; IEC ampacity üretim otoritesi yok. Neden=LAMBDA1_EDDY_CLOSED_FORM_OUT_OF_SCOPE_MULTI_CIRCUIT.",
+        "DESIGN: çözülen fiziksel çalışma noktası sıcaklık sınırını aşıyor.",
+        "N_MINUS_ONE_C1_OUT: kılıf kaybı fiziği tamamlanmamış; IEC ampacity üretim otoritesi yok. Neden=LAMBDA1_EDDY_CLOSED_FORM_OUT_OF_SCOPE_MULTI_CIRCUIT.",
+        "N_MINUS_ONE_C2_OUT: kılıf kaybı fiziği tamamlanmamış; IEC ampacity üretim otoritesi yok. Neden=LAMBDA1_EDDY_CLOSED_FORM_OUT_OF_SCOPE_MULTI_CIRCUIT."
+      ],
+      "trace": []
+    },
+    {
+      "section_id": "NODAL_THERMAL",
+      "title": "2D nodal kararlı termal analiz",
+      "status": "UYGUN DEĞİL",
+      "paragraphs": [],
+      "tables": [
+        {
+          "title": "2D nodal güzergâh senaryoları",
+          "headers": [
+            "Senaryo",
+            "Ad",
+            "I/kablo [A]",
+            "Güzergâh ampacity [A]",
+            "Kritik bölge",
+            "Tcond max [°C]",
+            "Durum"
+          ],
+          "rows": [
+            [
+              "NORMAL",
+              "Normal işletme",
+              "167.348",
+              "305.765",
+              "Sentetik termal bölge 4",
+              "41.761",
+              "UYGUN"
+            ],
+            [
+              "N_MINUS_ONE",
+              "N-1 / acil işletme",
+              "334.696",
+              "343.973",
+              "Sentetik termal bölge 4",
+              "85.781",
+              "UYGUN"
+            ],
+            [
+              "DESIGN",
+              "Tasarım-marjlı",
+              "386.574",
+              "343.973",
+              "Sentetik termal bölge 4",
+              "112.830",
+              "UYGUN DEĞİL"
+            ]
+          ],
+          "notes": []
+        },
+        {
+          "title": "Analitik–nodal yöntem otoritesi",
+          "headers": [
+            "Senaryo",
+            "Hesap temeli",
+            "Doğrulama",
+            "Veri hüküm temeli",
+            "Resmî [A]",
+            "Analitik [A]",
+            "Nodal [A]",
+            "ΔI [%]",
+            "ΔT [°C]"
+          ],
+          "rows": [
+            [
+              "NORMAL",
+              "NODAL_QUALITY_PENDING",
+              "NOT_RUN",
+              "CONDITIONAL",
+              "—",
+              "332.861",
+              "305.765",
+              "8.8617",
+              "-0.290"
+            ],
+            [
+              "N_MINUS_ONE",
+              "NODAL_QUALITY_PENDING",
+              "NOT_RUN",
+              "CONDITIONAL",
+              "—",
+              "332.861",
+              "343.973",
+              "-3.2305",
+              "5.065"
+            ],
+            [
+              "DESIGN",
+              "NODAL_QUALITY_PENDING",
+              "NOT_RUN",
+              "CONDITIONAL",
+              "—",
+              "332.861",
+              "343.973",
+              "-3.2305",
+              "6.163"
+            ]
+          ],
+          "notes": []
+        },
+        {
+          "title": "Bölgesel yöntem karşılaştırması",
+          "headers": [
+            "Senaryo",
+            "Bölge",
+            "İndirgeme",
+            "Hesap temeli",
+            "Doğrulama",
+            "Analitik [A]",
+            "Nodal [A]",
+            "ΔI [%]",
+            "ΔT [°C]",
+            "Nodal kalite"
+          ],
+          "rows": [
+            [
+              "NORMAL",
+              "TR-01",
+              "LAYERED",
+              "NODAL_QUALITY_PENDING",
+              "NOT_RUN",
+              "412.922",
+              "437.016",
+              "-5.5133",
+              "0.982",
+              "PENDING"
+            ],
+            [
+              "NORMAL",
+              "TR-02",
+              "LAYERED",
+              "NODAL_QUALITY_PENDING",
+              "NOT_RUN",
+              "332.861",
+              "419.887",
+              "-20.7262",
+              "5.150",
+              "PENDING"
+            ],
+            [
+              "NORMAL",
+              "TR-03",
+              "MANUAL_SOURCE",
+              "MANUAL_SOURCE",
+              "NOT_APPLICABLE",
+              "668.718",
+              "341.967",
+              "95.5505",
+              "-9.642",
+              "PENDING"
+            ],
+            [
+              "NORMAL",
+              "TR-04",
+              "MANUAL_SOURCE",
+              "MANUAL_SOURCE",
+              "NOT_APPLICABLE",
+              "679.256",
+              "305.765",
+              "122.1499",
+              "-13.525",
+              "PENDING"
+            ],
+            [
+              "N_MINUS_ONE",
+              "TR-01",
+              "LAYERED",
+              "NODAL_QUALITY_PENDING",
+              "NOT_RUN",
+              "412.922",
+              "497.291",
+              "-16.9657",
+              "13.427",
+              "PENDING"
+            ],
+            [
+              "N_MINUS_ONE",
+              "TR-02",
+              "LAYERED",
+              "NODAL_QUALITY_PENDING",
+              "NOT_RUN",
+              "332.861",
+              "479.629",
+              "-30.6004",
+              "35.845",
+              "PENDING"
+            ],
+            [
+              "N_MINUS_ONE",
+              "TR-03",
+              "MANUAL_SOURCE",
+              "MANUAL_SOURCE",
+              "NOT_APPLICABLE",
+              "668.718",
+              "370.570",
+              "80.4564",
+              "-35.844",
+              "PENDING"
+            ],
+            [
+              "N_MINUS_ONE",
+              "TR-04",
+              "MANUAL_SOURCE",
+              "MANUAL_SOURCE",
+              "NOT_APPLICABLE",
+              "679.256",
+              "343.973",
+              "97.4737",
+              "-47.466",
+              "PENDING"
+            ],
+            [
+              "DESIGN",
+              "TR-01",
+              "LAYERED",
+              "NODAL_QUALITY_PENDING",
+              "NOT_RUN",
+              "412.922",
+              "497.291",
+              "-16.9657",
+              "19.492",
+              "PENDING"
+            ],
+            [
+              "DESIGN",
+              "TR-02",
+              "LAYERED",
+              "NODAL_QUALITY_PENDING",
+              "NOT_RUN",
+              "332.861",
+              "479.619",
+              "-30.5990",
+              "53.737",
+              "PENDING"
+            ],
+            [
+              "DESIGN",
+              "TR-03",
+              "MANUAL_SOURCE",
+              "MANUAL_SOURCE",
+              "NOT_APPLICABLE",
+              "668.718",
+              "370.570",
+              "80.4564",
+              "-51.833",
+              "PENDING"
+            ],
+            [
+              "DESIGN",
+              "TR-04",
+              "MANUAL_SOURCE",
+              "MANUAL_SOURCE",
+              "NOT_APPLICABLE",
+              "679.256",
+              "343.973",
+              "97.4737",
+              "-69.777",
+              "PENDING"
+            ]
+          ],
+          "notes": []
+        },
+        {
+          "title": "2D nodal bölgesel sonuçlar",
+          "headers": [
+            "Senaryo",
+            "Bölge ID",
+            "Bölge",
+            "Başlangıç [m]",
+            "Bitiş [m]",
+            "I/kablo [A]",
+            "Ampacity [A]",
+            "Tcond max [°C]",
+            "Enerji dengesi [%]",
+            "Mesh",
+            "Kuruyan hücre",
+            "Kuruma çözümü",
+            "Durum"
+          ],
+          "rows": [
+            [
+              "NORMAL",
+              "TR-01",
+              "Sentetik termal bölge 1",
+              "0.000",
+              "12000.000",
+              "167.348",
+              "437.016",
+              "32.957",
+              "0.00000",
+              "98×53",
+              "YOK",
+              "PASS",
+              "UYGUN"
+            ],
+            [
+              "NORMAL",
+              "TR-02",
+              "Sentetik termal bölge 2",
+              "12000.000",
+              "15000.000",
+              "167.348",
+              "419.887",
+              "36.321",
+              "0.00000",
+              "98×55",
+              "YOK",
+              "PASS",
+              "UYGUN"
+            ],
+            [
+              "NORMAL",
+              "TR-03",
+              "Sentetik termal bölge 3",
+              "15000.000",
+              "16000.000",
+              "167.348",
+              "341.967",
+              "39.902",
+              "0.00000",
+              "98×53",
+              "YOK",
+              "PASS",
+              "UYGUN"
+            ],
+            [
+              "NORMAL",
+              "TR-04",
+              "Sentetik termal bölge 4",
+              "16000.000",
+              "20000.000",
+              "167.348",
+              "305.765",
+              "41.761",
+              "0.00000",
+              "174×124",
+              "YOK",
+              "PASS",
+              "UYGUN"
+            ],
+            [
+              "N_MINUS_ONE",
+              "TR-01",
+              "Sentetik termal bölge 1",
+              "0.000",
+              "12000.000",
+              "334.696",
+              "497.291",
+              "50.970",
+              "0.00000",
+              "98×53",
+              "YOK",
+              "PASS",
+              "UYGUN"
+            ],
+            [
+              "N_MINUS_ONE",
+              "TR-02",
+              "Sentetik termal bölge 2",
+              "12000.000",
+              "15000.000",
+              "334.696",
+              "479.629",
+              "55.001",
+              "0.00000",
+              "98×55",
+              "YOK",
+              "PASS",
+              "UYGUN"
+            ],
+            [
+              "N_MINUS_ONE",
+              "TR-03",
+              "Sentetik termal bölge 3",
+              "15000.000",
+              "16000.000",
+              "334.696",
+              "370.570",
+              "76.259",
+              "0.00000",
+              "98×53",
+              "YOK",
+              "PASS",
+              "UYGUN"
+            ],
+            [
+              "N_MINUS_ONE",
+              "TR-04",
+              "Sentetik termal bölge 4",
+              "16000.000",
+              "20000.000",
+              "334.696",
+              "343.973",
+              "85.781",
+              "0.00000",
+              "174×124",
+              "YOK",
+              "PASS",
+              "UYGUN"
+            ],
+            [
+              "DESIGN",
+              "TR-01",
+              "Sentetik termal bölge 1",
+              "0.000",
+              "12000.000",
+              "386.574",
+              "497.291",
+              "60.797",
+              "0.00000",
+              "98×53",
+              "YOK",
+              "PASS",
+              "UYGUN"
+            ],
+            [
+              "DESIGN",
+              "TR-02",
+              "Sentetik termal bölge 2",
+              "12000.000",
+              "15000.000",
+              "386.574",
+              "479.619",
+              "65.257",
+              "0.00000",
+              "98×55",
+              "YOK",
+              "PASS",
+              "UYGUN"
+            ],
+            [
+              "DESIGN",
+              "TR-03",
+              "Sentetik termal bölge 3",
+              "15000.000",
+              "16000.000",
+              "386.574",
+              "370.570",
+              "97.024",
+              "0.00000",
+              "98×53",
+              "YOK",
+              "PASS",
+              "UYGUN DEĞİL"
+            ],
+            [
+              "DESIGN",
+              "TR-04",
+              "Sentetik termal bölge 4",
+              "16000.000",
+              "20000.000",
+              "386.574",
+              "343.973",
+              "112.830",
+              "0.00000",
+              "174×124",
+              "YOK",
+              "PASS",
+              "UYGUN DEĞİL"
+            ]
+          ],
+          "notes": []
+        }
+      ],
+      "warnings": [
+        "En az bir termal malzeme ön tasarım varsayımıdır; TESTED/AS_BUILT veri gereklidir.",
+        "HDD kesiti 2D orta-kesit modelidir; giriş/çıkış ve eksenel 3D etkiler ayrıca doğrulanmalıdır.",
+        "Seçili kapsam izole/eksik-devre termal çözümüdür; diğer fiziksel kablolar pasif ısıl cisim olarak korunmuş, elektriksel kayıpları sıfırlanmıştır.",
+        "Analitik–nodal yöntem otoritesi NODAL_QUALITY_PENDING / NOT_RUN; kesin yöntem hükmü için inceleme gerekebilir."
+      ],
+      "trace": []
+    },
+    {
+      "section_id": "BONDING",
+      "title": "Metalik kılıf ve bonding",
+      "status": "AVAILABLE",
+      "paragraphs": [],
+      "tables": [
+        {
+          "title": "Legacy üç-loop bonding özeti — tanısal karşılaştırma, üretim otoritesi değildir",
+          "headers": [
+            "Parametre",
+            "Değer"
+          ],
+          "rows": [
+            [
+              "Bonding şeması",
+              "CROSS_BONDED"
+            ],
+            [
+              "Çözüm modu",
+              "PRIMITIVE_CIM"
+            ],
+            [
+              "Toplam uzunluk",
+              "20000.000 m"
+            ],
+            [
+              "Major section sayısı",
+              "7"
+            ],
+            [
+              "Maksimum standing voltage",
+              "19.069 V"
+            ],
+            [
+              "Proje voltage limiti",
+              "150.000 V"
+            ],
+            [
+              "Voltage kriteri",
+              "PASS"
+            ],
+            [
+              "Bonding lead kriteri",
+              "PASS"
+            ],
+            [
+              "Toplam metalik kılıf kaybı",
+              "6.234 W"
+            ],
+            [
+              "Legacy boyuna kılıf kayıp oranı",
+              "0.0000069"
+            ],
+            [
+              "İdeal iptal göstergesi",
+              "Hayır"
+            ]
+          ],
+          "notes": []
+        },
+        {
+          "title": "Metalik kılıf çevrimleri",
+          "headers": [
+            "Major",
+            "Çevrim",
+            "Yol",
+            "Residual EMF [V]",
+            "Akım [A]",
+            "Kayıp [W]"
+          ],
+          "rows": [
+            [
+              "1",
+              "M1-Loop A",
+              "A→B→C",
+              "0.00000",
+              "0.41998",
+              "0.29685"
+            ],
+            [
+              "1",
+              "M1-Loop B",
+              "B→C→A",
+              "0.00000",
+              "0.41998",
+              "0.29685"
+            ],
+            [
+              "1",
+              "M1-Loop C",
+              "C→A→B",
+              "0.00000",
+              "0.41998",
+              "0.29685"
+            ],
+            [
+              "2",
+              "M2-Loop A",
+              "A→B→C",
+              "0.00000",
+              "0.41998",
+              "0.29685"
+            ],
+            [
+              "2",
+              "M2-Loop B",
+              "B→C→A",
+              "0.00000",
+              "0.41998",
+              "0.29685"
+            ],
+            [
+              "2",
+              "M2-Loop C",
+              "C→A→B",
+              "0.00000",
+              "0.41998",
+              "0.29685"
+            ],
+            [
+              "3",
+              "M3-Loop A",
+              "A→B→C",
+              "0.00000",
+              "0.41998",
+              "0.29685"
+            ],
+            [
+              "3",
+              "M3-Loop B",
+              "B→C→A",
+              "0.00000",
+              "0.41998",
+              "0.29685"
+            ],
+            [
+              "3",
+              "M3-Loop C",
+              "C→A→B",
+              "0.00000",
+              "0.41998",
+              "0.29685"
+            ],
+            [
+              "4",
+              "M4-Loop A",
+              "A→B→C",
+              "0.00000",
+              "0.41998",
+              "0.29685"
+            ],
+            [
+              "4",
+              "M4-Loop B",
+              "B→C→A",
+              "0.00000",
+              "0.41998",
+              "0.29685"
+            ],
+            [
+              "4",
+              "M4-Loop C",
+              "C→A→B",
+              "0.00000",
+              "0.41998",
+              "0.29685"
+            ],
+            [
+              "5",
+              "M5-Loop A",
+              "A→B→C",
+              "0.00000",
+              "0.41998",
+              "0.29685"
+            ],
+            [
+              "5",
+              "M5-Loop B",
+              "B→C→A",
+              "0.00000",
+              "0.41998",
+              "0.29685"
+            ],
+            [
+              "5",
+              "M5-Loop C",
+              "C→A→B",
+              "0.00000",
+              "0.41998",
+              "0.29685"
+            ],
+            [
+              "6",
+              "M6-Loop A",
+              "A→B→C",
+              "0.00000",
+              "0.41998",
+              "0.29685"
+            ],
+            [
+              "6",
+              "M6-Loop B",
+              "B→C→A",
+              "0.00000",
+              "0.41998",
+              "0.29685"
+            ],
+            [
+              "6",
+              "M6-Loop C",
+              "C→A→B",
+              "0.00000",
+              "0.41998",
+              "0.29685"
+            ],
+            [
+              "7",
+              "M7-Loop A",
+              "A→B→C",
+              "0.00000",
+              "0.41998",
+              "0.29685"
+            ],
+            [
+              "7",
+              "M7-Loop B",
+              "B→C→A",
+              "0.00000",
+              "0.41998",
+              "0.29685"
+            ],
+            [
+              "7",
+              "M7-Loop C",
+              "C→A→B",
+              "0.00000",
+              "0.41998",
+              "0.29685"
+            ]
+          ],
+          "notes": []
+        },
+        {
+          "title": "Link box yerleşimleri",
+          "headers": [
+            "ID",
+            "Ad",
+            "Konum [m]",
+            "Lead [m]",
+            "Lead tipi",
+            "Sınır rolü",
+            "Kutu rolü",
+            "SVL gereksinimi",
+            "SVL adayı"
+          ],
+          "rows": [
+            [
+              "LB001",
+              "Sentetik cross-bonding link box 01",
+              "952.381",
+              "3.000",
+              "COAXIAL",
+              "MINOR_CROSS_BOUNDARY",
+              "CROSS_BONDING_LINK_BOX",
+              "REQUIRED",
+              "—"
+            ],
+            [
+              "LB002",
+              "Sentetik cross-bonding link box 02",
+              "1904.762",
+              "3.000",
+              "COAXIAL",
+              "MINOR_CROSS_BOUNDARY",
+              "CROSS_BONDING_LINK_BOX",
+              "REQUIRED",
+              "—"
+            ],
+            [
+              "LB003",
+              "Sentetik grounding link box 03",
+              "2857.143",
+              "3.000",
+              "COAXIAL",
+              "MAJOR_GROUND_BOUNDARY",
+              "GROUNDING_LINK_BOX",
+              "NOT_REQUIRED",
+              "—"
+            ],
+            [
+              "LB004",
+              "Sentetik cross-bonding link box 04",
+              "3809.524",
+              "3.000",
+              "COAXIAL",
+              "MINOR_CROSS_BOUNDARY",
+              "CROSS_BONDING_LINK_BOX",
+              "REQUIRED",
+              "—"
+            ],
+            [
+              "LB005",
+              "Sentetik cross-bonding link box 05",
+              "4761.905",
+              "3.000",
+              "COAXIAL",
+              "MINOR_CROSS_BOUNDARY",
+              "CROSS_BONDING_LINK_BOX",
+              "REQUIRED",
+              "—"
+            ],
+            [
+              "LB006",
+              "Sentetik grounding link box 06",
+              "5714.286",
+              "3.000",
+              "COAXIAL",
+              "MAJOR_GROUND_BOUNDARY",
+              "GROUNDING_LINK_BOX",
+              "NOT_REQUIRED",
+              "—"
+            ],
+            [
+              "LB007",
+              "Sentetik cross-bonding link box 07",
+              "6666.667",
+              "3.000",
+              "COAXIAL",
+              "MINOR_CROSS_BOUNDARY",
+              "CROSS_BONDING_LINK_BOX",
+              "REQUIRED",
+              "—"
+            ],
+            [
+              "LB008",
+              "Sentetik cross-bonding link box 08",
+              "7619.048",
+              "3.000",
+              "COAXIAL",
+              "MINOR_CROSS_BOUNDARY",
+              "CROSS_BONDING_LINK_BOX",
+              "REQUIRED",
+              "—"
+            ],
+            [
+              "LB009",
+              "Sentetik grounding link box 09",
+              "8571.429",
+              "3.000",
+              "COAXIAL",
+              "MAJOR_GROUND_BOUNDARY",
+              "GROUNDING_LINK_BOX",
+              "NOT_REQUIRED",
+              "—"
+            ],
+            [
+              "LB010",
+              "Sentetik cross-bonding link box 10",
+              "9523.810",
+              "3.000",
+              "COAXIAL",
+              "MINOR_CROSS_BOUNDARY",
+              "CROSS_BONDING_LINK_BOX",
+              "REQUIRED",
+              "—"
+            ],
+            [
+              "LB011",
+              "Sentetik cross-bonding link box 11",
+              "10476.190",
+              "3.000",
+              "COAXIAL",
+              "MINOR_CROSS_BOUNDARY",
+              "CROSS_BONDING_LINK_BOX",
+              "REQUIRED",
+              "—"
+            ],
+            [
+              "LB012",
+              "Sentetik grounding link box 12",
+              "11428.571",
+              "3.000",
+              "COAXIAL",
+              "MAJOR_GROUND_BOUNDARY",
+              "GROUNDING_LINK_BOX",
+              "NOT_REQUIRED",
+              "—"
+            ],
+            [
+              "LB013",
+              "Sentetik cross-bonding link box 13",
+              "12380.952",
+              "3.000",
+              "COAXIAL",
+              "MINOR_CROSS_BOUNDARY",
+              "CROSS_BONDING_LINK_BOX",
+              "REQUIRED",
+              "—"
+            ],
+            [
+              "LB014",
+              "Sentetik cross-bonding link box 14",
+              "13333.333",
+              "3.000",
+              "COAXIAL",
+              "MINOR_CROSS_BOUNDARY",
+              "CROSS_BONDING_LINK_BOX",
+              "REQUIRED",
+              "—"
+            ],
+            [
+              "LB015",
+              "Sentetik grounding link box 15",
+              "14285.714",
+              "3.000",
+              "COAXIAL",
+              "MAJOR_GROUND_BOUNDARY",
+              "GROUNDING_LINK_BOX",
+              "NOT_REQUIRED",
+              "—"
+            ],
+            [
+              "LB016",
+              "Sentetik cross-bonding link box 16",
+              "15238.095",
+              "3.000",
+              "COAXIAL",
+              "MINOR_CROSS_BOUNDARY",
+              "CROSS_BONDING_LINK_BOX",
+              "REQUIRED",
+              "—"
+            ],
+            [
+              "LB017",
+              "Sentetik cross-bonding link box 17",
+              "16190.476",
+              "3.000",
+              "COAXIAL",
+              "MINOR_CROSS_BOUNDARY",
+              "CROSS_BONDING_LINK_BOX",
+              "REQUIRED",
+              "—"
+            ],
+            [
+              "LB018",
+              "Sentetik grounding link box 18",
+              "17142.857",
+              "3.000",
+              "COAXIAL",
+              "MAJOR_GROUND_BOUNDARY",
+              "GROUNDING_LINK_BOX",
+              "NOT_REQUIRED",
+              "—"
+            ],
+            [
+              "LB019",
+              "Sentetik cross-bonding link box 19",
+              "18095.238",
+              "3.000",
+              "COAXIAL",
+              "MINOR_CROSS_BOUNDARY",
+              "CROSS_BONDING_LINK_BOX",
+              "REQUIRED",
+              "—"
+            ],
+            [
+              "LB020",
+              "Sentetik cross-bonding link box 20",
+              "19047.619",
+              "3.000",
+              "COAXIAL",
+              "MINOR_CROSS_BOUNDARY",
+              "CROSS_BONDING_LINK_BOX",
+              "REQUIRED",
+              "—"
+            ]
+          ],
+          "notes": []
+        }
+      ],
+      "warnings": [
+        "Cross-bond yolları link-box bağlantı grafiğinden faz sheath'leri arasında açıkça A→B→C / B→C→A / C→A→B olarak çözülür.",
+        "Her minor section EMF'si, güzergâh bölümlerindeki faz aralığı değişimleri parça parça entegre edilerek hesaplanır.",
+        "v0.8 PRIMITIVE_CIM/NODE_VOLTAGE modlarında core, sheath, opsiyonel GCC/ECC, bonding lead ve grounding dallarını explicit primitive ağda çözer.",
+        "CIM/MNA ve Node-Voltage aynı fiziksel ağ üzerinde bağımsız çözülür ve sonuç farkı doğrulama kapısıdır.",
+        "Toprak dönüşü simplified-Carson eşdeğer derinlik yaklaşımıdır; tam Pollaczek/Wedepohl-Wilcox ve wideband EMT hâlâ ayrı doğrulama katmanıdır.",
+        "Legacy COUPLED_LOOP_MATRIX ve INDEPENDENT_LOOP_PREVIEW modları regresyon ve hızlı ön inceleme için korunur.",
+        "Standing-voltage profili production primitive ağda çözülmüş sheath-to-earth düğüm gerilimlerinden; legacy modlarda ise cross-bond yolu boyunca kümülatif kompleks fazör toplamından üretilir.",
+        "Major 1 fiziksel minor-section uzunluk dengesizliği = %0.000.",
+        "Major 2 fiziksel minor-section uzunluk dengesizliği = %0.000.",
+        "Major 3 fiziksel minor-section uzunluk dengesizliği = %0.000.",
+        "Major 4 fiziksel minor-section uzunluk dengesizliği = %0.000.",
+        "Major 5 fiziksel minor-section uzunluk dengesizliği = %0.000.",
+        "Major 6 fiziksel minor-section uzunluk dengesizliği = %0.000.",
+        "Major 7 fiziksel minor-section uzunluk dengesizliği = %0.000."
+      ],
+      "trace": []
+    },
+    {
+      "section_id": "FAULT_EPR",
+      "title": "Arıza, EPR ve metalik kılıf dayanımı",
+      "status": "AVAILABLE",
+      "paragraphs": [],
+      "tables": [
+        {
+          "title": "Arıza/EPR özeti",
+          "headers": [
+            "Parametre",
+            "Değer"
+          ],
+          "rows": [
+            [
+              "Çözüm yöntemi",
+              "PRIMITIVE_CIM"
+            ],
+            [
+              "Yönetici senaryo",
+              "Tek Faz-Toprak Arızası A-G"
+            ],
+            [
+              "Yönetici TOV",
+              "3991.374 V rms"
+            ],
+            [
+              "Yönetici süre",
+              "0.5000 s"
+            ],
+            [
+              "Maksimum EPR",
+              "5643.121 V"
+            ],
+            [
+              "Maksimum metalik kılıf akımı",
+              "9804.366 A"
+            ],
+            [
+              "Maksimum GCC/ECC akımı",
+              "0.000 A"
+            ],
+            [
+              "CIM/NV yöntem uyumu",
+              "PASS"
+            ]
+          ],
+          "notes": []
+        },
+        {
+          "title": "Arıza senaryoları",
+          "headers": [
+            "ID",
+            "Senaryo",
+            "Tip",
+            "If [A]",
+            "Süre [s]",
+            "Ikılıf max [A]",
+            "IGCC max [A]",
+            "EPR max [V]",
+            "TOV [V]",
+            "Yöntem uyumu"
+          ],
+          "rows": [
+            [
+              "F-3PH",
+              "Üç Faz Simetrik Arıza",
+              "THREE_PHASE",
+              "31500.000",
+              "0.5000",
+              "0.000",
+              "0.000",
+              "0.000",
+              "2693.886",
+              "PASS"
+            ],
+            [
+              "F-PP",
+              "Faz-Faz Arızası A-B",
+              "PHASE_PHASE",
+              "31500.000",
+              "0.5000",
+              "0.000",
+              "0.000",
+              "0.000",
+              "3110.632",
+              "PASS"
+            ],
+            [
+              "F-SLG",
+              "Tek Faz-Toprak Arızası A-G",
+              "SINGLE_PHASE_GROUND",
+              "31500.000",
+              "0.5000",
+              "9804.366",
+              "0.000",
+              "5643.121",
+              "3991.374",
+              "PASS"
+            ]
+          ],
+          "notes": []
+        }
+      ],
+      "warnings": [
+        "SVL TOV aktarımı, metalik-kılıf–yerel-toprak ve sectionalizing-interrupt güç frekansı rms gerilimlerinin büyüğünü kullanır.",
+        "Fault clearing duration remains a project/protection input; the optional multiplier is applied only when transferring duty to SVL selection.",
+        "Full Pollaczek/Wedepohl-Wilcox earth return, distributed grounding-grid EPR and EMT remain later validation layers."
+      ],
+      "trace": []
+    },
+    {
+      "section_id": "SVL",
+      "title": "SVL ve yalıtım koordinasyonu",
+      "status": "AVAILABLE",
+      "paragraphs": [],
+      "tables": [
+        {
+          "title": "SVL seçim özeti",
+          "headers": [
+            "Parametre",
+            "Değer"
+          ],
+          "rows": [
+            [
+              "Önerilen aday",
+              "ÖRNEK MOV 3 kV"
+            ],
+            [
+              "Önerilen aday ID",
+              "DEMO-MOV-3"
+            ],
+            [
+              "Normal standing voltage",
+              "19.069 V rms"
+            ],
+            [
+              "Acil standing voltage",
+              "22.882 V rms"
+            ],
+            [
+              "Gerekli sürekli gerilim",
+              "25.171 V rms"
+            ],
+            [
+              "En uzun bonding lead",
+              "3.000 m"
+            ]
+          ],
+          "notes": []
+        },
+        {
+          "title": "SVL aday kontrolleri",
+          "headers": [
+            "ID",
+            "Aday",
+            "MCOV [V]",
+            "TOV [V]",
+            "Koruma seviyesi [Vpk]",
+            "Enerji [kJ]",
+            "In [kA]",
+            "Durum"
+          ],
+          "rows": [
+            [
+              "DEMO-MOV-3",
+              "ÖRNEK MOV 3 kV",
+              "3000.000",
+              "4200.000",
+              "9000.000",
+              "12.000",
+              "10.000",
+              "CONDITIONAL"
+            ],
+            [
+              "DEMO-MOV-6",
+              "ÖRNEK MOV 6 kV",
+              "6000.000",
+              "8400.000",
+              "15000.000",
+              "20.000",
+              "10.000",
+              "CONDITIONAL"
+            ],
+            [
+              "DEMO-MOV-9",
+              "ÖRNEK MOV 9 kV",
+              "9000.000",
+              "12600.000",
+              "21000.000",
+              "30.000",
+              "20.000",
+              "CONDITIONAL"
+            ]
+          ],
+          "notes": [
+            "DEMO-MOV-3 — bekleyen kontroller: Yalıtım koordinasyonu için BIL/residual/di-dt verileri tamamlanmalı; EMT kaynaklı enerji gereksinimi girilmedi; Gerekli deşarj akımı girilmedi",
+            "DEMO-MOV-6 — bekleyen kontroller: Yalıtım koordinasyonu için BIL/residual/di-dt verileri tamamlanmalı; EMT kaynaklı enerji gereksinimi girilmedi; Gerekli deşarj akımı girilmedi",
+            "DEMO-MOV-9 — bekleyen kontroller: Yalıtım koordinasyonu için BIL/residual/di-dt verileri tamamlanmalı; EMT kaynaklı enerji gereksinimi girilmedi; Gerekli deşarj akımı girilmedi"
+          ]
+        }
+      ],
+      "warnings": [
+        "SVL aday seçimi, üretici tarafından doğrulanmış MCOV, TOV, residual-voltage, enerji ve deşarj-akımı verileriyle yenilenmelidir.",
+        "Fault-TOV ve transient enerji yazılım tarafından uydurulmaz; onaylı kısa-devre/EMT çalışmasından veya proje şartnamesinden alınır.",
+        "Bonding lead yüksek frekans gerilim katkısı v=L·di/dt ile en uzun SVL lead'i üzerinden muhafazakâr değerlendirilir.",
+        "CONDITIONAL sonucu satın alma/onay anlamına gelmez; bekleyen hesap ve üretici verileri tamamlanmalıdır.",
+        "ILLUSTRATIVE kaynaklı örnek adaylar yalnız arayüz/test içindir; satın alma seçiminde kullanılamaz."
+      ],
+      "trace": []
+    },
+    {
+      "section_id": "PROCUREMENT_SUMMARY",
+      "title": "BOQ/BOM ve tedarik özeti",
+      "status": "CONDITIONAL_PROJECT_DATA",
+      "paragraphs": [
+        "Bu bölüm proje modelinden türetilen tedarik özetidir. Ayrıntılı BOQ, BOM, RFQ ve makara planı ayrı tedarik çıktılarında üretilir."
+      ],
+      "tables": [
+        {
+          "title": "Tedarik ve metraj özeti",
+          "headers": [
+            "Gösterge",
+            "Değer"
+          ],
+          "rows": [
+            [
+              "Net yeraltı güzergâhı",
+              "20000.000 m"
+            ],
+            [
+              "Montajlı tek damarlı kablo",
+              "121740.000 m"
+            ],
+            [
+              "Sipariş tek damarlı kablo",
+              "122349.000 m"
+            ],
+            [
+              "Termination",
+              "12 adet"
+            ],
+            [
+              "Joint",
+              "120 adet"
+            ],
+            [
+              "Cross-bonding link box",
+              "28 adet"
+            ],
+            [
+              "Grounding link box",
+              "12 adet"
+            ],
+            [
+              "Toplam link box",
+              "40 adet"
+            ],
+            [
+              "SVL seti",
+              "28 set"
+            ],
+            [
+              "SVL elemanı/polü",
+              "84 adet"
+            ],
+            [
+              "Makara",
+              "126 adet"
+            ],
+            [
+              "Makara planı",
+              "VALID"
+            ],
+            [
+              "Sipariş/fire payı",
+              "597.000 m"
+            ],
+            [
+              "Toplam makara aşımı",
+              "0.000 m"
+            ],
+            [
+              "Tedarik paketi durumu",
+              "CONDITIONAL_PROJECT_DATA"
+            ]
+          ],
+          "notes": []
+        },
+        {
+          "title": "Ana BOQ/BOM kalemleri",
+          "headers": [
+            "Kalem",
+            "Tanım",
+            "Miktar",
+            "Birim",
+            "Durum"
+          ],
+          "rows": [
+            [
+              "CBL-001",
+              "Tek damarlı OG güç kablosu",
+              "122349.000",
+              "m",
+              "CONDITIONAL_PROJECT_DATA"
+            ],
+            [
+              "ACC-TERM-001",
+              "Tek damarlı kablo terminasyonu",
+              "12.000",
+              "adet",
+              "CONDITIONAL_PROJECT_DATA"
+            ],
+            [
+              "ACC-JOINT-001",
+              "Tek damarlı sectionalizing / straight joint",
+              "120.000",
+              "adet",
+              "CONDITIONAL_PROJECT_DATA"
+            ],
+            [
+              "BND-LB-CROSS-001",
+              "Cross-bonding link box",
+              "28.000",
+              "adet",
+              "CONFIRMED_PROJECT_DATA"
+            ],
+            [
+              "BND-LB-GROUND-001",
+              "Major-section grounding link box",
+              "12.000",
+              "adet",
+              "CONFIRMED_PROJECT_DATA"
+            ],
+            [
+              "BND-SVL-001",
+              "Metalik kılıf gerilim sınırlayıcı (SVL) elemanı/polü",
+              "84.000",
+              "adet",
+              "CONDITIONAL_PROJECT_DATA"
+            ],
+            [
+              "BND-SVL-SET-001",
+              "Üç fazlı SVL seti",
+              "28.000",
+              "set",
+              "CONDITIONAL_PROJECT_DATA"
+            ],
+            [
+              "BND-LEAD-001",
+              "Bonding bağlantı iletkeni / koaksiyel bonding kablosu",
+              "396.000",
+              "m",
+              "CONDITIONAL_PROJECT_DATA"
+            ],
+            [
+              "GND-POINT-001",
+              "Bonding/terminasyon topraklama bağlantı noktası",
+              "16.000",
+              "nokta",
+              "CONDITIONAL_PROJECT_DATA"
+            ],
+            [
+              "SUP-CLEAT-001",
+              "Üç faz kablo kelepçe/cleat seti",
+              "40008.000",
+              "set",
+              "CONDITIONAL_PROJECT_DATA"
+            ],
+            [
+              "MRK-TAPE-001",
+              "Yeraltı kablo ikaz bandı",
+              "21000.000",
+              "m",
+              "ENGINEERING_ASSUMPTION"
+            ],
+            [
+              "MRK-TAG-001",
+              "Kablo güzergâh ve aksesuar işaretleme seti",
+              "26.000",
+              "set",
+              "ENGINEERING_ASSUMPTION"
+            ],
+            [
+              "CIV-EXC-001",
+              "Kablo hendeği kazısı",
+              "48400.000",
+              "m³",
+              "ENGINEERING_ASSUMPTION"
+            ],
+            [
+              "CIV-TBF-001",
+              "Termal dolgu malzemesi",
+              "5350.000",
+              "m³",
+              "ENGINEERING_ASSUMPTION"
+            ],
+            [
+              "CIV-DUCT-001",
+              "Kablo koruma borusu / duct",
+              "30000.000",
+              "m",
+              "CONDITIONAL_PROJECT_DATA"
+            ]
+          ],
+          "notes": []
+        }
+      ],
+      "warnings": [
+        "Kablo verisi VERIFIED değildir; BOQ/BOM/RFQ teknik tanımı koşullu proje verisi içerir.",
+        "SVL adedi bonding grafiğinden üretildi; üretici/model ve MCOV/TOV/enerji sınıfı nihai seçilmemiştir.",
+        "Kazı ve termal dolgu miktarları DESIGN termal kesitlerinden türetilmiştir; saha/as-built metrajı değildir."
+      ],
+      "trace": []
+    },
+    {
+      "section_id": "WARNINGS_LIMITATIONS",
+      "title": "Uyarılar, sınırlamalar ve açık işler",
+      "status": "ATTENTION",
+      "paragraphs": [
+        "Bu bölüm kullanıcı tarafından rapordan çıkarılamaz. Kritik eksik veriler ve koşullu hesap durumları burada görünür tutulur."
+      ],
+      "tables": [],
+      "warnings": [
+        "Kablo uygulama/iterasyon kapıları CONDITIONAL_READY; sonuçlar nihai tasarım onayı değildir.",
+        "Proje nihai tasarım durumu: NOT_READY.",
+        "Kablo verisi doğrulanmış/as-built seviyede değildir: CONDITIONAL.",
+        "Kablo veri durumu nihai doğrulanmış değildir: CONDITIONAL",
+        "NORMAL: kılıf kaybı fiziği tamamlanmamış; IEC ampacity üretim otoritesi yok. Neden=LAMBDA1_EDDY_CLOSED_FORM_OUT_OF_SCOPE_MULTI_CIRCUIT.",
+        "DESIGN: kılıf kaybı fiziği tamamlanmamış; IEC ampacity üretim otoritesi yok. Neden=LAMBDA1_EDDY_CLOSED_FORM_OUT_OF_SCOPE_MULTI_CIRCUIT.",
+        "DESIGN: çözülen fiziksel çalışma noktası sıcaklık sınırını aşıyor.",
+        "N_MINUS_ONE_C1_OUT: kılıf kaybı fiziği tamamlanmamış; IEC ampacity üretim otoritesi yok. Neden=LAMBDA1_EDDY_CLOSED_FORM_OUT_OF_SCOPE_MULTI_CIRCUIT.",
+        "N_MINUS_ONE_C2_OUT: kılıf kaybı fiziği tamamlanmamış; IEC ampacity üretim otoritesi yok. Neden=LAMBDA1_EDDY_CLOSED_FORM_OUT_OF_SCOPE_MULTI_CIRCUIT.",
+        "En az bir termal malzeme ön tasarım varsayımıdır; TESTED/AS_BUILT veri gereklidir.",
+        "HDD kesiti 2D orta-kesit modelidir; giriş/çıkış ve eksenel 3D etkiler ayrıca doğrulanmalıdır.",
+        "Seçili kapsam izole/eksik-devre termal çözümüdür; diğer fiziksel kablolar pasif ısıl cisim olarak korunmuş, elektriksel kayıpları sıfırlanmıştır.",
+        "Analitik–nodal yöntem otoritesi NODAL_QUALITY_PENDING / NOT_RUN; kesin yöntem hükmü için inceleme gerekebilir.",
+        "Cross-bond yolları link-box bağlantı grafiğinden faz sheath'leri arasında açıkça A→B→C / B→C→A / C→A→B olarak çözülür.",
+        "Her minor section EMF'si, güzergâh bölümlerindeki faz aralığı değişimleri parça parça entegre edilerek hesaplanır.",
+        "v0.8 PRIMITIVE_CIM/NODE_VOLTAGE modlarında core, sheath, opsiyonel GCC/ECC, bonding lead ve grounding dallarını explicit primitive ağda çözer.",
+        "CIM/MNA ve Node-Voltage aynı fiziksel ağ üzerinde bağımsız çözülür ve sonuç farkı doğrulama kapısıdır.",
+        "Toprak dönüşü simplified-Carson eşdeğer derinlik yaklaşımıdır; tam Pollaczek/Wedepohl-Wilcox ve wideband EMT hâlâ ayrı doğrulama katmanıdır.",
+        "Legacy COUPLED_LOOP_MATRIX ve INDEPENDENT_LOOP_PREVIEW modları regresyon ve hızlı ön inceleme için korunur.",
+        "Standing-voltage profili production primitive ağda çözülmüş sheath-to-earth düğüm gerilimlerinden; legacy modlarda ise cross-bond yolu boyunca kümülatif kompleks fazör toplamından üretilir.",
+        "Major 1 fiziksel minor-section uzunluk dengesizliği = %0.000.",
+        "Major 2 fiziksel minor-section uzunluk dengesizliği = %0.000.",
+        "Major 3 fiziksel minor-section uzunluk dengesizliği = %0.000.",
+        "Major 4 fiziksel minor-section uzunluk dengesizliği = %0.000.",
+        "Major 5 fiziksel minor-section uzunluk dengesizliği = %0.000.",
+        "Major 6 fiziksel minor-section uzunluk dengesizliği = %0.000.",
+        "Major 7 fiziksel minor-section uzunluk dengesizliği = %0.000.",
+        "SVL TOV aktarımı, metalik-kılıf–yerel-toprak ve sectionalizing-interrupt güç frekansı rms gerilimlerinin büyüğünü kullanır.",
+        "Fault clearing duration remains a project/protection input; the optional multiplier is applied only when transferring duty to SVL selection.",
+        "Full Pollaczek/Wedepohl-Wilcox earth return, distributed grounding-grid EPR and EMT remain later validation layers.",
+        "SVL aday seçimi, üretici tarafından doğrulanmış MCOV, TOV, residual-voltage, enerji ve deşarj-akımı verileriyle yenilenmelidir.",
+        "Fault-TOV ve transient enerji yazılım tarafından uydurulmaz; onaylı kısa-devre/EMT çalışmasından veya proje şartnamesinden alınır.",
+        "Bonding lead yüksek frekans gerilim katkısı v=L·di/dt ile en uzun SVL lead'i üzerinden muhafazakâr değerlendirilir.",
+        "CONDITIONAL sonucu satın alma/onay anlamına gelmez; bekleyen hesap ve üretici verileri tamamlanmalıdır.",
+        "ILLUSTRATIVE kaynaklı örnek adaylar yalnız arayüz/test içindir; satın alma seçiminde kullanılamaz.",
+        "Kablo verisi VERIFIED değildir; BOQ/BOM/RFQ teknik tanımı koşullu proje verisi içerir.",
+        "SVL adedi bonding grafiğinden üretildi; üretici/model ve MCOV/TOV/enerji sınıfı nihai seçilmemiştir.",
+        "Kazı ve termal dolgu miktarları DESIGN termal kesitlerinden türetilmiştir; saha/as-built metrajı değildir."
+      ],
+      "trace": []
+    }
+  ],
+  "mandatory_warnings": [
+    "Kablo uygulama/iterasyon kapıları CONDITIONAL_READY; sonuçlar nihai tasarım onayı değildir.",
+    "Proje nihai tasarım durumu: NOT_READY.",
+    "Kablo verisi doğrulanmış/as-built seviyede değildir: CONDITIONAL.",
+    "Kablo veri durumu nihai doğrulanmış değildir: CONDITIONAL",
+    "NORMAL: kılıf kaybı fiziği tamamlanmamış; IEC ampacity üretim otoritesi yok. Neden=LAMBDA1_EDDY_CLOSED_FORM_OUT_OF_SCOPE_MULTI_CIRCUIT.",
+    "DESIGN: kılıf kaybı fiziği tamamlanmamış; IEC ampacity üretim otoritesi yok. Neden=LAMBDA1_EDDY_CLOSED_FORM_OUT_OF_SCOPE_MULTI_CIRCUIT.",
+    "DESIGN: çözülen fiziksel çalışma noktası sıcaklık sınırını aşıyor.",
+    "N_MINUS_ONE_C1_OUT: kılıf kaybı fiziği tamamlanmamış; IEC ampacity üretim otoritesi yok. Neden=LAMBDA1_EDDY_CLOSED_FORM_OUT_OF_SCOPE_MULTI_CIRCUIT.",
+    "N_MINUS_ONE_C2_OUT: kılıf kaybı fiziği tamamlanmamış; IEC ampacity üretim otoritesi yok. Neden=LAMBDA1_EDDY_CLOSED_FORM_OUT_OF_SCOPE_MULTI_CIRCUIT.",
+    "En az bir termal malzeme ön tasarım varsayımıdır; TESTED/AS_BUILT veri gereklidir.",
+    "HDD kesiti 2D orta-kesit modelidir; giriş/çıkış ve eksenel 3D etkiler ayrıca doğrulanmalıdır.",
+    "Seçili kapsam izole/eksik-devre termal çözümüdür; diğer fiziksel kablolar pasif ısıl cisim olarak korunmuş, elektriksel kayıpları sıfırlanmıştır.",
+    "Analitik–nodal yöntem otoritesi NODAL_QUALITY_PENDING / NOT_RUN; kesin yöntem hükmü için inceleme gerekebilir.",
+    "Cross-bond yolları link-box bağlantı grafiğinden faz sheath'leri arasında açıkça A→B→C / B→C→A / C→A→B olarak çözülür.",
+    "Her minor section EMF'si, güzergâh bölümlerindeki faz aralığı değişimleri parça parça entegre edilerek hesaplanır.",
+    "v0.8 PRIMITIVE_CIM/NODE_VOLTAGE modlarında core, sheath, opsiyonel GCC/ECC, bonding lead ve grounding dallarını explicit primitive ağda çözer.",
+    "CIM/MNA ve Node-Voltage aynı fiziksel ağ üzerinde bağımsız çözülür ve sonuç farkı doğrulama kapısıdır.",
+    "Toprak dönüşü simplified-Carson eşdeğer derinlik yaklaşımıdır; tam Pollaczek/Wedepohl-Wilcox ve wideband EMT hâlâ ayrı doğrulama katmanıdır.",
+    "Legacy COUPLED_LOOP_MATRIX ve INDEPENDENT_LOOP_PREVIEW modları regresyon ve hızlı ön inceleme için korunur.",
+    "Standing-voltage profili production primitive ağda çözülmüş sheath-to-earth düğüm gerilimlerinden; legacy modlarda ise cross-bond yolu boyunca kümülatif kompleks fazör toplamından üretilir.",
+    "Major 1 fiziksel minor-section uzunluk dengesizliği = %0.000.",
+    "Major 2 fiziksel minor-section uzunluk dengesizliği = %0.000.",
+    "Major 3 fiziksel minor-section uzunluk dengesizliği = %0.000.",
+    "Major 4 fiziksel minor-section uzunluk dengesizliği = %0.000.",
+    "Major 5 fiziksel minor-section uzunluk dengesizliği = %0.000.",
+    "Major 6 fiziksel minor-section uzunluk dengesizliği = %0.000.",
+    "Major 7 fiziksel minor-section uzunluk dengesizliği = %0.000.",
+    "SVL TOV aktarımı, metalik-kılıf–yerel-toprak ve sectionalizing-interrupt güç frekansı rms gerilimlerinin büyüğünü kullanır.",
+    "Fault clearing duration remains a project/protection input; the optional multiplier is applied only when transferring duty to SVL selection.",
+    "Full Pollaczek/Wedepohl-Wilcox earth return, distributed grounding-grid EPR and EMT remain later validation layers.",
+    "SVL aday seçimi, üretici tarafından doğrulanmış MCOV, TOV, residual-voltage, enerji ve deşarj-akımı verileriyle yenilenmelidir.",
+    "Fault-TOV ve transient enerji yazılım tarafından uydurulmaz; onaylı kısa-devre/EMT çalışmasından veya proje şartnamesinden alınır.",
+    "Bonding lead yüksek frekans gerilim katkısı v=L·di/dt ile en uzun SVL lead'i üzerinden muhafazakâr değerlendirilir.",
+    "CONDITIONAL sonucu satın alma/onay anlamına gelmez; bekleyen hesap ve üretici verileri tamamlanmalıdır.",
+    "ILLUSTRATIVE kaynaklı örnek adaylar yalnız arayüz/test içindir; satın alma seçiminde kullanılamaz.",
+    "Kablo verisi VERIFIED değildir; BOQ/BOM/RFQ teknik tanımı koşullu proje verisi içerir.",
+    "SVL adedi bonding grafiğinden üretildi; üretici/model ve MCOV/TOV/enerji sınıfı nihai seçilmemiştir.",
+    "Kazı ve termal dolgu miktarları DESIGN termal kesitlerinden türetilmiştir; saha/as-built metrajı değildir."
+  ],
+  "report_status": "CONDITIONAL",
+  "trace": [
+    "DiTuS v0.16.9.4.34 project, calculation and procurement-summary reporting engine. Reports reproduce the project state and calculation results supplied to the engine; they do not turn conditional or incomplete calculations into final design approval.",
+    "Rapor türü: DESIGN_REPORT",
+    "Seçilen modüller: PROJECT_SUMMARY, DESIGN_BASIS, SOURCE_AUDIT, CABLE_CONSTRUCTION, ROUTE_AND_REGIONS, VOLTAGE_DROP, IEC60287, NODAL_THERMAL, BONDING, FAULT_EPR, SVL, PROCUREMENT_SUMMARY, WARNINGS_LIMITATIONS",
+    "Proje imzası: 0b76ac9b7eba6fb2b824ab556dc0174ac10701422b319bea3c44eda6e1f0f8a5",
+    "Uyarılar ve sınırlamalar bölümü zorunlu olarak eklendi."
+  ]
+}

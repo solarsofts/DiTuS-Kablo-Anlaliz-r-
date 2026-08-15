@@ -1,0 +1,448 @@
+{
+  "engine": "DiTuS v0.16.5.2 Global N-Core + N-Sheath SHADOW_COMPARE",
+  "project_schema": "0.16.4",
+  "methods_agree": true,
+  "core_sharing_mode": "GLOBAL_CORE_CONTINUITY_COUPLED_SHEATH",
+  "core_count": 12,
+  "sheath_count": 12,
+  "group_count": 6,
+  "minor_section_count": 3,
+  "maximum_method_core_current_difference_a": 1.4617161094319945e-12,
+  "maximum_method_sheath_current_difference_a": 2.4759280988493312e-12,
+  "maximum_method_voltage_difference_v": 1.9678526946954344e-13,
+  "maximum_core_current_imbalance_percent": 36.15845452424353,
+  "maximum_sheath_current_a": 18.80246223564513,
+  "maximum_sheath_to_earth_voltage_v": 5.92977101471361,
+  "total_core_metal_loss_w": 10175.658244423365,
+  "total_sheath_metal_loss_w": 149.24938516934358,
+  "lambda1_shadow": 0.014667295381223888,
+  "groups": [
+    {
+      "group_id": "C1:A",
+      "parallel_count": 2,
+      "target": {
+        "real": 900.0,
+        "imag": 0.0,
+        "magnitude": 900.0
+      },
+      "solved": {
+        "real": 900.0,
+        "imag": 0.0,
+        "magnitude": 900.0
+      },
+      "route_voltage_drop": {
+        "real": 3.668618428426438,
+        "imag": 22.63822897066118,
+        "magnitude": 22.933559952643055
+      },
+      "imbalance_percent": 19.790006633469673,
+      "current_sum_residual_a": 0.0
+    },
+    {
+      "group_id": "C1:B",
+      "parallel_count": 2,
+      "target": {
+        "real": -449.9999999999998,
+        "imag": -779.4228634059948,
+        "magnitude": 899.9999999999999
+      },
+      "solved": {
+        "real": -449.9999999999998,
+        "imag": -779.4228634059948,
+        "magnitude": 899.9999999999999
+      },
+      "route_voltage_drop": {
+        "real": 16.701462548020118,
+        "imag": -15.743628510352941,
+        "magnitude": 22.952139114141772
+      },
+      "imbalance_percent": 5.0684418216023195,
+      "current_sum_residual_a": 0.0
+    },
+    {
+      "group_id": "C1:C",
+      "parallel_count": 2,
+      "target": {
+        "real": -449.9999999999998,
+        "imag": 779.4228634059948,
+        "magnitude": 899.9999999999999
+      },
+      "solved": {
+        "real": -449.9999999999998,
+        "imag": 779.4228634059948,
+        "magnitude": 899.9999999999999
+      },
+      "route_voltage_drop": {
+        "real": -23.20916633539199,
+        "imag": -14.498481347024414,
+        "magnitude": 27.36551412551768
+      },
+      "imbalance_percent": 20.92982212987081,
+      "current_sum_residual_a": 0.0
+    },
+    {
+      "group_id": "C2:A",
+      "parallel_count": 2,
+      "target": {
+        "real": 600.0,
+        "imag": 0.0,
+        "magnitude": 600.0
+      },
+      "solved": {
+        "real": 600.0,
+        "imag": 0.0,
+        "magnitude": 600.0
+      },
+      "route_voltage_drop": {
+        "real": 1.526218857842135,
+        "imag": 15.815256505038292,
+        "magnitude": 15.888728153070936
+      },
+      "imbalance_percent": 36.15845452424353,
+      "current_sum_residual_a": 0.0
+    },
+    {
+      "group_id": "C2:B",
+      "parallel_count": 2,
+      "target": {
+        "real": -299.9999999999999,
+        "imag": -519.6152422706632,
+        "magnitude": 600.0
+      },
+      "solved": {
+        "real": -299.9999999999999,
+        "imag": -519.6152422706632,
+        "magnitude": 600.0
+      },
+      "route_voltage_drop": {
+        "real": 10.703393124934514,
+        "imag": -11.940243721647454,
+        "magnitude": 16.035337368425925
+      },
+      "imbalance_percent": 14.811558394195485,
+      "current_sum_residual_a": 0.0
+    },
+    {
+      "group_id": "C2:C",
+      "parallel_count": 2,
+      "target": {
+        "real": -299.9999999999999,
+        "imag": 519.6152422706632,
+        "magnitude": 600.0
+      },
+      "solved": {
+        "real": -299.9999999999999,
+        "imag": 519.6152422706632,
+        "magnitude": 600.0
+      },
+      "route_voltage_drop": {
+        "real": -16.164832215912178,
+        "imag": -10.618005315569988,
+        "magnitude": 19.340212962893265
+      },
+      "imbalance_percent": 24.40955514332129,
+      "current_sum_residual_a": 0.0
+    }
+  ],
+  "cores": [
+    {
+      "key": "C1:A:P1",
+      "physical_cable_id": "C1-A-1",
+      "current": {
+        "real": 405.135089196137,
+        "imag": 38.97761954290856,
+        "magnitude": 407.00576816943715
+      },
+      "equal_share": {
+        "real": 450.0,
+        "imag": 0.0,
+        "magnitude": 450.0
+      },
+      "current_share_percent": 45.05249834163258,
+      "difference_from_equal_share_a": 59.43159973171098,
+      "route_voltage_drop": {
+        "real": 3.668618428426438,
+        "imag": 22.63822897066118,
+        "magnitude": 22.933559952643055
+      },
+      "core_metal_loss_w": 946.8499791131583
+    },
+    {
+      "key": "C1:A:P2",
+      "physical_cable_id": "C1-A-2",
+      "current": {
+        "real": 494.864910803863,
+        "imag": -38.97761954290856,
+        "magnitude": 496.3975571758457
+      },
+      "equal_share": {
+        "real": 450.0,
+        "imag": 0.0,
+        "magnitude": 450.0
+      },
+      "current_share_percent": 54.94750165836742,
+      "difference_from_equal_share_a": 59.43159973171098,
+      "route_voltage_drop": {
+        "real": 3.668618428426438,
+        "imag": 22.63822897066118,
+        "magnitude": 22.933559952643055
+      },
+      "core_metal_loss_w": 1408.443133400532
+    },
+    {
+      "key": "C1:B:P1",
+      "physical_cable_id": "C1-B-1",
+      "current": {
+        "real": -241.01614047548685,
+        "imag": -367.2553208708539,
+        "magnitude": 439.27810175064894
+      },
+      "equal_share": {
+        "real": -224.9999999999999,
+        "imag": -389.7114317029974,
+        "magnitude": 449.99999999999994
+      },
+      "current_share_percent": 48.73288954459942,
+      "difference_from_equal_share_a": 27.58248845619345,
+      "route_voltage_drop": {
+        "real": 16.701462548020118,
+        "imag": -15.743628510352941,
+        "magnitude": 22.952139114141772
+      },
+      "core_metal_loss_w": 1102.9584532794902
+    },
+    {
+      "key": "C1:B:P2",
+      "physical_cable_id": "C1-B-2",
+      "current": {
+        "real": -208.98385952451292,
+        "imag": -412.1675425351409,
+        "magnitude": 462.1215604808096
+      },
+      "equal_share": {
+        "real": -224.9999999999999,
+        "imag": -389.7114317029974,
+        "magnitude": 449.99999999999994
+      },
+      "current_share_percent": 51.267110455400584,
+      "difference_from_equal_share_a": 27.58248845619345,
+      "route_voltage_drop": {
+        "real": 16.701462548020118,
+        "imag": -15.743628510352941,
+        "magnitude": 22.952139114141772
+      },
+      "core_metal_loss_w": 1220.6538013694767
+    },
+    {
+      "key": "C1:C:P1",
+      "physical_cable_id": "C1-C-1",
+      "current": {
+        "real": -270.99581464205045,
+        "imag": 417.71418962200795,
+        "magnitude": 497.9195474824014
+      },
+      "equal_share": {
+        "real": -224.9999999999999,
+        "imag": 389.7114317029974,
+        "magnitude": 449.99999999999994
+      },
+      "current_share_percent": 55.232455532467704,
+      "difference_from_equal_share_a": 53.84950710690471,
+      "route_voltage_drop": {
+        "real": -23.20916633539199,
+        "imag": -14.498481347024414,
+        "magnitude": 27.36551412551768
+      },
+      "core_metal_loss_w": 1417.0931480388845
+    },
+    {
+      "key": "C1:C:P2",
+      "physical_cable_id": "C1-C-2",
+      "current": {
+        "real": -179.00418535794932,
+        "imag": 361.70867378398685,
+        "magnitude": 403.5785711187274
+      },
+      "equal_share": {
+        "real": -224.9999999999999,
+        "imag": 389.7114317029974,
+        "magnitude": 449.99999999999994
+      },
+      "current_share_percent": 44.7675444675323,
+      "difference_from_equal_share_a": 53.84950710690471,
+      "route_voltage_drop": {
+        "real": -23.20916633539199,
+        "imag": -14.498481347024414,
+        "magnitude": 27.36551412551768
+      },
+      "core_metal_loss_w": 930.971191867596
+    },
+    {
+      "key": "C2:A:P1",
+      "physical_cable_id": "C2-A-1",
+      "current": {
+        "real": 354.4174662022298,
+        "imag": -16.98658845850144,
+        "magnitude": 354.82430093874234
+      },
+      "equal_share": {
+        "real": 300.0,
+        "imag": 0.0,
+        "magnitude": 300.0
+      },
+      "current_share_percent": 59.039613631060874,
+      "difference_from_equal_share_a": 57.00705934644686,
+      "route_voltage_drop": {
+        "real": 1.526218857842135,
+        "imag": 15.815256505038292,
+        "magnitude": 15.888728153070936
+      },
+      "core_metal_loss_w": 719.6258529053971
+    },
+    {
+      "key": "C2:A:P2",
+      "physical_cable_id": "C2-A-2",
+      "current": {
+        "real": 245.5825337977702,
+        "imag": 16.98658845850144,
+        "magnitude": 246.16930168888126
+      },
+      "equal_share": {
+        "real": 300.0,
+        "imag": 0.0,
+        "magnitude": 300.0
+      },
+      "current_share_percent": 40.96038636893912,
+      "difference_from_equal_share_a": 57.00705934644689,
+      "route_voltage_drop": {
+        "real": 1.526218857842135,
+        "imag": 15.815256505038292,
+        "magnitude": 15.888728153070936
+      },
+      "core_metal_loss_w": 346.3760321649979
+    },
+    {
+      "key": "C2:B:P1",
+      "physical_cable_id": "C2-B-1",
+      "current": {
+        "real": -155.49283033127114,
+        "imag": -282.30278067623965,
+        "magnitude": 322.29315888173386
+      },
+      "equal_share": {
+        "real": -149.99999999999994,
+        "imag": -259.8076211353316,
+        "magnitude": 300.0
+      },
+      "current_share_percent": 53.70288959854888,
+      "difference_from_equal_share_a": 23.15606589684524,
+      "route_voltage_drop": {
+        "real": 10.703393124934514,
+        "imag": -11.940243721647454,
+        "magnitude": 16.035337368425925
+      },
+      "core_metal_loss_w": 593.7207396103049
+    },
+    {
+      "key": "C2:B:P2",
+      "physical_cable_id": "C2-B-2",
+      "current": {
+        "real": -144.50716966872875,
+        "imag": -237.31246159442355,
+        "magnitude": 277.8480277303971
+      },
+      "equal_share": {
+        "real": -149.99999999999994,
+        "imag": -259.8076211353316,
+        "magnitude": 300.0
+      },
+      "current_share_percent": 46.297110401451135,
+      "difference_from_equal_share_a": 23.15606589684524,
+      "route_voltage_drop": {
+        "real": 10.703393124934514,
+        "imag": -11.940243721647454,
+        "magnitude": 16.035337368425925
+      },
+      "core_metal_loss_w": 441.2601235632151
+    },
+    {
+      "key": "C2:C:P1",
+      "physical_cable_id": "C2-C-1",
+      "current": {
+        "real": -116.63984108919203,
+        "imag": 236.64663066815615,
+        "magnitude": 263.8304007045107
+      },
+      "equal_share": {
+        "real": -149.99999999999994,
+        "imag": 259.8076211353316,
+        "magnitude": 300.0
+      },
+      "current_share_percent": 43.89761121416968,
+      "difference_from_equal_share_a": 40.61196476378542,
+      "route_voltage_drop": {
+        "real": -16.164832215912178,
+        "imag": -10.618005315569988,
+        "magnitude": 19.340212962893265
+      },
+      "core_metal_loss_w": 397.85948827524953
+    },
+    {
+      "key": "C2:C:P2",
+      "physical_cable_id": "C2-C-2",
+      "current": {
+        "real": -183.36015891080785,
+        "imag": 282.96861160250705,
+        "magnitude": 337.1827146044815
+      },
+      "equal_share": {
+        "real": -149.99999999999994,
+        "imag": 259.8076211353316,
+        "magnitude": 300.0
+      },
+      "current_share_percent": 56.102388785830314,
+      "difference_from_equal_share_a": 40.61196476378542,
+      "route_voltage_drop": {
+        "real": -16.164832215912178,
+        "imag": -10.618005315569988,
+        "magnitude": 19.340212962893265
+      },
+      "core_metal_loss_w": 649.8463008350625
+    }
+  ],
+  "sections": [
+    {
+      "section_id": "MS1",
+      "major_index": 1,
+      "cross_sections": [
+        "ICS-GLOBAL-DEMO"
+      ],
+      "maximum_sheath_current_a": 18.80246223564513,
+      "maximum_sheath_to_earth_voltage_v": 5.92950486051661,
+      "core_metal_loss_w": 3391.886081474455,
+      "sheath_metal_loss_w": 49.74999936839021
+    },
+    {
+      "section_id": "MS2",
+      "major_index": 1,
+      "cross_sections": [
+        "ICS-GLOBAL-DEMO"
+      ],
+      "maximum_sheath_current_a": 18.79710618651606,
+      "maximum_sheath_to_earth_voltage_v": 5.9210205892817775,
+      "core_metal_loss_w": 3391.886081474455,
+      "sheath_metal_loss_w": 49.74952760205992
+    },
+    {
+      "section_id": "MS3",
+      "major_index": 1,
+      "cross_sections": [
+        "ICS-GLOBAL-DEMO"
+      ],
+      "maximum_sheath_current_a": 18.800301467314704,
+      "maximum_sheath_to_earth_voltage_v": 5.92977101471361,
+      "core_metal_loss_w": 3391.886081474455,
+      "sheath_metal_loss_w": 49.749858198893456
+    }
+  ]
+}
