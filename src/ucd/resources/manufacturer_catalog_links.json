@@ -1,0 +1,9 @@
+{
+  "notice": "Bu liste yalnız erişim kolaylığı içindir; DiTuS tarafından onay, temsilcilik veya işbirliği anlamına gelmez. Bağlantılar değişebilir. Üretici verisi uygulama paketi içinde taşınmaz.",
+  "links": [
+    {"manufacturer": "HES Kablo", "label": "Ürün katalogları", "url": "https://www.hes.com.tr/urun-kataloglari"},
+    {"manufacturer": "Prysmian Türkiye", "label": "Broşürler ve kataloglar", "url": "https://tr.prysmian.com/tr/dokumanlar/brosurler"},
+    {"manufacturer": "Vatan Kablo", "label": "Kataloglar", "url": "https://www.vatan.com.tr/kataloglar"},
+    {"manufacturer": "Nexans Türkiye", "label": "Katalog ve ürün erişimi", "url": "https://www.nexans.com.tr/tr/"}
+  ]
+}
