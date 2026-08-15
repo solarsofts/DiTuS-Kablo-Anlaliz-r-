@@ -1,0 +1,671 @@
+{
+  "component_statuses": {
+    "engine_lock": "PASS",
+    "generated_output_self_check": "PASS",
+    "manifest": "PASS",
+    "publish_integrity": "PASS",
+    "pytest": "PASS"
+  },
+  "engine_lock": {
+    "baseline_file": "ENGINE_BASELINE_v0.16.9.4.18.sha256",
+    "baseline_file_sha256": "bd51a32a0f1919b6079c184b6216360b04389453bd581fd102d6ec8d956f4b34",
+    "expected_file_count": 39,
+    "mismatches": [],
+    "missing_paths": [],
+    "status": "PASS",
+    "unexpected_paths": [],
+    "verified_file_count": 39
+  },
+  "generated_output_self_check": "PASS",
+  "historical_correction": {
+    "statement": "The earlier PDF scan PASS claim was unverified and is not accepted as evidence.",
+    "superseded_documents": [
+      "PACKAGED_TEST_RESULTS_v0.16.9.4.14.txt",
+      "PUBLISH_CLEANUP_AUDIT_v0.16.9.4.14.md"
+    ]
+  },
+  "manifest": {
+    "entry_count": 289,
+    "excluded_generated_attestations": [
+      "PACKAGED_TEST_RESULTS_v0.16.9.4.18.txt",
+      "PUBLISH_CLEANUP_AUDIT_v0.16.9.4.18.md",
+      "PUBLISH_INTEGRITY_AUDIT_v0.16.9.4.18.json"
+    ],
+    "manifest_file": "MANIFEST.txt",
+    "manifest_sha256": "083583ca4f5310d4cc501cd498d317cc7d2bfe83b9412adad84c6eb7a2670204",
+    "mismatches": [],
+    "status": "PASS",
+    "verified_count": 289
+  },
+  "overall_status": "PASS",
+  "package_version": "0.16.9.4.18",
+  "provenance": "Generated automatically by tools/run_release_acceptance.py; manual PASS editing is not authoritative.",
+  "publish_integrity": {
+    "allowed_finding_count": 8,
+    "blocking_finding_count": 0,
+    "errors": [],
+    "finding_counts_by_rule": {
+      "regression_approved_designer_signature": 8
+    },
+    "findings": [
+      {
+        "allowance_reason": "Approved application signature, restricted to reviewed source/test/release locations.",
+        "allowed": true,
+        "fingerprint": "d3002f32cf8b7900d404cb48abecb00348232eb86a98b104fbb00ef168a1a3b5",
+        "location": "line 6",
+        "path": "EVENING_ACCEPTANCE_CHECKLIST_v0.16.9.4.15.md",
+        "redacted_preview": "s.…im (len=6)",
+        "rule_id": "regression_approved_designer_signature",
+        "surface": "file-text"
+      },
+      {
+        "allowance_reason": "Approved application signature, restricted to reviewed source/test/release locations.",
+        "allowed": true,
+        "fingerprint": "d3002f32cf8b7900d404cb48abecb00348232eb86a98b104fbb00ef168a1a3b5",
+        "location": "line 13",
+        "path": "EVENING_ACCEPTANCE_CHECKLIST_v0.16.9.4.15.md",
+        "redacted_preview": "s.…im (len=6)",
+        "rule_id": "regression_approved_designer_signature",
+        "surface": "file-text"
+      },
+      {
+        "allowance_reason": "Approved application signature, restricted to reviewed source/test/release locations.",
+        "allowed": true,
+        "fingerprint": "d3002f32cf8b7900d404cb48abecb00348232eb86a98b104fbb00ef168a1a3b5",
+        "location": "line 7",
+        "path": "IDENTITY_SIGNATURE_AUDIT_v0.16.9.4.15.md",
+        "redacted_preview": "s.…im (len=6)",
+        "rule_id": "regression_approved_designer_signature",
+        "surface": "file-text"
+      },
+      {
+        "allowance_reason": "Approved application signature, restricted to reviewed source/test/release locations.",
+        "allowed": true,
+        "fingerprint": "d3002f32cf8b7900d404cb48abecb00348232eb86a98b104fbb00ef168a1a3b5",
+        "location": "line 13",
+        "path": "RELEASE_NOTES_v0.16.9.4.15.md",
+        "redacted_preview": "s.…im (len=6)",
+        "rule_id": "regression_approved_designer_signature",
+        "surface": "file-text"
+      },
+      {
+        "allowance_reason": "Approved application signature, restricted to reviewed source/test/release locations.",
+        "allowed": true,
+        "fingerprint": "d3002f32cf8b7900d404cb48abecb00348232eb86a98b104fbb00ef168a1a3b5",
+        "location": "line 615",
+        "path": "src/ucd/ui/main_window.py",
+        "redacted_preview": "s.…im (len=6)",
+        "rule_id": "regression_approved_designer_signature",
+        "surface": "file-text"
+      },
+      {
+        "allowance_reason": "Approved application signature, restricted to reviewed source/test/release locations.",
+        "allowed": true,
+        "fingerprint": "d3002f32cf8b7900d404cb48abecb00348232eb86a98b104fbb00ef168a1a3b5",
+        "location": "line 5955",
+        "path": "src/ucd/ui/main_window.py",
+        "redacted_preview": "s.…im (len=6)",
+        "rule_id": "regression_approved_designer_signature",
+        "surface": "file-text"
+      },
+      {
+        "allowance_reason": "Approved application signature, restricted to reviewed source/test/release locations.",
+        "allowed": true,
+        "fingerprint": "d3002f32cf8b7900d404cb48abecb00348232eb86a98b104fbb00ef168a1a3b5",
+        "location": "line 26",
+        "path": "tests/test_ui_full_canvas_contract.py",
+        "redacted_preview": "s.…im (len=6)",
+        "rule_id": "regression_approved_designer_signature",
+        "surface": "file-text"
+      },
+      {
+        "allowance_reason": "Approved application signature, restricted to reviewed source/test/release locations.",
+        "allowed": true,
+        "fingerprint": "d3002f32cf8b7900d404cb48abecb00348232eb86a98b104fbb00ef168a1a3b5",
+        "location": "line 27",
+        "path": "tests/test_ui_full_canvas_contract.py",
+        "redacted_preview": "s.…im (len=6)",
+        "rule_id": "regression_approved_designer_signature",
+        "surface": "file-text"
+      }
+    ],
+    "root_name": "DiTuS_Kablo_Analizor_v0.16.9.4.18",
+    "rule_set_id": "DITUS_PUBLISH_INTEGRITY_PHASE1_V1",
+    "rule_set_sha256": "660bbba2783faa1ee86c567602466d1cf72724a9d1dc3f77ed1ded298953b536",
+    "schema_version": "1.0",
+    "stats": {
+      "archive_members_scanned": 51,
+      "filenames_scanned": 289,
+      "files_seen": 289,
+      "json_identity_fields_scanned": 12,
+      "ooxml_files_scanned": 3,
+      "pdf_annotations_scanned": 0,
+      "pdf_attachments_scanned": 0,
+      "pdf_files_scanned": 2,
+      "pdf_files_seen": 2,
+      "pdf_form_fields_scanned": 0,
+      "pdf_metadata_fields_scanned": 18,
+      "pdf_pages_scanned": 15,
+      "pdf_pages_seen": 15,
+      "pdf_text_characters_scanned": 36522,
+      "text_characters_scanned": 6490321,
+      "text_files_scanned": 279,
+      "unscannable_objects": 0,
+      "unsupported_binary_files": 5
+    },
+    "status": "PASS"
+  },
+  "pytest": {
+    "elapsed_seconds": 0.0,
+    "errors": 0,
+    "exit_code": 0,
+    "failed_cases": [],
+    "failures": 0,
+    "node_isolated_files": [
+      "tests/test_thermal_optimization.py"
+    ],
+    "passed": 388,
+    "process_isolated_files": true,
+    "runs": [
+      {
+        "errors": 0,
+        "exit_code": 0,
+        "failures": 0,
+        "selection": "tests/test_application_database.py",
+        "skipped": 0,
+        "status": "PASS",
+        "tests": 1
+      },
+      {
+        "errors": 0,
+        "exit_code": 0,
+        "failures": 0,
+        "selection": "tests/test_bonding.py",
+        "skipped": 0,
+        "status": "PASS",
+        "tests": 14
+      },
+      {
+        "errors": 0,
+        "exit_code": 0,
+        "failures": 0,
+        "selection": "tests/test_cable_channel_calculation_coupling_v0169411.py",
+        "skipped": 0,
+        "status": "PASS",
+        "tests": 1
+      },
+      {
+        "errors": 0,
+        "exit_code": 0,
+        "failures": 0,
+        "selection": "tests/test_cable_channel_layout.py",
+        "skipped": 0,
+        "status": "PASS",
+        "tests": 35
+      },
+      {
+        "errors": 0,
+        "exit_code": 0,
+        "failures": 0,
+        "selection": "tests/test_cable_channel_production_coupling_v0169411.py",
+        "skipped": 0,
+        "status": "PASS",
+        "tests": 5
+      },
+      {
+        "errors": 0,
+        "exit_code": 0,
+        "failures": 0,
+        "selection": "tests/test_cable_library.py",
+        "skipped": 0,
+        "status": "PASS",
+        "tests": 8
+      },
+      {
+        "errors": 0,
+        "exit_code": 0,
+        "failures": 0,
+        "selection": "tests/test_cable_physical_parameters.py",
+        "skipped": 0,
+        "status": "PASS",
+        "tests": 7
+      },
+      {
+        "errors": 0,
+        "exit_code": 0,
+        "failures": 0,
+        "selection": "tests/test_calculation_policy.py",
+        "skipped": 0,
+        "status": "PASS",
+        "tests": 6
+      },
+      {
+        "errors": 0,
+        "exit_code": 0,
+        "failures": 0,
+        "selection": "tests/test_catalog_comparison.py",
+        "skipped": 0,
+        "status": "PASS",
+        "tests": 7
+      },
+      {
+        "errors": 0,
+        "exit_code": 0,
+        "failures": 0,
+        "selection": "tests/test_catalog_phase2_v0169417.py",
+        "skipped": 0,
+        "status": "PASS",
+        "tests": 10
+      },
+      {
+        "errors": 0,
+        "exit_code": 0,
+        "failures": 0,
+        "selection": "tests/test_catalog_selection.py",
+        "skipped": 0,
+        "status": "PASS",
+        "tests": 9
+      },
+      {
+        "errors": 0,
+        "exit_code": 0,
+        "failures": 0,
+        "selection": "tests/test_circuit_independent_placement_v016946.py",
+        "skipped": 0,
+        "status": "PASS",
+        "tests": 4
+      },
+      {
+        "errors": 0,
+        "exit_code": 0,
+        "failures": 0,
+        "selection": "tests/test_current_version_outputs.py",
+        "skipped": 0,
+        "status": "PASS",
+        "tests": 2
+      },
+      {
+        "errors": 0,
+        "exit_code": 0,
+        "failures": 0,
+        "selection": "tests/test_electrothermal_coupled.py",
+        "skipped": 0,
+        "status": "PASS",
+        "tests": 6
+      },
+      {
+        "errors": 0,
+        "exit_code": 0,
+        "failures": 0,
+        "selection": "tests/test_engine_precheck.py",
+        "skipped": 0,
+        "status": "PASS",
+        "tests": 6
+      },
+      {
+        "errors": 0,
+        "exit_code": 0,
+        "failures": 0,
+        "selection": "tests/test_fault_epr.py",
+        "skipped": 0,
+        "status": "PASS",
+        "tests": 5
+      },
+      {
+        "errors": 0,
+        "exit_code": 0,
+        "failures": 0,
+        "selection": "tests/test_first_design.py",
+        "skipped": 0,
+        "status": "PASS",
+        "tests": 8
+      },
+      {
+        "errors": 0,
+        "exit_code": 0,
+        "failures": 0,
+        "selection": "tests/test_iec60287.py",
+        "skipped": 0,
+        "status": "PASS",
+        "tests": 4
+      },
+      {
+        "errors": 0,
+        "exit_code": 0,
+        "failures": 0,
+        "selection": "tests/test_installation_design.py",
+        "skipped": 0,
+        "status": "PASS",
+        "tests": 11
+      },
+      {
+        "errors": 0,
+        "exit_code": 0,
+        "failures": 0,
+        "selection": "tests/test_installation_dialog_startup_order.py",
+        "skipped": 0,
+        "status": "PASS",
+        "tests": 1
+      },
+      {
+        "errors": 0,
+        "exit_code": 0,
+        "failures": 0,
+        "selection": "tests/test_installation_spin_controls_v0169414.py",
+        "skipped": 0,
+        "status": "PASS",
+        "tests": 3
+      },
+      {
+        "errors": 0,
+        "exit_code": 0,
+        "failures": 0,
+        "selection": "tests/test_kablo_kanal_accordion_zoom_v016948.py",
+        "skipped": 0,
+        "status": "PASS",
+        "tests": 2
+      },
+      {
+        "errors": 0,
+        "exit_code": 0,
+        "failures": 0,
+        "selection": "tests/test_kablo_kanal_circuit_panel_v016947.py",
+        "skipped": 0,
+        "status": "PASS",
+        "tests": 3
+      },
+      {
+        "errors": 0,
+        "exit_code": 0,
+        "failures": 0,
+        "selection": "tests/test_kablo_kanal_ui_layout_v016944.py",
+        "skipped": 0,
+        "status": "PASS",
+        "tests": 4
+      },
+      {
+        "errors": 0,
+        "exit_code": 0,
+        "failures": 0,
+        "selection": "tests/test_kablo_kanal_width_scope_v016949.py",
+        "skipped": 0,
+        "status": "PASS",
+        "tests": 4
+      },
+      {
+        "errors": 0,
+        "exit_code": 0,
+        "failures": 0,
+        "selection": "tests/test_multiconductor_bonding_network.py",
+        "skipped": 0,
+        "status": "PASS",
+        "tests": 9
+      },
+      {
+        "errors": 0,
+        "exit_code": 0,
+        "failures": 0,
+        "selection": "tests/test_multiconductor_em.py",
+        "skipped": 0,
+        "status": "PASS",
+        "tests": 9
+      },
+      {
+        "errors": 0,
+        "exit_code": 0,
+        "failures": 0,
+        "selection": "tests/test_multiconductor_global_network.py",
+        "skipped": 0,
+        "status": "PASS",
+        "tests": 6
+      },
+      {
+        "errors": 0,
+        "exit_code": 0,
+        "failures": 0,
+        "selection": "tests/test_multiconductor_thermal.py",
+        "skipped": 0,
+        "status": "PASS",
+        "tests": 6
+      },
+      {
+        "errors": 0,
+        "exit_code": 0,
+        "failures": 0,
+        "selection": "tests/test_nodal_circuit_scopes_v0169412.py",
+        "skipped": 0,
+        "status": "PASS",
+        "tests": 4
+      },
+      {
+        "errors": 0,
+        "exit_code": 0,
+        "failures": 0,
+        "selection": "tests/test_nodal_thermal.py",
+        "skipped": 0,
+        "status": "PASS",
+        "tests": 9
+      },
+      {
+        "errors": 0,
+        "exit_code": 0,
+        "failures": 0,
+        "selection": "tests/test_phase3_1_runtime_resilience.py",
+        "skipped": 0,
+        "status": "PASS",
+        "tests": 16
+      },
+      {
+        "errors": 0,
+        "exit_code": 0,
+        "failures": 0,
+        "selection": "tests/test_primitive_cim.py",
+        "skipped": 0,
+        "status": "PASS",
+        "tests": 9
+      },
+      {
+        "errors": 0,
+        "exit_code": 0,
+        "failures": 0,
+        "selection": "tests/test_procurement.py",
+        "skipped": 0,
+        "status": "PASS",
+        "tests": 5
+      },
+      {
+        "errors": 0,
+        "exit_code": 0,
+        "failures": 0,
+        "selection": "tests/test_project_application.py",
+        "skipped": 0,
+        "status": "PASS",
+        "tests": 10
+      },
+      {
+        "errors": 0,
+        "exit_code": 0,
+        "failures": 0,
+        "selection": "tests/test_project_migration.py",
+        "skipped": 0,
+        "status": "PASS",
+        "tests": 9
+      },
+      {
+        "errors": 0,
+        "exit_code": 0,
+        "failures": 0,
+        "selection": "tests/test_project_workflow.py",
+        "skipped": 0,
+        "status": "PASS",
+        "tests": 9
+      },
+      {
+        "errors": 0,
+        "exit_code": 0,
+        "failures": 0,
+        "selection": "tests/test_publish_integrity_phase1_v0169416.py",
+        "skipped": 0,
+        "status": "PASS",
+        "tests": 12
+      },
+      {
+        "errors": 0,
+        "exit_code": 0,
+        "failures": 0,
+        "selection": "tests/test_reporting.py",
+        "skipped": 0,
+        "status": "PASS",
+        "tests": 12
+      },
+      {
+        "errors": 0,
+        "exit_code": 0,
+        "failures": 0,
+        "selection": "tests/test_shadow_validation.py",
+        "skipped": 0,
+        "status": "PASS",
+        "tests": 8
+      },
+      {
+        "errors": 0,
+        "exit_code": 0,
+        "failures": 0,
+        "selection": "tests/test_svl.py",
+        "skipped": 0,
+        "status": "PASS",
+        "tests": 5
+      },
+      {
+        "errors": 0,
+        "exit_code": 0,
+        "failures": 0,
+        "selection": "tests/test_synthetic_20km_examples.py",
+        "skipped": 0,
+        "status": "PASS",
+        "tests": 8
+      },
+      {
+        "errors": 0,
+        "exit_code": 0,
+        "failures": 0,
+        "selection": "tests/test_thermal_optimization.py::test_thermal_alternatives_are_recalculated_and_ranked",
+        "skipped": 0,
+        "status": "PASS",
+        "tests": 1
+      },
+      {
+        "errors": 0,
+        "exit_code": 0,
+        "failures": 0,
+        "selection": "tests/test_thermal_optimization.py::test_apply_alternative_changes_only_selected_region_overrides",
+        "skipped": 0,
+        "status": "PASS",
+        "tests": 1
+      },
+      {
+        "errors": 0,
+        "exit_code": 0,
+        "failures": 0,
+        "selection": "tests/test_thermal_optimization.py::test_grout_override_is_an_explicit_template_property",
+        "skipped": 0,
+        "status": "PASS",
+        "tests": 1
+      },
+      {
+        "errors": 0,
+        "exit_code": 0,
+        "failures": 0,
+        "selection": "tests/test_thermal_resistance.py",
+        "skipped": 0,
+        "status": "PASS",
+        "tests": 8
+      },
+      {
+        "errors": 0,
+        "exit_code": 0,
+        "failures": 0,
+        "selection": "tests/test_thermal_review.py",
+        "skipped": 0,
+        "status": "PASS",
+        "tests": 6
+      },
+      {
+        "errors": 0,
+        "exit_code": 0,
+        "failures": 0,
+        "selection": "tests/test_thermal_route.py",
+        "skipped": 0,
+        "status": "PASS",
+        "tests": 8
+      },
+      {
+        "errors": 0,
+        "exit_code": 0,
+        "failures": 0,
+        "selection": "tests/test_transient_thermal.py",
+        "skipped": 0,
+        "status": "PASS",
+        "tests": 7
+      },
+      {
+        "errors": 0,
+        "exit_code": 0,
+        "failures": 0,
+        "selection": "tests/test_trefoil_contact_roundtrip_v0169413.py",
+        "skipped": 0,
+        "status": "PASS",
+        "tests": 4
+      },
+      {
+        "errors": 0,
+        "exit_code": 0,
+        "failures": 0,
+        "selection": "tests/test_ui_cable_database_startup_contract.py",
+        "skipped": 0,
+        "status": "PASS",
+        "tests": 3
+      },
+      {
+        "errors": 0,
+        "exit_code": 0,
+        "failures": 0,
+        "selection": "tests/test_ui_full_canvas_contract.py",
+        "skipped": 0,
+        "status": "PASS",
+        "tests": 8
+      },
+      {
+        "errors": 0,
+        "exit_code": 0,
+        "failures": 0,
+        "selection": "tests/test_ui_guided_first_design_contract.py",
+        "skipped": 0,
+        "status": "PASS",
+        "tests": 8
+      },
+      {
+        "errors": 0,
+        "exit_code": 0,
+        "failures": 0,
+        "selection": "tests/test_ui_navigation_audit.py",
+        "skipped": 0,
+        "status": "PASS",
+        "tests": 16
+      },
+      {
+        "errors": 0,
+        "exit_code": 0,
+        "failures": 0,
+        "selection": "tests/test_workflow_run_registry.py",
+        "skipped": 0,
+        "status": "PASS",
+        "tests": 5
+      }
+    ],
+    "skipped": 0,
+    "status": "PASS",
+    "tests": 388
+  },
+  "schema_version": "1.0"
+}

@@ -1,0 +1,18 @@
+DiTuS Kablo Analizör v0.16.9.4.33
+Yayın veri bütünlüğü otomatik test sonucu
+
+SONUÇ: PASS
+Kural seti: DITUS_PUBLISH_INTEGRITY_PHASE1_V1
+Kural seti SHA-256: 660bbba2783faa1ee86c567602466d1cf72724a9d1dc3f77ed1ded298953b536
+Engelleyici eşleşme: 0
+İzin verilen eşleşme: 8
+Taranamayan nesne: 0
+Dosya/yol taraması: 412/412
+PDF taraması: 2/2
+PDF sayfa taraması: 19/19
+PDF metin karakteri: 41474
+PDF metadata alanı: 18
+OOXML dosyası: 3
+
+Bu belge elle yazılmamıştır; yapılandırılmış denetim sonucundan üretilmiştir.
+v0.16.9.4.14 PDF PASS iddiası bu sonuç için kanıt kabul edilmemiştir.

@@ -1,0 +1,202 @@
+{
+  "component_statuses": {
+    "engine_lock": "PASS",
+    "generated_output_self_check": "PASS",
+    "manifest": "PASS",
+    "procurement_drum_plan": "PASS",
+    "publish_integrity": "PASS",
+    "pytest": "PASS"
+  },
+  "engine_lock": {
+    "baseline_file": "ENGINE_BASELINE_v0.16.9.4.34.sha256",
+    "baseline_file_sha256": "3fe805d394d944d9e022edda85e9970d3a41e4f0fc7e4a388b71f4f0983706ef",
+    "expected_file_count": 53,
+    "mismatches": [],
+    "missing_paths": [],
+    "status": "PASS",
+    "unexpected_paths": [],
+    "verified_file_count": 53
+  },
+  "generated_output_self_check": "PASS",
+  "historical_correction": {
+    "statement": "Earlier PDF and maximum-drum-length PASS claims were not supported by complete machine-readable evidence and are not accepted as evidence.",
+    "superseded_documents": [
+      "PACKAGED_TEST_RESULTS_v0.16.9.4.14.txt",
+      "PUBLISH_CLEANUP_AUDIT_v0.16.9.4.14.md"
+    ]
+  },
+  "manifest": {
+    "entry_count": 420,
+    "excluded_generated_attestations": [
+      "PACKAGED_TEST_RESULTS_v0.16.9.4.34.txt",
+      "PUBLISH_CLEANUP_AUDIT_v0.16.9.4.34.md",
+      "PUBLISH_INTEGRITY_AUDIT_v0.16.9.4.34.json"
+    ],
+    "manifest_file": "MANIFEST.txt",
+    "manifest_sha256": "2923f18fb69c6cec35da4f369074c4883e726733825eacb3e1f1050a595d8876",
+    "mismatches": [],
+    "status": "PASS",
+    "verified_count": 420
+  },
+  "overall_status": "PASS",
+  "package_version": "0.16.9.4.34",
+  "procurement_drum_plan": {
+    "accessory_plan_status": "VALID",
+    "accounting_residual_m": 0.0,
+    "allocated_total_m": 124175.0,
+    "cross_bonding_link_box_units": 28,
+    "drum_count": 126,
+    "drum_plan_status": "VALID",
+    "duplicate_cut_assignments": 0,
+    "export_consistency": "PASS",
+    "grounding_link_box_units": 12,
+    "invalid_drum_count": 0,
+    "maximum_drum_length_m": 1000.0,
+    "maximum_single_drum_overload_m": 0.0,
+    "order_allowance_total_m": 2423.0,
+    "order_quantity_total_m": 124175.0,
+    "overload_total_m": 0.0,
+    "procurement_output_sha256": "f466b35e9b919851e627d32776656401600be3e0afd177cf159a7b0e8e9e0a31",
+    "route_cut_count": 126,
+    "route_cut_total_m": 121752.0,
+    "source_project": "examples/synthetic_20km_procurement.ucd.json",
+    "spare_stock_total_m": 0.0,
+    "status": "PASS",
+    "svl_pole_units": 84,
+    "svl_set_units": 28,
+    "unallocated_total_m": 0.0,
+    "unassigned_cut_count": 0,
+    "valid_drum_count": 126,
+    "violations": []
+  },
+  "provenance": "Generated automatically by tools/run_release_acceptance.py; manual PASS editing is not authoritative.",
+  "publish_integrity": {
+    "allowed_finding_count": 8,
+    "blocking_finding_count": 0,
+    "errors": [],
+    "finding_counts_by_rule": {
+      "regression_approved_designer_signature": 8
+    },
+    "findings": [
+      {
+        "allowance_reason": "Approved application signature, restricted to reviewed source/test/release locations.",
+        "allowed": true,
+        "fingerprint": "d3002f32cf8b7900d404cb48abecb00348232eb86a98b104fbb00ef168a1a3b5",
+        "location": "line 6",
+        "path": "EVENING_ACCEPTANCE_CHECKLIST_v0.16.9.4.15.md",
+        "redacted_preview": "s.…im (len=6)",
+        "rule_id": "regression_approved_designer_signature",
+        "surface": "file-text"
+      },
+      {
+        "allowance_reason": "Approved application signature, restricted to reviewed source/test/release locations.",
+        "allowed": true,
+        "fingerprint": "d3002f32cf8b7900d404cb48abecb00348232eb86a98b104fbb00ef168a1a3b5",
+        "location": "line 13",
+        "path": "EVENING_ACCEPTANCE_CHECKLIST_v0.16.9.4.15.md",
+        "redacted_preview": "s.…im (len=6)",
+        "rule_id": "regression_approved_designer_signature",
+        "surface": "file-text"
+      },
+      {
+        "allowance_reason": "Approved application signature, restricted to reviewed source/test/release locations.",
+        "allowed": true,
+        "fingerprint": "d3002f32cf8b7900d404cb48abecb00348232eb86a98b104fbb00ef168a1a3b5",
+        "location": "line 7",
+        "path": "IDENTITY_SIGNATURE_AUDIT_v0.16.9.4.15.md",
+        "redacted_preview": "s.…im (len=6)",
+        "rule_id": "regression_approved_designer_signature",
+        "surface": "file-text"
+      },
+      {
+        "allowance_reason": "Approved application signature, restricted to reviewed source/test/release locations.",
+        "allowed": true,
+        "fingerprint": "d3002f32cf8b7900d404cb48abecb00348232eb86a98b104fbb00ef168a1a3b5",
+        "location": "line 13",
+        "path": "RELEASE_NOTES_v0.16.9.4.15.md",
+        "redacted_preview": "s.…im (len=6)",
+        "rule_id": "regression_approved_designer_signature",
+        "surface": "file-text"
+      },
+      {
+        "allowance_reason": "Approved application signature, restricted to reviewed source/test/release locations.",
+        "allowed": true,
+        "fingerprint": "d3002f32cf8b7900d404cb48abecb00348232eb86a98b104fbb00ef168a1a3b5",
+        "location": "line 636",
+        "path": "src/ucd/ui/main_window.py",
+        "redacted_preview": "s.…im (len=6)",
+        "rule_id": "regression_approved_designer_signature",
+        "surface": "file-text"
+      },
+      {
+        "allowance_reason": "Approved application signature, restricted to reviewed source/test/release locations.",
+        "allowed": true,
+        "fingerprint": "d3002f32cf8b7900d404cb48abecb00348232eb86a98b104fbb00ef168a1a3b5",
+        "location": "line 6123",
+        "path": "src/ucd/ui/main_window.py",
+        "redacted_preview": "s.…im (len=6)",
+        "rule_id": "regression_approved_designer_signature",
+        "surface": "file-text"
+      },
+      {
+        "allowance_reason": "Approved application signature, restricted to reviewed source/test/release locations.",
+        "allowed": true,
+        "fingerprint": "d3002f32cf8b7900d404cb48abecb00348232eb86a98b104fbb00ef168a1a3b5",
+        "location": "line 26",
+        "path": "tests/test_ui_full_canvas_contract.py",
+        "redacted_preview": "s.…im (len=6)",
+        "rule_id": "regression_approved_designer_signature",
+        "surface": "file-text"
+      },
+      {
+        "allowance_reason": "Approved application signature, restricted to reviewed source/test/release locations.",
+        "allowed": true,
+        "fingerprint": "d3002f32cf8b7900d404cb48abecb00348232eb86a98b104fbb00ef168a1a3b5",
+        "location": "line 27",
+        "path": "tests/test_ui_full_canvas_contract.py",
+        "redacted_preview": "s.…im (len=6)",
+        "rule_id": "regression_approved_designer_signature",
+        "surface": "file-text"
+      }
+    ],
+    "root_name": "DiTuS_Kablo_Analizor_v0.16.9.4.33",
+    "rule_set_id": "DITUS_PUBLISH_INTEGRITY_PHASE1_V1",
+    "rule_set_sha256": "660bbba2783faa1ee86c567602466d1cf72724a9d1dc3f77ed1ded298953b536",
+    "schema_version": "1.0",
+    "stats": {
+      "archive_members_scanned": 51,
+      "filenames_scanned": 420,
+      "files_seen": 420,
+      "json_identity_fields_scanned": 12,
+      "ooxml_files_scanned": 3,
+      "pdf_annotations_scanned": 0,
+      "pdf_attachments_scanned": 0,
+      "pdf_files_scanned": 2,
+      "pdf_files_seen": 2,
+      "pdf_form_fields_scanned": 0,
+      "pdf_metadata_fields_scanned": 18,
+      "pdf_pages_scanned": 19,
+      "pdf_pages_seen": 19,
+      "pdf_text_characters_scanned": 43795,
+      "text_characters_scanned": 7657997,
+      "text_files_scanned": 396,
+      "unscannable_objects": 0,
+      "unsupported_binary_files": 19
+    },
+    "status": "PASS"
+  },
+  "pytest": {
+    "elapsed_seconds": 79.67,
+    "errors": 0,
+    "evidence": "Four deterministic pytest shards plus publication-integrity shard; 502 passed, 1 skipped. Skip: PySide6 unavailable in packaging environment.",
+    "exit_code": 0,
+    "failed_cases": [],
+    "failures": 0,
+    "output_tail": "",
+    "passed": 502,
+    "skipped": 1,
+    "status": "PASS",
+    "tests": 503
+  },
+  "schema_version": "1.0"
+}

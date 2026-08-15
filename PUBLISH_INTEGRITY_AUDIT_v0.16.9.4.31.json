@@ -1,0 +1,123 @@
+{
+  "allowed_finding_count": 8,
+  "blocking_finding_count": 0,
+  "errors": [],
+  "finding_counts_by_rule": {
+    "regression_approved_designer_signature": 8
+  },
+  "findings": [
+    {
+      "allowance_reason": "Approved application signature, restricted to reviewed source/test/release locations.",
+      "allowed": true,
+      "fingerprint": "d3002f32cf8b7900d404cb48abecb00348232eb86a98b104fbb00ef168a1a3b5",
+      "location": "line 6",
+      "path": "EVENING_ACCEPTANCE_CHECKLIST_v0.16.9.4.15.md",
+      "redacted_preview": "s.…im (len=6)",
+      "rule_id": "regression_approved_designer_signature",
+      "surface": "file-text"
+    },
+    {
+      "allowance_reason": "Approved application signature, restricted to reviewed source/test/release locations.",
+      "allowed": true,
+      "fingerprint": "d3002f32cf8b7900d404cb48abecb00348232eb86a98b104fbb00ef168a1a3b5",
+      "location": "line 13",
+      "path": "EVENING_ACCEPTANCE_CHECKLIST_v0.16.9.4.15.md",
+      "redacted_preview": "s.…im (len=6)",
+      "rule_id": "regression_approved_designer_signature",
+      "surface": "file-text"
+    },
+    {
+      "allowance_reason": "Approved application signature, restricted to reviewed source/test/release locations.",
+      "allowed": true,
+      "fingerprint": "d3002f32cf8b7900d404cb48abecb00348232eb86a98b104fbb00ef168a1a3b5",
+      "location": "line 7",
+      "path": "IDENTITY_SIGNATURE_AUDIT_v0.16.9.4.15.md",
+      "redacted_preview": "s.…im (len=6)",
+      "rule_id": "regression_approved_designer_signature",
+      "surface": "file-text"
+    },
+    {
+      "allowance_reason": "Approved application signature, restricted to reviewed source/test/release locations.",
+      "allowed": true,
+      "fingerprint": "d3002f32cf8b7900d404cb48abecb00348232eb86a98b104fbb00ef168a1a3b5",
+      "location": "line 13",
+      "path": "RELEASE_NOTES_v0.16.9.4.15.md",
+      "redacted_preview": "s.…im (len=6)",
+      "rule_id": "regression_approved_designer_signature",
+      "surface": "file-text"
+    },
+    {
+      "allowance_reason": "Approved application signature, restricted to reviewed source/test/release locations.",
+      "allowed": true,
+      "fingerprint": "d3002f32cf8b7900d404cb48abecb00348232eb86a98b104fbb00ef168a1a3b5",
+      "location": "line 634",
+      "path": "src/ucd/ui/main_window.py",
+      "redacted_preview": "s.…im (len=6)",
+      "rule_id": "regression_approved_designer_signature",
+      "surface": "file-text"
+    },
+    {
+      "allowance_reason": "Approved application signature, restricted to reviewed source/test/release locations.",
+      "allowed": true,
+      "fingerprint": "d3002f32cf8b7900d404cb48abecb00348232eb86a98b104fbb00ef168a1a3b5",
+      "location": "line 6121",
+      "path": "src/ucd/ui/main_window.py",
+      "redacted_preview": "s.…im (len=6)",
+      "rule_id": "regression_approved_designer_signature",
+      "surface": "file-text"
+    },
+    {
+      "allowance_reason": "Approved application signature, restricted to reviewed source/test/release locations.",
+      "allowed": true,
+      "fingerprint": "d3002f32cf8b7900d404cb48abecb00348232eb86a98b104fbb00ef168a1a3b5",
+      "location": "line 26",
+      "path": "tests/test_ui_full_canvas_contract.py",
+      "redacted_preview": "s.…im (len=6)",
+      "rule_id": "regression_approved_designer_signature",
+      "surface": "file-text"
+    },
+    {
+      "allowance_reason": "Approved application signature, restricted to reviewed source/test/release locations.",
+      "allowed": true,
+      "fingerprint": "d3002f32cf8b7900d404cb48abecb00348232eb86a98b104fbb00ef168a1a3b5",
+      "location": "line 27",
+      "path": "tests/test_ui_full_canvas_contract.py",
+      "redacted_preview": "s.…im (len=6)",
+      "rule_id": "regression_approved_designer_signature",
+      "surface": "file-text"
+    }
+  ],
+  "historical_correction": {
+    "reason": "The earlier PDF scan claim was not verified by a PDF text extractor.",
+    "superseded_documents": [
+      "PACKAGED_TEST_RESULTS_v0.16.9.4.14.txt",
+      "PUBLISH_CLEANUP_AUDIT_v0.16.9.4.14.md"
+    ]
+  },
+  "package_version": "0.16.9.4.31",
+  "root_name": "DiTuS_Kablo_Analizor_v0.16.9.4.30",
+  "rule_set_id": "DITUS_PUBLISH_INTEGRITY_PHASE1_V1",
+  "rule_set_sha256": "660bbba2783faa1ee86c567602466d1cf72724a9d1dc3f77ed1ded298953b536",
+  "schema_version": "1.0",
+  "stats": {
+    "archive_members_scanned": 51,
+    "filenames_scanned": 391,
+    "files_seen": 391,
+    "json_identity_fields_scanned": 12,
+    "ooxml_files_scanned": 3,
+    "pdf_annotations_scanned": 0,
+    "pdf_attachments_scanned": 0,
+    "pdf_files_scanned": 2,
+    "pdf_files_seen": 2,
+    "pdf_form_fields_scanned": 0,
+    "pdf_metadata_fields_scanned": 18,
+    "pdf_pages_scanned": 19,
+    "pdf_pages_seen": 19,
+    "pdf_text_characters_scanned": 41474,
+    "text_characters_scanned": 7488764,
+    "text_files_scanned": 370,
+    "unscannable_objects": 0,
+    "unsupported_binary_files": 16
+  },
+  "status": "PASS"
+}
