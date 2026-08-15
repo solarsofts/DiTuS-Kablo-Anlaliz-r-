@@ -1,0 +1,13 @@
+DiTuS Kablo Analizör v0.16.9.4.29
+FAZ 6.7 geliştirme ve paket regresyon sonucu
+
+Tam test kümesi shard edilerek yürütüldü: PASS / 468/468
+- shard A: 158/158 PASS
+- shard B1: 56/56 PASS
+- shard B2a: 47/47 PASS
+- shard B2b: 44/44 PASS
+- shard C: 87/87 PASS
+- shard D: 76/76 PASS
+
+FAZ 6.7 odak bonding testi: 16/16 PASS.
+Yayın veri bütünlüğü denetimi: PASS / 0 blocking finding.

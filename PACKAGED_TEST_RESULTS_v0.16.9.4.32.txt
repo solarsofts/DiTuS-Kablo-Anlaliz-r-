@@ -1,0 +1,29 @@
+DiTuS Kablo Analizör v0.16.9.4.32
+FAZ 6 Audit Closure doğrulaması
+
+SONUÇ: PASS
+Toplam test: 487
+Geçen: 487
+Başarısız: 0
+
+Shard sonuçları:
+- 119/119 PASS
+- 70/70 PASS
+- 105/105 PASS
+- 96/96 PASS
+- 97/97 PASS
+
+Özel audit closure kanıtları:
+- Method authority / geometry provenance: PASS
+- Layered analytical preview + nodal authority: PASS
+- Legacy scalar authority cap: PASS
+- Surface-correction raw/clamp evidence: PASS
+- Groundwater reason-code separation: PASS
+- Trefoil formation-centre depth contract: PASS
+- IEC/IEEE closed-form bonding oracle: PASS
+- FAZ 6.7 cumulative standing-voltage regression: PASS
+- Engine baseline: 51/51 file locked
+- Publish integrity audit: PASS, 0 blocking finding
+
+Not: IEC 60287-2-1 §2.2.7.3 concrete duct-bank correction scope is registered and verified,
+but is intentionally not claimed as a completed production implementation in this audit-closure release.

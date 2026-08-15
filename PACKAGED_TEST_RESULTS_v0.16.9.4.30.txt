@@ -1,0 +1,12 @@
+DiTuS Kablo Analizör v0.16.9.4.30
+FAZ 6.9 motor uygulanabilirliği ve paket regresyon sonucu
+
+Tam test kümesi dosya shard'larıyla yürütüldü: PASS / 473/473
+- shard A: 107/107 PASS
+- shard B1: 59/59 PASS
+- shard B2: 61/61 PASS
+- shard C: 119/119 PASS
+- shard D: 127/127 PASS
+
+FAZ 6.9 odak testi: 5/5 PASS.
+Engine-lock ve yayın bütünlüğü kapıları paket sonlandırmasında ayrıca doğrulanmıştır.

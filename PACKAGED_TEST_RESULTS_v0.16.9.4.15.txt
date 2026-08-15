@@ -1,0 +1,25 @@
+DiTuS Kablo Analizör v0.16.9.4.15
+Kimlik ve İmza Hotfix — Kaynak Doğrulama
+
+Python compileall: PASS
+Kimlik/atfı bağımsız taraması: PASS / 0 eşleşme
+Hesap modülleri v0.16.9.4.14 karşılaştırması: BYTE-IDENTICAL
+Veri modeli modülleri v0.16.9.4.14 karşılaştırması: BYTE-IDENTICAL
+Sentetik rapor proje imzası: UNCHANGED
+Sentetik rapor hesap bölümleri: UNCHANGED
+DOCX render incelemesi: PASS / 11 sayfa
+PDF render incelemesi: PASS / 10 sayfa
+
+Test grupları:
+- Grup 1: 107/107 PASS
+- Grup 2: 69/69 PASS
+- Grup 3: 100/100 PASS
+- Grup 4: 76/76 PASS
+- Toplam: 352/352 PASS
+
+Nihai paket doğrulaması:
+- ZIP CRC: PASS
+- Manifest: 258/258 PASS
+- Paket-içi Python compileall: PASS
+- Paket-içi kimlik/atıf taraması: PASS / 0 eşleşme
+- Paket-içi testler: 352/352 PASS

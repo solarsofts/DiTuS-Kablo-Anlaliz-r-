@@ -1,0 +1,18 @@
+DiTuS Kablo Analizör v0.16.9.4.33 — FAZ 7.2–7.4 test özeti
+
+Pytest shard sonuçları:
+- Shard 1: 118 passed
+- Shard 2: 119 passed
+- Shard 3: 120 passed, 1 skipped
+- Shard 4: 137 passed
+TOPLAM: 494 passed, 1 skipped, 0 failed
+
+Skip nedeni:
+- test_phase7_2_ui_runtime.py::test_main_window_constructs_in_offscreen_qt
+- Bu paketleme ortamında PySide6 kurulu değil. Test PySide6 bulunan desteklenen geliştirme/CI ortamında çalışacak şekilde fail-on-runtime-error olarak tanımlıdır; CI QT_QPA_PLATFORM=offscreen kullanır.
+
+Ek doğrulamalar:
+- Python compileall: PASS
+- Engine baseline: 52/52 dosya kilitli
+- Publish integrity: PASS, 0 blocking finding, 0 unscannable object
+- Project schema: 0.16.4

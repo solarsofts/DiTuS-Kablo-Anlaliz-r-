@@ -1,0 +1,14 @@
+DiTuS Kablo Analizör v0.16.9.4.18
+Otomatik paket kabul sonucu
+
+GENEL SONUÇ: PASS
+Testler: PASS / 388/388 PASS / skipped=0
+Yayın veri bütünlüğü: PASS / blocker=0 / allowed=8
+PDF: 2/2 dosya; 15/15 sayfa; 36522 karakter
+PDF metadata: 18 alan; taranamayan nesne=0
+Hesap/model motor kilidi: PASS / 39/39
+Manifest: PASS / 289/289
+Üretilen kabul belgeleri öz-denetimi: PASS
+
+Bu belge test ve denetim çıktısından otomatik üretilmiştir; elle yazılmış PASS beyanı değildir.
+v0.16.9.4.14 içindeki PDF tarama beyanı doğrulanmamış tarihsel kayıttır ve kanıt olarak kullanılmamıştır.

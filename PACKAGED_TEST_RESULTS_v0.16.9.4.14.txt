@@ -1,0 +1,17 @@
+DiTuS Kablo Analizör v0.16.9.4.14 — Paket Doğrulama Özeti
+
+- Toplanan test: 351
+- Sonuç: 351/351 PASS (ortam süre sınırı nedeniyle bağımsız test gruplarında çalıştırıldı)
+- Kurulum spinbox kontrol sözleşmesi: PASS
+- Üst/alt ok tema-bağımsız tıklama bölgesi: PASS
+- Spinbox wheel → panel kaydırma sözleşmesi: PASS
+- Kablo-Kanal zoom hassasiyeti 1.08: PASS
+- Sentetik 20 km örnek üretimi: PASS
+- Toplam güzergâh: 20.000 m
+- Bonding: 21 minör kesim / 7 ana cross-bonding grubu
+- Makara planı: 126 güzergâh kesimi + 1 rezerv; azami makara boyu aşımı yok
+- Gerçek proje kimliği dosya/metin/Office arşiv taraması: PASS / 0 eşleşme
+- PDF metin taraması: PASS / 0 eşleşme
+- Python compileall: PASS
+- Proje şeması: 0.16.4
+- Windows/PySide6 görsel etkileşim testi: bu Linux paketleme ortamında çalıştırılmadı
